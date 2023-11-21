@@ -48,5 +48,10 @@ namespace GUI
             QuestionMainMenu.ShowDialog();
             this.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
