@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="Admin\AccountCreation.designer.cs">
       <DependentUpon>AccountCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AccountHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AccountHandling.Designer.cs">
+      <DependentUpon>AccountHandling.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Admin.cs">
       <SubType>Form</SubType>
@@ -124,18 +131,6 @@
     <Compile Include="Professor\Profesor.designer.cs">
       <DependentUpon>Profesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="StudentGradeMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentGradeMenu.Designer.cs">
-      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StudentMainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StudentMainMenu.Designer.cs">
-      <DependentUpon>StudentMainMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Student\Student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +139,9 @@
     </Compile>
     <EmbeddedResource Include="Admin\AccountCreation.resx">
       <DependentUpon>AccountCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AccountHandling.resx">
+      <DependentUpon>AccountHandling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -177,12 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\Profesor.resx">
       <DependentUpon>Profesor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentGradeMenu.resx">
-      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StudentMainMenu.resx">
-      <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
