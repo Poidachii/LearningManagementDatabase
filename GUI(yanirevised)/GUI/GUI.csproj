@@ -104,6 +104,18 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor\ProfGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfGrade.Designer.cs">
+      <DependentUpon>ProfGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\ProfQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfQuiz.Designer.cs">
+      <DependentUpon>ProfQuiz.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -151,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\Professor.resx">
       <DependentUpon>Professor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor\ProfGrade.resx">
+      <DependentUpon>ProfGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor\ProfQuiz.resx">
+      <DependentUpon>ProfQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

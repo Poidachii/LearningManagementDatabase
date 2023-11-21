@@ -28,31 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountHandling));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.AccHandleButton = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.AccountLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.AccHandleButton = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.AccountDataViewer = new System.Windows.Forms.DataGridView();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.SearchBarIcon = new System.Windows.Forms.PictureBox();
+            this.SearchBar = new System.Windows.Forms.TextBox();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.SignOutLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountDataViewer)).BeginInit();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchBarIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -66,19 +77,8 @@
             this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(221, 542);
+            this.panel2.Size = new System.Drawing.Size(221, 720);
             this.panel2.TabIndex = 53;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(5, 4);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(211, 111);
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
             // 
             // panel4
             // 
@@ -103,18 +103,6 @@
             this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "HOME";
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::GUI.Properties.Resources.img_66574;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(217, 50);
-            this.button6.TabIndex = 3;
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -143,18 +131,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "COURSE SETTING";
             // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::GUI.Properties.Resources.course_management;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(1, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(217, 50);
-            this.button3.TabIndex = 1;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.RoyalBlue;
@@ -178,18 +154,6 @@
             this.label5.Size = new System.Drawing.Size(118, 15);
             this.label5.TabIndex = 3;
             this.label5.Text = "ACCOUNT SETTING";
-            // 
-            // AccHandleButton
-            // 
-            this.AccHandleButton.BackgroundImage = global::GUI.Properties.Resources.acc_handling;
-            this.AccHandleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AccHandleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AccHandleButton.Location = new System.Drawing.Point(0, 0);
-            this.AccHandleButton.Margin = new System.Windows.Forms.Padding(2);
-            this.AccHandleButton.Name = "AccHandleButton";
-            this.AccHandleButton.Size = new System.Drawing.Size(217, 49);
-            this.AccHandleButton.TabIndex = 0;
-            this.AccHandleButton.UseVisualStyleBackColor = true;
             // 
             // panel12
             // 
@@ -215,53 +179,30 @@
             this.label12.TabIndex = 7;
             this.label12.Text = "CALENDAR";
             // 
-            // button10
-            // 
-            this.button10.BackgroundImage = global::GUI.Properties.Resources.calendar_icon_png_transparent_3;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(0, -4);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(217, 51);
-            this.button10.TabIndex = 8;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.SignOutLabel);
+            this.panel1.Controls.Add(this.AccountLabel);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(955, 42);
+            this.panel1.Size = new System.Drawing.Size(1385, 42);
             this.panel1.TabIndex = 52;
             // 
-            // label11
+            // AccountLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(849, 13);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 17);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "ACCOUNT";
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(789, 3);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 38);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
+            this.AccountLabel.AutoSize = true;
+            this.AccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.AccountLabel.Location = new System.Drawing.Point(1214, 13);
+            this.AccountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AccountLabel.Name = "AccountLabel";
+            this.AccountLabel.Size = new System.Drawing.Size(75, 17);
+            this.AccountLabel.TabIndex = 3;
+            this.AccountLabel.Text = "ACCOUNT";
             // 
             // label1
             // 
@@ -275,17 +216,167 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMIN - ACCOUNT HANDLING";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(5, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(211, 111);
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::GUI.Properties.Resources.img_66574;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(0, 0);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(217, 50);
+            this.button6.TabIndex = 3;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::GUI.Properties.Resources.course_management;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(1, 0);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(217, 50);
+            this.button3.TabIndex = 1;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // AccHandleButton
+            // 
+            this.AccHandleButton.BackgroundImage = global::GUI.Properties.Resources.acc_handling;
+            this.AccHandleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.AccHandleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccHandleButton.Location = new System.Drawing.Point(0, 0);
+            this.AccHandleButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AccHandleButton.Name = "AccHandleButton";
+            this.AccHandleButton.Size = new System.Drawing.Size(217, 49);
+            this.AccHandleButton.TabIndex = 0;
+            this.AccHandleButton.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = global::GUI.Properties.Resources.calendar_icon_png_transparent_3;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(0, -4);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(217, 51);
+            this.button10.TabIndex = 8;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(1160, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 38);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // AccountDataViewer
+            // 
+            this.AccountDataViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AccountDataViewer.Location = new System.Drawing.Point(228, 99);
+            this.AccountDataViewer.Name = "AccountDataViewer";
+            this.AccountDataViewer.Size = new System.Drawing.Size(1144, 650);
+            this.AccountDataViewer.TabIndex = 55;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel15.Controls.Add(this.SearchBarIcon);
+            this.panel15.Controls.Add(this.SearchBar);
+            this.panel15.Controls.Add(this.AddButton);
+            this.panel15.Controls.Add(this.label15);
+            this.panel15.Location = new System.Drawing.Point(225, 46);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(1147, 48);
+            this.panel15.TabIndex = 54;
+            // 
+            // SearchBarIcon
+            // 
+            this.SearchBarIcon.BackColor = System.Drawing.Color.Transparent;
+            this.SearchBarIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.SearchBarIcon.Enabled = false;
+            this.SearchBarIcon.Image = ((System.Drawing.Image)(resources.GetObject("SearchBarIcon.Image")));
+            this.SearchBarIcon.InitialImage = null;
+            this.SearchBarIcon.Location = new System.Drawing.Point(1115, 7);
+            this.SearchBarIcon.Name = "SearchBarIcon";
+            this.SearchBarIcon.Size = new System.Drawing.Size(25, 28);
+            this.SearchBarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SearchBarIcon.TabIndex = 4;
+            this.SearchBarIcon.TabStop = false;
+            // 
+            // SearchBar
+            // 
+            this.SearchBar.Location = new System.Drawing.Point(827, 12);
+            this.SearchBar.Name = "SearchBar";
+            this.SearchBar.Size = new System.Drawing.Size(282, 20);
+            this.SearchBar.TabIndex = 3;
+            // 
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.Color.AliceBlue;
+            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.Location = new System.Drawing.Point(152, 9);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(107, 26);
+            this.AddButton.TabIndex = 2;
+            this.AddButton.Text = "ADD";
+            this.AddButton.UseVisualStyleBackColor = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(21, 12);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(109, 20);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "Account List";
+            // 
+            // SignOutLabel
+            // 
+            this.SignOutLabel.AutoSize = true;
+            this.SignOutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.SignOutLabel.Location = new System.Drawing.Point(1297, 13);
+            this.SignOutLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SignOutLabel.Name = "SignOutLabel";
+            this.SignOutLabel.Size = new System.Drawing.Size(75, 17);
+            this.SignOutLabel.TabIndex = 4;
+            this.SignOutLabel.Text = "SIGN OUT";
+            // 
             // AccountHandling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 582);
+            this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.AccountDataViewer);
+            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AccountHandling";
             this.Text = "AccountHandling";
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -296,6 +387,11 @@
             this.panel12.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AccountDataViewer)).EndInit();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchBarIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,8 +413,15 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label AccountLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView AccountDataViewer;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.PictureBox SearchBarIcon;
+        private System.Windows.Forms.TextBox SearchBar;
+        private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label SignOutLabel;
     }
 }
