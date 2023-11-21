@@ -97,6 +97,12 @@
     <Compile Include="GeneralInfo.Designer.cs">
       <DependentUpon>GeneralInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuestionMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
