@@ -18,17 +18,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void StudentHomeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void StudentLogoutButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void StudentCalendarButton_Click(object sender, EventArgs e)
         {
 
         }

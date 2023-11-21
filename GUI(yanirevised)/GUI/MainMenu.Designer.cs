@@ -256,14 +256,14 @@
             this.SignInButton.TabIndex = 12;
             this.SignInButton.Text = "Sign In";
             this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
+            this.SignInButton.Click += new System.EventHandler(this.DEBUG_TEST_CLICK);
             // 
             // PasswordLoginField
             // 
             this.PasswordLoginField.Location = new System.Drawing.Point(80, 215);
             this.PasswordLoginField.Name = "PasswordLoginField";
             this.PasswordLoginField.PasswordChar = '*';
-            this.PasswordLoginField.Size = new System.Drawing.Size(270, 22);
+            this.PasswordLoginField.Size = new System.Drawing.Size(270, 20);
             this.PasswordLoginField.TabIndex = 11;
             // 
             // LoginLabel1
@@ -281,7 +281,7 @@
             // 
             this.UsernameLoginField.Location = new System.Drawing.Point(80, 130);
             this.UsernameLoginField.Name = "UsernameLoginField";
-            this.UsernameLoginField.Size = new System.Drawing.Size(270, 22);
+            this.UsernameLoginField.Size = new System.Drawing.Size(270, 20);
             this.UsernameLoginField.TabIndex = 10;
             // 
             // PassLabel
@@ -291,7 +291,7 @@
             this.PassLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.PassLabel.Location = new System.Drawing.Point(75, 180);
             this.PassLabel.Name = "PassLabel";
-            this.PassLabel.Size = new System.Drawing.Size(98, 25);
+            this.PassLabel.Size = new System.Drawing.Size(78, 20);
             this.PassLabel.TabIndex = 8;
             this.PassLabel.Text = "Password";
             // 
@@ -302,7 +302,7 @@
             this.UserLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.UserLabel.Location = new System.Drawing.Point(75, 90);
             this.UserLabel.Name = "UserLabel";
-            this.UserLabel.Size = new System.Drawing.Size(102, 25);
+            this.UserLabel.Size = new System.Drawing.Size(83, 20);
             this.UserLabel.TabIndex = 7;
             this.UserLabel.Text = "Username";
             // 

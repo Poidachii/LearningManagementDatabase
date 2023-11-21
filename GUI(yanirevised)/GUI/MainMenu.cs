@@ -55,6 +55,13 @@ namespace GUI
             this.Show();
         }
 
+        private void DEBUG_TEST_CLICK(object sender, EventArgs e)
+        {
+            this.Hide();
+            student_form.ShowDialog();
+            this.Show();
+        }
+
         private void OneMCLButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://one.mcl.edu.ph");
