@@ -54,7 +54,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lMSDataBaseDataSet = new GUI.LMSDataBaseDataSet();
             this.lMSDataBaseDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -66,7 +65,6 @@
             this.panel12.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lMSDataBaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataBaseDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -373,14 +371,8 @@
             this.dataGridView1.Size = new System.Drawing.Size(713, 524);
             this.dataGridView1.TabIndex = 53;
             // 
-            // lMSDataBaseDataSet
-            // 
-            this.lMSDataBaseDataSet.DataSetName = "LMSDataBaseDataSet";
-            this.lMSDataBaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lMSDataBaseDataSetBindingSource
             // 
-            this.lMSDataBaseDataSetBindingSource.DataSource = this.lMSDataBaseDataSet;
             this.lMSDataBaseDataSetBindingSource.Position = 0;
             // 
             // DataBaseDisplay
@@ -410,7 +402,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lMSDataBaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMSDataBaseDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -444,6 +435,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource lMSDataBaseDataSetBindingSource;
-        private LMSDataBaseDataSet lMSDataBaseDataSet;
     }
 }
