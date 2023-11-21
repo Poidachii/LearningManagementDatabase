@@ -43,10 +43,12 @@ namespace GUI
 
         private void QuizManagementBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            QuestionMainMenu QuestionMainMenu = new QuestionMainMenu();
-            QuestionMainMenu.ShowDialog();
-            this.Show();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

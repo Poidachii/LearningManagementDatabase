@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.IO;
-using System.Runtime.CompilerServices;
-using System.Runtime.Remoting.Contexts;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace GUI
