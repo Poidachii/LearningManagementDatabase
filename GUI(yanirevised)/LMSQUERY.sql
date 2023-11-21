@@ -22,7 +22,8 @@ CREATE TABLE CourseAssignment(
 
 CREATE TABLE CourseMaterials (
 	CourseID INT NOT NULL FOREIGN KEY REFERENCES Courses(CourseID),
-	Material NVARCHAR(MAX)
+	MaterialName NVARCHAR(MAX),
+	MaterialLink NVARCHAR(MAX)
 );
 
 CREATE TABLE Quiz (

@@ -14,9 +14,9 @@ namespace GUI
 {
     public partial class MainMenu : Form
     {
-        private Student student_form = new Student();
-        private Admin admin_form = new Admin();
-        private Professor professor_form = new Professor();
+        private StudentMainMenu student_form = new StudentMainMenu();
+        //private Admin admin_form = new Admin();
+        //private Professor professor_form = new Professor();
 
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private DataTable dataset;
@@ -47,11 +47,21 @@ namespace GUI
             string token_value = query_result[0].ToString();
 
             this.Hide();
-
+            /*
             if (token_value == "admin") { admin_form.ShowDialog(); }
             else if (token_value == "prof") { professor_form.ShowDialog(); }
             else { student_form.ShowDialog(); }
+            */
+            this.Show();
+        }
 
+        private void DEBUG_TEST_CLICK(object sender, EventArgs e)
+        {
+            Session.AccID = 1;
+            Session.AccRole = "student";
+
+            this.Hide();
+            student_form.ShowDialog();
             this.Show();
         }
 

@@ -1,125 +1,21 @@
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.Admin.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.Calendar.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.Login.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.ProfessorDB.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.StudentDB.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.WS_Profesor.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.WS_Student.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\bin\Debug\GUI.exe.config
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\bin\Debug\GUI.exe
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\bin\Debug\GUI.pdb
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.AccountCreation.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.CreationMainMenu.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.QuestionCreation.resources
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.exe
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.pdb
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\bin\Debug\LMS_DB.mdf
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\bin\Debug\LMS_DB_log.ldf
-D:\1st Term 2023-2023\AllCodes\GUI\GUI\obj\Debug\GUI.SQL_DB.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.AccountCreation.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.Admin.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.Calendar.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.CreationMainMenu.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.Login.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.ProfessorDB.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.QuestionCreation.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.SQL_DB.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.StudentDB.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.WS_Profesor.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.WS_Student.resources
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.exe
-C:\Users\YaNawMe\source\repos\GUI\GUI\obj\Debug\GUI.pdb
-C:\Users\YaNawMe\source\repos\GUI\GUI\bin\Debug\LMS_DB.mdf
-C:\Users\YaNawMe\source\repos\GUI\GUI\bin\Debug\LMS_DB_log.ldf
-C:\Users\YaNawMe\source\repos\GUI\GUI\bin\Debug\GUI.exe.config
-C:\Users\YaNawMe\source\repos\GUI\GUI\bin\Debug\GUI.exe
-C:\Users\YaNawMe\source\repos\GUI\GUI\bin\Debug\GUI.pdb
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Calendar.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Login.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.ProfessorDB.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionCreation.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.StudentDB.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.WS_Profesor.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.WS_Student.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.exe.config
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.exe
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.pdb
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
-E:\CODE RELATED\csharpnow\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionMainMenu.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.exe.config
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.exe
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\bin\Debug\GUI.pdb
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Calendar.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Login.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionCreation.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionMainMenu.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.WS_Profesor.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.WS_Student.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.UserControlCal.resources
-D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.UserControlDays.resources
-<<<<<<< HEAD
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Calendar.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionCreation.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionMainMenu.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Profesor.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.StudentGradeMenu.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.StudentMainMenu.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Student.resources
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
-D:\Github\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
-=======
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Calendar.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionCreation.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionMainMenu.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Profesor.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Student.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
->>>>>>> 9c69547b3250484f066d9bbd7aafce4f9386ade1
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.AccountHandling.resources
-C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.MainMenu.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\bin\Debug\GUI.exe.config
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\bin\Debug\GUI.exe
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\bin\Debug\GUI.pdb
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.AccountHandling.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.AdminCourseHandling.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.MainMenu.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.Profesor.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.ProfGrade.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.ProfQuiz.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.StudentGradeMenu.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.StudentMainMenu.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.Student.resources
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
