@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class MainMenu : Form
     {
-        private Student student_form = new Student();
+        private StudentMainMenu student_form = new StudentMainMenu();
         //private Admin admin_form = new Admin();
         //private Professor professor_form = new Professor();
 
@@ -57,6 +57,9 @@ namespace GUI
 
         private void DEBUG_TEST_CLICK(object sender, EventArgs e)
         {
+            Session.AccID = 1;
+            Session.AccRole = "student";
+
             this.Hide();
             student_form.ShowDialog();
             this.Show();

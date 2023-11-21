@@ -18,3 +18,4 @@ E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.Gene
 E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
 E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
+E:\CODE RELATED\csharpnow\LMSYani\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache

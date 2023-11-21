@@ -122,6 +122,8 @@
     <Compile Include="Professor\ProfQuiz.Designer.cs">
       <DependentUpon>ProfQuiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
+    <Compile Include="SQL _legit.cs" />
     <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
