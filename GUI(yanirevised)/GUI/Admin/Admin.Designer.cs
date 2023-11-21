@@ -1,4 +1,5 @@
-﻿namespace GUI
+﻿
+namespace GUI.Admin
 {
     partial class Admin
     {
@@ -252,7 +253,6 @@
             this.button3.Size = new System.Drawing.Size(217, 50);
             this.button3.TabIndex = 1;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // AccHandleButton
             // 
@@ -265,7 +265,6 @@
             this.AccHandleButton.Size = new System.Drawing.Size(217, 49);
             this.AccHandleButton.TabIndex = 0;
             this.AccHandleButton.UseVisualStyleBackColor = true;
-            this.AccHandleButton.Click += new System.EventHandler(this.AccHandleButton_Click);
             // 
             // button10
             // 
@@ -301,7 +300,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Admin";
             this.Text = "Admin";
-            this.Click += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
