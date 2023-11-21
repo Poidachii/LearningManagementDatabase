@@ -118,6 +118,18 @@
     <Compile Include="Professor\Profesor.designer.cs">
       <DependentUpon>Profesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentGradeMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentGradeMenu.Designer.cs">
+      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentMainMenu.Designer.cs">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\Student.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +168,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\Profesor.resx">
       <DependentUpon>Profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentGradeMenu.resx">
+      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentMainMenu.resx">
+      <DependentUpon>StudentMainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
