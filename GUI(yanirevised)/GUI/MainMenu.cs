@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Login : Form
+    public partial class MainMenu : Form
     {
         private WS_Student studentform = new WS_Student();
         private Admin adminform = new Admin();
         private WS_Profesor profform = new WS_Profesor();
 
-        public Login()
+        public MainMenu()
         {
             InitializeComponent();
             SQLData.ReloadData();

@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Login
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -51,7 +50,6 @@
             this.Password = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Register = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -64,7 +62,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.ErrorImage = global::GUI.Properties.Resources._377791715_353741580427885_4740537056986506792_n;
             this.pictureBox4.Location = new System.Drawing.Point(41, 45);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(480, 145);
@@ -74,7 +72,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(395, 143);
@@ -212,7 +209,6 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(21, 102);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(38, 37);
@@ -223,7 +219,6 @@
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(21, 183);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(38, 37);
@@ -310,7 +305,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.Register);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.linkLabel1);
@@ -325,20 +319,7 @@
             this.panel1.Size = new System.Drawing.Size(370, 340);
             this.panel1.TabIndex = 17;
             // 
-            // Register
-            // 
-            this.Register.BackColor = System.Drawing.Color.Red;
-            this.Register.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Register.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.Register.Location = new System.Drawing.Point(46, 273);
-            this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(277, 32);
-            this.Register.TabIndex = 15;
-            this.Register.Text = "Register";
-            this.Register.UseVisualStyleBackColor = false;
-            this.Register.Click += new System.EventHandler(this.Register_Click);
-            // 
-            // Login
+            // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.Screenshot_2023_09_19_185222;
@@ -350,7 +331,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "Login";
+            this.Name = "MainMenu";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -390,7 +371,6 @@
         private System.Windows.Forms.Label Password;
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Register;
     }
 }
 
