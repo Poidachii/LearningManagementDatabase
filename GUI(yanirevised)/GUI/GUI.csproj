@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountCreation.cs">
+    <Compile Include="Admin\AccountCreation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccountCreation.designer.cs">
+    <Compile Include="Admin\AccountCreation.designer.cs">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin.cs">
@@ -145,7 +145,7 @@
     <Compile Include="WS_Student.Designer.cs">
       <DependentUpon>WS_Student.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AccountCreation.resx">
+    <EmbeddedResource Include="Admin\AccountCreation.resx">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
@@ -224,7 +224,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="Professor\" />
     <Folder Include="Student\" />
   </ItemGroup>
