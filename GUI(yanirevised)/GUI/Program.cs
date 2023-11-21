@@ -16,7 +16,11 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin());
+<<<<<<< HEAD
+            Application.Run(new StudentMainMenu());
+=======
+            Application.Run(new MainMenu());
+>>>>>>> 9c69547b3250484f066d9bbd7aafce4f9386ade1
         }
     }
 }
