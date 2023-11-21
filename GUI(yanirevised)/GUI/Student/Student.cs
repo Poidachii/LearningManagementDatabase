@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class UserControlDays : UserControl
+    public partial class Student : Form
     {
-        public UserControlDays()
+        public Student()
         {
             InitializeComponent();
-        }
-
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-
-        }
-        public void days(int dayinmonth)
-        {
-            labeldays.Text = dayinmonth+ "";
         }
     }
 }

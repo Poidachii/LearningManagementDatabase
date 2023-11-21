@@ -17,9 +17,9 @@ namespace GUI
 
         public static string current_user;
 
-        private WS_Student student_form = new WS_Student();
+        private Student student_form = new Student();
         private Admin admin_form = new Admin();
-        private WS_Profesor professor_form = new WS_Profesor();
+        private Profesor professor_form = new Profesor();
 
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private DataTable dataset;
