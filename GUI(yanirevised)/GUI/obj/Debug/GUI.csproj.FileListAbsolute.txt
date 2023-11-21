@@ -85,3 +85,18 @@ D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI
 D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
 D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.UserControlCal.resources
 D:\1st Term 2023-2023\AllCodes\GUIyanirevised\GUI(yanirevised)\GUI\obj\Debug\GUI.UserControlDays.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountCreation.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.AccountMainMenu.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Calendar.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.DataBaseDisplay.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionCreation.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.QuestionMainMenu.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Profesor.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Student.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb

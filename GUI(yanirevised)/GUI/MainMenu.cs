@@ -14,23 +14,28 @@ namespace GUI
 {
     public partial class MainMenu : Form
     {
-        private WS_Student studentform = new WS_Student();
-        private Admin adminform = new Admin();
-        private WS_Profesor profform = new WS_Profesor();
+        private Student student_form = new Student();
+        private Admin admin_form = new Admin();
+        private Profesor professor_form = new Profesor();
+
+        private Dictionary<string, object> sql_params = new Dictionary<string, object>();
+        private DataTable dataset;
+        private DataRow query_result;
 
         public MainMenu()
         {
             InitializeComponent();
-            SQLData.ReloadData();
         }
 
-        private void SignIn_Click(object sender, EventArgs e)
+        private void SignInButton_Click(object sender, EventArgs e)
         {
-            Dictionary<string, object> sql_params = new Dictionary<string, object>();
-            sql_params.Add("@name", UsernameLoginField.Text);
-            sql_params.Add("@pass", PasswordLoginField.Text);
+            sql_params = new Dictionary<string, object>
+            {
+                { "@name", UsernameLoginField.Text },
+                { "@pass", PasswordLoginField.Text }
+            };
 
-            DataTable dataset = SQL.RunCommand("SELECT Token FROM Accountlist WHERE Name = @name AND Password = @pass", opt_sql_params: sql_params);
+            dataset = SQL.RunCommand("SELECT Token FROM Accountlist WHERE Name = @name AND Password = @pass", opt_sql_params: sql_params);
 
             if (dataset == null || dataset?.Rows.Count <= 0)
             {
@@ -38,61 +43,31 @@ namespace GUI
                 return;
             }
 
-            DataRow Query_Result = dataset.Rows[0];
-            string token_value = Query_Result[0].ToString();
+            query_result = dataset.Rows[0];
+            string token_value = query_result[0].ToString();
 
             this.Hide();
 
-            if (token_value == "admin") { adminform.ShowDialog(); }
-            else if (token_value == "prof") { profform.ShowDialog(); }
-            else { studentform.ShowDialog(); }
+            if (token_value == "admin") { admin_form.ShowDialog(); }
+            else if (token_value == "prof") { professor_form.ShowDialog(); }
+            else { student_form.ShowDialog(); }
 
             this.Show();
         }
 
-        private void Register_Click(object sender, EventArgs e)
+        private void OneMCLButton_Click(object sender, EventArgs e)
         {
-            string username = UsernameLoginField.Text;
-            string password = PasswordLoginField.Text;
+            System.Diagnostics.Process.Start("http://one.mcl.edu.ph");
+        }
 
-            if (SQLData.CheckUserIfExists(username))
-            {
-                MessageBox.Show("Please choose another username.");
-                return;
-            }
+        private void BlackboardAppButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://mcl.edu.ph");
+        }
 
-            if (UsernameLoginField.Text.Contains("|"))
-            {
-                MessageBox.Show("Username must not contain '|' character.");
-                return;
-            }
-
-            string token;
-
-            switch (password)
-            {
-                case "$$C1-1013151515":
-                    // check if password is for admin
-                    token = "admin";
-                    break;
-                case "C2-1515151515":
-                    // check if password is for admin
-                    token = "prof";
-                    break;
-                default:
-                    // default case is user
-                    token = "user";
-                    break;
-            }
-
-            Dictionary<string, object> sql_params = new Dictionary<string, object>();
-            sql_params.Add("@name", username);
-            sql_params.Add("@pass", password);
-            sql_params.Add("@token", token);
-
-            SQL.RunCommand("INSERT INTO Accountlist VALUES (@name, @pass, @token)", opt_sql_params: sql_params);
-
-            MessageBox.Show("User is successfully registered.");
+        private void button1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://mcl.blackboard.com/ultra/catalog");
         }
     }
 }

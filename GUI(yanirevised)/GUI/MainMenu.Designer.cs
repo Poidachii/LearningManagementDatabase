@@ -28,349 +28,353 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MCLLogoPicture = new System.Windows.Forms.PictureBox();
+            this.MCLPicture = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.SignIn = new System.Windows.Forms.Button();
+            this.WelcomeLabel2 = new System.Windows.Forms.Label();
+            this.WelcomePanel = new System.Windows.Forms.Panel();
+            this.WelcomeLabel1 = new System.Windows.Forms.Label();
+            this.LinksLabel3 = new System.Windows.Forms.Label();
+            this.BlackboardAppButton = new System.Windows.Forms.Button();
+            this.LinksLabel2 = new System.Windows.Forms.Label();
+            this.OneMCLButton = new System.Windows.Forms.Button();
+            this.LinksLabel1 = new System.Windows.Forms.Label();
+            this.LinksPanel = new System.Windows.Forms.Panel();
+            this.UserBoxPicture = new System.Windows.Forms.PictureBox();
+            this.PassBoxPicture = new System.Windows.Forms.PictureBox();
+            this.LoginLinkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.SignInButton = new System.Windows.Forms.Button();
             this.PasswordLoginField = new System.Windows.Forms.TextBox();
-            this.Loginto = new System.Windows.Forms.Label();
+            this.LoginLabel1 = new System.Windows.Forms.Label();
             this.UsernameLoginField = new System.Windows.Forms.TextBox();
-            this.Password = new System.Windows.Forms.Label();
-            this.Username = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.PassLabel = new System.Windows.Forms.Label();
+            this.UserLabel = new System.Windows.Forms.Label();
+            this.LoginPanel = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.MCLLogoPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MCLPicture)).BeginInit();
+            this.WelcomePanel.SuspendLayout();
+            this.LinksPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UserBoxPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PassBoxPicture)).BeginInit();
+            this.LoginPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox4
+            // MCLLogoPicture
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.ErrorImage = global::GUI.Properties.Resources._377791715_353741580427885_4740537056986506792_n;
-            this.pictureBox4.Location = new System.Drawing.Point(41, 45);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(480, 145);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
+            this.MCLLogoPicture.BackColor = System.Drawing.Color.Transparent;
+            this.MCLLogoPicture.ErrorImage = null;
+            this.MCLLogoPicture.Image = global::GUI.Properties.Resources._377791715_353741580427885_4740537056986506792_n;
+            this.MCLLogoPicture.Location = new System.Drawing.Point(500, 50);
+            this.MCLLogoPicture.Name = "MCLLogoPicture";
+            this.MCLLogoPicture.Size = new System.Drawing.Size(500, 150);
+            this.MCLLogoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MCLLogoPicture.TabIndex = 20;
+            this.MCLLogoPicture.TabStop = false;
             // 
-            // pictureBox1
+            // MCLPicture
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(395, 143);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.MCLPicture.ErrorImage = null;
+            this.MCLPicture.Image = global::GUI.Properties.Resources._379403150_733893148561620_6045000477614317198_n;
+            this.MCLPicture.Location = new System.Drawing.Point(0, 80);
+            this.MCLPicture.Name = "MCLPicture";
+            this.MCLPicture.Size = new System.Drawing.Size(400, 130);
+            this.MCLPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MCLPicture.TabIndex = 15;
+            this.MCLPicture.TabStop = false;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(48, 255);
+            this.button1.Location = new System.Drawing.Point(50, 260);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(288, 44);
+            this.button1.Size = new System.Drawing.Size(300, 40);
             this.button1.TabIndex = 14;
             this.button1.Text = "View course catalog";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label2
+            // WelcomeLabel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(123, 223);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 11);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "powered by blackboard";
+            this.WelcomeLabel2.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.WelcomeLabel2.Location = new System.Drawing.Point(125, 210);
+            this.WelcomeLabel2.Name = "WelcomeLabel2";
+            this.WelcomeLabel2.Size = new System.Drawing.Size(150, 15);
+            this.WelcomeLabel2.TabIndex = 14;
+            this.WelcomeLabel2.Text = "powered by blackboard";
+            this.WelcomeLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel3
+            // WelcomePanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(78, 216);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(397, 340);
-            this.panel3.TabIndex = 19;
+            this.WelcomePanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.WelcomePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.WelcomePanel.Controls.Add(this.MCLPicture);
+            this.WelcomePanel.Controls.Add(this.button1);
+            this.WelcomePanel.Controls.Add(this.WelcomeLabel2);
+            this.WelcomePanel.Controls.Add(this.WelcomeLabel1);
+            this.WelcomePanel.Location = new System.Drawing.Point(75, 300);
+            this.WelcomePanel.Name = "WelcomePanel";
+            this.WelcomePanel.Size = new System.Drawing.Size(400, 350);
+            this.WelcomePanel.TabIndex = 19;
             // 
-            // label1
+            // WelcomeLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(129, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 30);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Welcome to\r\n";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.WelcomeLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.WelcomeLabel1.Location = new System.Drawing.Point(125, 30);
+            this.WelcomeLabel1.Name = "WelcomeLabel1";
+            this.WelcomeLabel1.Size = new System.Drawing.Size(150, 30);
+            this.WelcomeLabel1.TabIndex = 14;
+            this.WelcomeLabel1.Text = "Welcome to\r\n";
+            this.WelcomeLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // LinksLabel3
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(63, 258);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(221, 26);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Access your courses directly on your mobile\r\ndevices, download the Blackboard app" +
+            this.LinksLabel3.ForeColor = System.Drawing.SystemColors.Control;
+            this.LinksLabel3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel3.Location = new System.Drawing.Point(50, 290);
+            this.LinksLabel3.Name = "LinksLabel3";
+            this.LinksLabel3.Size = new System.Drawing.Size(300, 40);
+            this.LinksLabel3.TabIndex = 15;
+            this.LinksLabel3.Text = "Access your courses directly on your mobile\r\ndevices, download the Blackboard app" +
     " today";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button3
+            // BlackboardAppButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button3.Location = new System.Drawing.Point(109, 211);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(149, 30);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Black Board app";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BlackboardAppButton.BackColor = System.Drawing.Color.Red;
+            this.BlackboardAppButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BlackboardAppButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.BlackboardAppButton.Location = new System.Drawing.Point(50, 240);
+            this.BlackboardAppButton.Name = "BlackboardAppButton";
+            this.BlackboardAppButton.Size = new System.Drawing.Size(300, 40);
+            this.BlackboardAppButton.TabIndex = 16;
+            this.BlackboardAppButton.Text = "Black Board app";
+            this.BlackboardAppButton.UseVisualStyleBackColor = false;
+            this.BlackboardAppButton.Click += new System.EventHandler(this.BlackboardAppButton_Click);
             // 
-            // label4
+            // LinksLabel2
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.MidnightBlue;
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(63, 133);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 39);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "For important announcements and notification \r\nregarding your courses, use your M" +
+            this.LinksLabel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.LinksLabel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.LinksLabel2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel2.Location = new System.Drawing.Point(50, 160);
+            this.LinksLabel2.Name = "LinksLabel2";
+            this.LinksLabel2.Size = new System.Drawing.Size(300, 50);
+            this.LinksLabel2.TabIndex = 11;
+            this.LinksLabel2.Text = "For important announcements and notification \r\nregarding your courses, use your M" +
     "apúa MCL \r\nLive email to access your OneMCL account.\r\n";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button2
+            // OneMCLButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button2.Location = new System.Drawing.Point(109, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 31);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "One MCL";
-            this.button2.UseVisualStyleBackColor = false;
+            this.OneMCLButton.BackColor = System.Drawing.Color.Red;
+            this.OneMCLButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.OneMCLButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.OneMCLButton.Location = new System.Drawing.Point(50, 105);
+            this.OneMCLButton.Name = "OneMCLButton";
+            this.OneMCLButton.Size = new System.Drawing.Size(300, 40);
+            this.OneMCLButton.TabIndex = 14;
+            this.OneMCLButton.Text = "One MCL";
+            this.OneMCLButton.UseVisualStyleBackColor = false;
+            this.OneMCLButton.Click += new System.EventHandler(this.OneMCLButton_Click);
             // 
-            // label3
+            // LinksLabel1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(144, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 32);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Links\r\n";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinksLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.LinksLabel1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LinksLabel1.Location = new System.Drawing.Point(150, 30);
+            this.LinksLabel1.Name = "LinksLabel1";
+            this.LinksLabel1.Size = new System.Drawing.Size(100, 40);
+            this.LinksLabel1.TabIndex = 14;
+            this.LinksLabel1.Text = "Links\r\n";
+            this.LinksLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel2
+            // LinksPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panel2.Location = new System.Drawing.Point(1026, 217);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(364, 339);
-            this.panel2.TabIndex = 18;
+            this.LinksPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.LinksPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LinksPanel.Controls.Add(this.LinksLabel3);
+            this.LinksPanel.Controls.Add(this.BlackboardAppButton);
+            this.LinksPanel.Controls.Add(this.LinksLabel2);
+            this.LinksPanel.Controls.Add(this.OneMCLButton);
+            this.LinksPanel.Controls.Add(this.LinksLabel1);
+            this.LinksPanel.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LinksPanel.Location = new System.Drawing.Point(1025, 300);
+            this.LinksPanel.Name = "LinksPanel";
+            this.LinksPanel.Size = new System.Drawing.Size(400, 350);
+            this.LinksPanel.TabIndex = 18;
             // 
-            // pictureBox3
+            // UserBoxPicture
             // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox3.Location = new System.Drawing.Point(21, 102);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.UserBoxPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.UserBoxPicture.ErrorImage = null;
+            this.UserBoxPicture.Image = global::GUI.Properties.Resources._378326889_281564724736409_3253073940515923188_n;
+            this.UserBoxPicture.Location = new System.Drawing.Point(30, 120);
+            this.UserBoxPicture.Name = "UserBoxPicture";
+            this.UserBoxPicture.Size = new System.Drawing.Size(40, 40);
+            this.UserBoxPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.UserBoxPicture.TabIndex = 14;
+            this.UserBoxPicture.TabStop = false;
             // 
-            // pictureBox2
+            // PassBoxPicture
             // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(21, 183);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 37);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.PassBoxPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PassBoxPicture.ErrorImage = null;
+            this.PassBoxPicture.Image = global::GUI.Properties.Resources._378259570_1452698178910946_7162365543038312775_n;
+            this.PassBoxPicture.Location = new System.Drawing.Point(30, 205);
+            this.PassBoxPicture.Name = "PassBoxPicture";
+            this.PassBoxPicture.Size = new System.Drawing.Size(40, 40);
+            this.PassBoxPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PassBoxPicture.TabIndex = 3;
+            this.PassBoxPicture.TabStop = false;
             // 
-            // linkLabel1
+            // LoginLinkLabel1
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.AliceBlue;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(134, 308);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(92, 13);
-            this.linkLabel1.TabIndex = 13;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Forgot Password?";
+            this.LoginLinkLabel1.ActiveLinkColor = System.Drawing.Color.AliceBlue;
+            this.LoginLinkLabel1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.LoginLinkLabel1.LinkColor = System.Drawing.Color.White;
+            this.LoginLinkLabel1.Location = new System.Drawing.Point(125, 310);
+            this.LoginLinkLabel1.Name = "LoginLinkLabel1";
+            this.LoginLinkLabel1.Size = new System.Drawing.Size(150, 20);
+            this.LoginLinkLabel1.TabIndex = 13;
+            this.LoginLinkLabel1.TabStop = true;
+            this.LoginLinkLabel1.Text = "Forgot Password?";
+            this.LoginLinkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SignIn
+            // SignInButton
             // 
-            this.SignIn.BackColor = System.Drawing.Color.Red;
-            this.SignIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SignIn.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.SignIn.Location = new System.Drawing.Point(46, 235);
-            this.SignIn.Name = "SignIn";
-            this.SignIn.Size = new System.Drawing.Size(277, 32);
-            this.SignIn.TabIndex = 12;
-            this.SignIn.Text = "Sign In";
-            this.SignIn.UseVisualStyleBackColor = false;
-            this.SignIn.Click += new System.EventHandler(this.SignIn_Click);
+            this.SignInButton.BackColor = System.Drawing.Color.Red;
+            this.SignInButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SignInButton.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.SignInButton.Location = new System.Drawing.Point(50, 260);
+            this.SignInButton.Name = "SignInButton";
+            this.SignInButton.Size = new System.Drawing.Size(300, 40);
+            this.SignInButton.TabIndex = 12;
+            this.SignInButton.Text = "Sign In";
+            this.SignInButton.UseVisualStyleBackColor = false;
+            this.SignInButton.Click += new System.EventHandler(this.SignInButton_Click);
             // 
             // PasswordLoginField
             // 
-            this.PasswordLoginField.Location = new System.Drawing.Point(65, 194);
+            this.PasswordLoginField.Location = new System.Drawing.Point(80, 215);
             this.PasswordLoginField.Name = "PasswordLoginField";
             this.PasswordLoginField.PasswordChar = '*';
-            this.PasswordLoginField.Size = new System.Drawing.Size(258, 20);
+            this.PasswordLoginField.Size = new System.Drawing.Size(270, 22);
             this.PasswordLoginField.TabIndex = 11;
             // 
-            // Loginto
+            // LoginLabel1
             // 
-            this.Loginto.AutoSize = true;
-            this.Loginto.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginto.ForeColor = System.Drawing.SystemColors.Control;
-            this.Loginto.Location = new System.Drawing.Point(16, 23);
-            this.Loginto.Name = "Loginto";
-            this.Loginto.Size = new System.Drawing.Size(327, 30);
-            this.Loginto.TabIndex = 9;
-            this.Loginto.Text = "Login to Mapua MCL Blackboard";
-            this.Loginto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LoginLabel1.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.LoginLabel1.Location = new System.Drawing.Point(10, 30);
+            this.LoginLabel1.Name = "LoginLabel1";
+            this.LoginLabel1.Size = new System.Drawing.Size(380, 50);
+            this.LoginLabel1.TabIndex = 9;
+            this.LoginLabel1.Text = "Login to Mapua MCL Blackboard";
+            this.LoginLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // UsernameLoginField
             // 
-            this.UsernameLoginField.Location = new System.Drawing.Point(65, 113);
+            this.UsernameLoginField.Location = new System.Drawing.Point(80, 130);
             this.UsernameLoginField.Name = "UsernameLoginField";
-            this.UsernameLoginField.Size = new System.Drawing.Size(258, 20);
+            this.UsernameLoginField.Size = new System.Drawing.Size(270, 22);
             this.UsernameLoginField.TabIndex = 10;
             // 
-            // Password
+            // PassLabel
             // 
-            this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.ForeColor = System.Drawing.SystemColors.Control;
-            this.Password.Location = new System.Drawing.Point(22, 160);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(78, 20);
-            this.Password.TabIndex = 8;
-            this.Password.Text = "Password";
+            this.PassLabel.AutoSize = true;
+            this.PassLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.PassLabel.Location = new System.Drawing.Point(75, 180);
+            this.PassLabel.Name = "PassLabel";
+            this.PassLabel.Size = new System.Drawing.Size(98, 25);
+            this.PassLabel.TabIndex = 8;
+            this.PassLabel.Text = "Password";
             // 
-            // Username
+            // UserLabel
             // 
-            this.Username.AutoSize = true;
-            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Username.ForeColor = System.Drawing.SystemColors.Control;
-            this.Username.Location = new System.Drawing.Point(17, 79);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(83, 20);
-            this.Username.TabIndex = 7;
-            this.Username.Text = "Username";
+            this.UserLabel.AutoSize = true;
+            this.UserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UserLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.UserLabel.Location = new System.Drawing.Point(75, 90);
+            this.UserLabel.Name = "UserLabel";
+            this.UserLabel.Size = new System.Drawing.Size(102, 25);
+            this.UserLabel.TabIndex = 7;
+            this.UserLabel.Text = "Username";
             // 
-            // panel1
+            // LoginPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.SignIn);
-            this.panel1.Controls.Add(this.PasswordLoginField);
-            this.panel1.Controls.Add(this.Loginto);
-            this.panel1.Controls.Add(this.UsernameLoginField);
-            this.panel1.Controls.Add(this.Password);
-            this.panel1.Controls.Add(this.Username);
-            this.panel1.Location = new System.Drawing.Point(562, 216);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 340);
-            this.panel1.TabIndex = 17;
+            this.LoginPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.LoginPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LoginPanel.Controls.Add(this.UserBoxPicture);
+            this.LoginPanel.Controls.Add(this.PassBoxPicture);
+            this.LoginPanel.Controls.Add(this.LoginLinkLabel1);
+            this.LoginPanel.Controls.Add(this.SignInButton);
+            this.LoginPanel.Controls.Add(this.PasswordLoginField);
+            this.LoginPanel.Controls.Add(this.LoginLabel1);
+            this.LoginPanel.Controls.Add(this.UsernameLoginField);
+            this.LoginPanel.Controls.Add(this.PassLabel);
+            this.LoginPanel.Controls.Add(this.UserLabel);
+            this.LoginPanel.Location = new System.Drawing.Point(550, 300);
+            this.LoginPanel.Name = "LoginPanel";
+            this.LoginPanel.Size = new System.Drawing.Size(400, 350);
+            this.LoginPanel.TabIndex = 17;
             // 
             // MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::GUI.Properties.Resources.Screenshot_2023_09_19_185222;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1431, 600);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1482, 753);
+            this.Controls.Add(this.MCLLogoPicture);
+            this.Controls.Add(this.WelcomePanel);
+            this.Controls.Add(this.LinksPanel);
+            this.Controls.Add(this.LoginPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "MainMenu";
-            this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Welcome to Mapua Malayan Colleges Laguna";
+            ((System.ComponentModel.ISupportInitialize)(this.MCLLogoPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MCLPicture)).EndInit();
+            this.WelcomePanel.ResumeLayout(false);
+            this.LinksPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UserBoxPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PassBoxPicture)).EndInit();
+            this.LoginPanel.ResumeLayout(false);
+            this.LoginPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox MCLLogoPicture;
+        private System.Windows.Forms.PictureBox MCLPicture;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button SignIn;
+        private System.Windows.Forms.Label WelcomeLabel2;
+        private System.Windows.Forms.Panel WelcomePanel;
+        private System.Windows.Forms.Label WelcomeLabel1;
+        private System.Windows.Forms.Label LinksLabel3;
+        private System.Windows.Forms.Button BlackboardAppButton;
+        private System.Windows.Forms.Label LinksLabel2;
+        private System.Windows.Forms.Button OneMCLButton;
+        private System.Windows.Forms.Label LinksLabel1;
+        private System.Windows.Forms.Panel LinksPanel;
+        private System.Windows.Forms.PictureBox UserBoxPicture;
+        private System.Windows.Forms.PictureBox PassBoxPicture;
+        private System.Windows.Forms.LinkLabel LoginLinkLabel1;
+        private System.Windows.Forms.Button SignInButton;
         private System.Windows.Forms.TextBox PasswordLoginField;
-        private System.Windows.Forms.Label Loginto;
+        private System.Windows.Forms.Label LoginLabel1;
         private System.Windows.Forms.TextBox UsernameLoginField;
-        private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.Label Username;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label PassLabel;
+        private System.Windows.Forms.Label UserLabel;
+        private System.Windows.Forms.Panel LoginPanel;
     }
 }
 
