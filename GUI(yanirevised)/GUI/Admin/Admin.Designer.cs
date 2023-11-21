@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MenuLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
+            this.SignOutLabel = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -58,13 +59,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.SignOutLabel);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.MenuLabel);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(955, 42);
+            this.panel1.Size = new System.Drawing.Size(1386, 42);
             this.panel1.TabIndex = 25;
             // 
             // label11
@@ -72,24 +74,24 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(849, 13);
+            this.label11.Location = new System.Drawing.Point(1196, 15);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 17);
             this.label11.TabIndex = 3;
             this.label11.Text = "ACCOUNT";
             // 
-            // label1
+            // MenuLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(5, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ADMIN MENU";
+            this.MenuLabel.AutoSize = true;
+            this.MenuLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MenuLabel.Location = new System.Drawing.Point(5, 6);
+            this.MenuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuLabel.Name = "MenuLabel";
+            this.MenuLabel.Size = new System.Drawing.Size(165, 26);
+            this.MenuLabel.TabIndex = 0;
+            this.MenuLabel.Text = "ADMIN - MENU";
             // 
             // panel2
             // 
@@ -102,7 +104,7 @@
             this.panel2.Location = new System.Drawing.Point(-1, 42);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(221, 542);
+            this.panel2.Size = new System.Drawing.Size(221, 719);
             this.panel2.TabIndex = 51;
             // 
             // panel4
@@ -204,6 +206,18 @@
             this.label12.TabIndex = 7;
             this.label12.Text = "CALENDAR";
             // 
+            // SignOutLabel
+            // 
+            this.SignOutLabel.AutoSize = true;
+            this.SignOutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.SignOutLabel.Location = new System.Drawing.Point(1286, 15);
+            this.SignOutLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SignOutLabel.Name = "SignOutLabel";
+            this.SignOutLabel.Size = new System.Drawing.Size(75, 17);
+            this.SignOutLabel.TabIndex = 4;
+            this.SignOutLabel.Text = "SIGN OUT";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
@@ -270,7 +284,7 @@
             this.button1.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(789, 3);
+            this.button1.Location = new System.Drawing.Point(1141, 3);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(50, 38);
@@ -281,7 +295,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(954, 582);
+            this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -308,7 +322,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MenuLabel;
         private System.Windows.Forms.Button AccHandleButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
@@ -323,5 +337,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label SignOutLabel;
     }
 }

@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminCourseHandling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCourseHandling.Designer.cs">
+      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AccountCreation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountMainMenu.resx">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminCourseHandling.resx">
+      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataBaseDisplay.resx">
       <DependentUpon>DataBaseDisplay.cs</DependentUpon>
