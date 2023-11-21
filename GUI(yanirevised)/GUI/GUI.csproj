@@ -67,10 +67,10 @@
     <Compile Include="Admin\AccountCreation.designer.cs">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="Admin\Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
+    <Compile Include="Admin\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="AccountMainMenu.cs">
@@ -97,15 +97,9 @@
     <Compile Include="GeneralInfo.Designer.cs">
       <DependentUpon>GeneralInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="LMSDataBaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LMSDataBaseDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SQLData.cs" />
     <Compile Include="QuestionMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,34 +115,22 @@
     <Compile Include="QuestionCreation.designer.cs">
       <DependentUpon>QuestionCreation.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlCal.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlCal.designer.cs">
-      <DependentUpon>UserControlCal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControlDays.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControlDays.designer.cs">
-      <DependentUpon>UserControlDays.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Professor\WS_Profesor.cs">
+    <Compile Include="Professor\Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Professor\WS_Profesor.designer.cs">
-      <DependentUpon>WS_Profesor.cs</DependentUpon>
+    <Compile Include="Professor\Profesor.designer.cs">
+      <DependentUpon>Profesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student\WS_Student.cs">
+    <Compile Include="Student\Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student\WS_Student.Designer.cs">
-      <DependentUpon>WS_Student.cs</DependentUpon>
+    <Compile Include="Student\Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\AccountCreation.resx">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
+    <EmbeddedResource Include="Admin\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountMainMenu.resx">
@@ -175,29 +157,12 @@
     <EmbeddedResource Include="QuestionMainMenu.resx">
       <DependentUpon>QuestionMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlCal.resx">
-      <DependentUpon>UserControlCal.cs</DependentUpon>
+    <EmbeddedResource Include="Professor\Profesor.resx">
+      <DependentUpon>Profesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlDays.resx">
-      <DependentUpon>UserControlDays.cs</DependentUpon>
+    <EmbeddedResource Include="Student\Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Professor\WS_Profesor.resx">
-      <DependentUpon>WS_Profesor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Student\WS_Student.resx">
-      <DependentUpon>WS_Student.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="LMSDataBaseDataSet.xsc">
-      <DependentUpon>LMSDataBaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LMSDataBaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LMSDataBaseDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LMSDataBaseDataSet.xss">
-      <DependentUpon>LMSDataBaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
