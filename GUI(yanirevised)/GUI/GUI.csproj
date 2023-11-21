@@ -133,16 +133,16 @@
     <Compile Include="UserControlDays.designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="WS_Profesor.cs">
+    <Compile Include="Professor\WS_Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WS_Profesor.designer.cs">
+    <Compile Include="Professor\WS_Profesor.designer.cs">
       <DependentUpon>WS_Profesor.cs</DependentUpon>
     </Compile>
-    <Compile Include="WS_Student.cs">
+    <Compile Include="Student\WS_Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WS_Student.Designer.cs">
+    <Compile Include="Student\WS_Student.Designer.cs">
       <DependentUpon>WS_Student.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\AccountCreation.resx">
@@ -181,10 +181,10 @@
     <EmbeddedResource Include="UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WS_Profesor.resx">
+    <EmbeddedResource Include="Professor\WS_Profesor.resx">
       <DependentUpon>WS_Profesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WS_Student.resx">
+    <EmbeddedResource Include="Student\WS_Student.resx">
       <DependentUpon>WS_Student.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="LMSDataBaseDataSet.xsc">
@@ -223,9 +223,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Professor\" />
-    <Folder Include="Student\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
