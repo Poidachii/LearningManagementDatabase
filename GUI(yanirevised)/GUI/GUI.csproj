@@ -80,11 +80,11 @@
     <Compile Include="Admin\AccountHandling.Designer.cs">
       <DependentUpon>AccountHandling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin.cs">
+    <Compile Include="Admin\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="Admin\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
     <Compile Include="AccountMainMenu.cs">
       <SubType>Form</SubType>
@@ -155,8 +155,8 @@
     <EmbeddedResource Include="Admin\AccountHandling.resx">
       <DependentUpon>AccountHandling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AccountMainMenu.resx">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
