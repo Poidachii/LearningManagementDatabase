@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.FrontEndPanel = new System.Windows.Forms.Panel();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.HomeLabel = new System.Windows.Forms.Label();
             this.GradePanel = new System.Windows.Forms.Panel();
@@ -39,35 +39,46 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.CourseListComboBox = new System.Windows.Forms.ComboBox();
+            this.CourseListLabel = new System.Windows.Forms.Label();
+            this.CourseLabel1 = new System.Windows.Forms.Label();
+            this.QuizLabel = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.FrontEndPanelVertical = new System.Windows.Forms.Panel();
+            this.CourseAddButton = new System.Windows.Forms.Button();
+            this.CourseUpdateButton = new System.Windows.Forms.Button();
+            this.CourseRemoveButton = new System.Windows.Forms.Button();
+            this.QuizRemoveButton = new System.Windows.Forms.Button();
+            this.QuizUpdateButton = new System.Windows.Forms.Button();
+            this.QuizAddButton = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.HomeButton = new System.Windows.Forms.Button();
             this.GradeButton = new System.Windows.Forms.Button();
             this.CourseButton = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.FrontEndPanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.GradePanel.SuspendLayout();
             this.CoursePanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel2
+            // FrontEndPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.HomePanel);
-            this.panel2.Controls.Add(this.GradePanel);
-            this.panel2.Controls.Add(this.CoursePanel);
-            this.panel2.Location = new System.Drawing.Point(0, 42);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1385, 120);
-            this.panel2.TabIndex = 52;
+            this.FrontEndPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.FrontEndPanel.Controls.Add(this.CourseListLabel);
+            this.FrontEndPanel.Controls.Add(this.CourseListComboBox);
+            this.FrontEndPanel.Controls.Add(this.pictureBox6);
+            this.FrontEndPanel.Controls.Add(this.HomePanel);
+            this.FrontEndPanel.Controls.Add(this.GradePanel);
+            this.FrontEndPanel.Controls.Add(this.CoursePanel);
+            this.FrontEndPanel.Location = new System.Drawing.Point(0, 42);
+            this.FrontEndPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.FrontEndPanel.Name = "FrontEndPanel";
+            this.FrontEndPanel.Size = new System.Drawing.Size(1385, 120);
+            this.FrontEndPanel.TabIndex = 52;
             // 
             // HomePanel
             // 
@@ -191,6 +202,125 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "PROF - MENU";
             // 
+            // CourseListComboBox
+            // 
+            this.CourseListComboBox.FormattingEnabled = true;
+            this.CourseListComboBox.Location = new System.Drawing.Point(928, 77);
+            this.CourseListComboBox.Name = "CourseListComboBox";
+            this.CourseListComboBox.Size = new System.Drawing.Size(445, 21);
+            this.CourseListComboBox.TabIndex = 18;
+            // 
+            // CourseListLabel
+            // 
+            this.CourseListLabel.AutoSize = true;
+            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.CourseListLabel.Location = new System.Drawing.Point(918, 10);
+            this.CourseListLabel.Name = "CourseListLabel";
+            this.CourseListLabel.Size = new System.Drawing.Size(344, 55);
+            this.CourseListLabel.TabIndex = 19;
+            this.CourseListLabel.Text = "COURSE LIST";
+            // 
+            // CourseLabel1
+            // 
+            this.CourseLabel1.AutoSize = true;
+            this.CourseLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.CourseLabel1.Location = new System.Drawing.Point(199, 174);
+            this.CourseLabel1.Name = "CourseLabel1";
+            this.CourseLabel1.Size = new System.Drawing.Size(230, 55);
+            this.CourseLabel1.TabIndex = 20;
+            this.CourseLabel1.Text = "COURSE";
+            // 
+            // QuizLabel
+            // 
+            this.QuizLabel.AutoSize = true;
+            this.QuizLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuizLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.QuizLabel.Location = new System.Drawing.Point(1008, 174);
+            this.QuizLabel.Name = "QuizLabel";
+            this.QuizLabel.Size = new System.Drawing.Size(138, 55);
+            this.QuizLabel.TabIndex = 53;
+            this.QuizLabel.Text = "QUIZ";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.Controls.Add(this.QuizRemoveButton);
+            this.panel2.Controls.Add(this.QuizUpdateButton);
+            this.panel2.Controls.Add(this.QuizAddButton);
+            this.panel2.Controls.Add(this.CourseRemoveButton);
+            this.panel2.Controls.Add(this.CourseUpdateButton);
+            this.panel2.Controls.Add(this.CourseAddButton);
+            this.panel2.Location = new System.Drawing.Point(0, 710);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1385, 50);
+            this.panel2.TabIndex = 53;
+            // 
+            // FrontEndPanelVertical
+            // 
+            this.FrontEndPanelVertical.BackColor = System.Drawing.Color.MidnightBlue;
+            this.FrontEndPanelVertical.Location = new System.Drawing.Point(700, 162);
+            this.FrontEndPanelVertical.Margin = new System.Windows.Forms.Padding(2);
+            this.FrontEndPanelVertical.Name = "FrontEndPanelVertical";
+            this.FrontEndPanelVertical.Size = new System.Drawing.Size(50, 550);
+            this.FrontEndPanelVertical.TabIndex = 54;
+            // 
+            // CourseAddButton
+            // 
+            this.CourseAddButton.Location = new System.Drawing.Point(20, 13);
+            this.CourseAddButton.Name = "CourseAddButton";
+            this.CourseAddButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseAddButton.TabIndex = 0;
+            this.CourseAddButton.Text = "ADD";
+            this.CourseAddButton.UseVisualStyleBackColor = true;
+            // 
+            // CourseUpdateButton
+            // 
+            this.CourseUpdateButton.Location = new System.Drawing.Point(243, 13);
+            this.CourseUpdateButton.Name = "CourseUpdateButton";
+            this.CourseUpdateButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseUpdateButton.TabIndex = 1;
+            this.CourseUpdateButton.Text = "UPDATE";
+            this.CourseUpdateButton.UseVisualStyleBackColor = true;
+            // 
+            // CourseRemoveButton
+            // 
+            this.CourseRemoveButton.Location = new System.Drawing.Point(471, 13);
+            this.CourseRemoveButton.Name = "CourseRemoveButton";
+            this.CourseRemoveButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseRemoveButton.TabIndex = 2;
+            this.CourseRemoveButton.Text = "REMOVE";
+            this.CourseRemoveButton.UseVisualStyleBackColor = true;
+            // 
+            // QuizRemoveButton
+            // 
+            this.QuizRemoveButton.Location = new System.Drawing.Point(1236, 13);
+            this.QuizRemoveButton.Name = "QuizRemoveButton";
+            this.QuizRemoveButton.Size = new System.Drawing.Size(112, 26);
+            this.QuizRemoveButton.TabIndex = 5;
+            this.QuizRemoveButton.Text = "REMOVE";
+            this.QuizRemoveButton.UseVisualStyleBackColor = true;
+            // 
+            // QuizUpdateButton
+            // 
+            this.QuizUpdateButton.Location = new System.Drawing.Point(1008, 13);
+            this.QuizUpdateButton.Name = "QuizUpdateButton";
+            this.QuizUpdateButton.Size = new System.Drawing.Size(112, 26);
+            this.QuizUpdateButton.TabIndex = 4;
+            this.QuizUpdateButton.Text = "UPDATE";
+            this.QuizUpdateButton.UseVisualStyleBackColor = true;
+            // 
+            // QuizAddButton
+            // 
+            this.QuizAddButton.Location = new System.Drawing.Point(785, 13);
+            this.QuizAddButton.Name = "QuizAddButton";
+            this.QuizAddButton.Size = new System.Drawing.Size(112, 26);
+            this.QuizAddButton.TabIndex = 3;
+            this.QuizAddButton.Text = "ADD";
+            this.QuizAddButton.UseVisualStyleBackColor = true;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
@@ -251,38 +381,23 @@
             this.button12.TabIndex = 4;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(927, 76);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(445, 21);
-            this.comboBox1.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(917, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(267, 55);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Course List";
-            // 
             // Profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1384, 761);
+            this.Controls.Add(this.FrontEndPanelVertical);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.QuizLabel);
+            this.Controls.Add(this.CourseLabel1);
+            this.Controls.Add(this.FrontEndPanel);
             this.Controls.Add(this.panel1);
             this.Name = "Profesor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profesor";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.FrontEndPanel.ResumeLayout(false);
+            this.FrontEndPanel.PerformLayout();
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
             this.GradePanel.ResumeLayout(false);
@@ -291,14 +406,16 @@
             this.CoursePanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel FrontEndPanel;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel HomePanel;
         private System.Windows.Forms.Label HomeLabel;
@@ -314,7 +431,17 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label CourseListLabel;
+        private System.Windows.Forms.ComboBox CourseListComboBox;
+        private System.Windows.Forms.Label CourseLabel1;
+        private System.Windows.Forms.Label QuizLabel;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel FrontEndPanelVertical;
+        private System.Windows.Forms.Button QuizRemoveButton;
+        private System.Windows.Forms.Button QuizUpdateButton;
+        private System.Windows.Forms.Button QuizAddButton;
+        private System.Windows.Forms.Button CourseRemoveButton;
+        private System.Windows.Forms.Button CourseUpdateButton;
+        private System.Windows.Forms.Button CourseAddButton;
     }
 }
