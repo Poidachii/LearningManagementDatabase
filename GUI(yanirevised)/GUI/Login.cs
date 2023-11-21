@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data; 
+using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
@@ -14,29 +14,23 @@ namespace GUI
 {
     public partial class Login : Form
     {
-
-        public static string current_user;
-
-        private Student student_form = new Student();
-        private Admin admin_form = new Admin();
-        private Profesor professor_form = new Profesor();
-
-        private Dictionary<string, object> sql_params = new Dictionary<string, object>();
-        private DataTable dataset;
-        private DataRow query_result;
+        private WS_Student studentform = new WS_Student();
+        private Admin adminform = new Admin();
+        private WS_Profesor profform = new WS_Profesor();
 
         public Login()
         {
             InitializeComponent();
+            SQLData.ReloadData();
         }
 
         private void SignIn_Click(object sender, EventArgs e)
         {
-            sql_params.Clear();
+            Dictionary<string, object> sql_params = new Dictionary<string, object>();
             sql_params.Add("@name", UsernameLoginField.Text);
             sql_params.Add("@pass", PasswordLoginField.Text);
 
-            dataset = SQL.RunCommand("SELECT Token FROM Accountlist WHERE Name = @name AND Password = @pass", opt_sql_params: sql_params);
+            DataTable dataset = SQL.RunCommand("SELECT Token FROM Accountlist WHERE Name = @name AND Password = @pass", opt_sql_params: sql_params);
 
             if (dataset == null || dataset?.Rows.Count <= 0)
             {
@@ -44,34 +38,30 @@ namespace GUI
                 return;
             }
 
-            query_result = dataset.Rows[0];
-            string token_value = query_result[0].ToString();
+            DataRow Query_Result = dataset.Rows[0];
+            string token_value = Query_Result[0].ToString();
 
-            username = UsernameLoginField.Text;
-            
             this.Hide();
 
-            if (token_value == "admin") { admin_form.ShowDialog(); }
-            else if (token_value == "prof") { professor_form.ShowDialog(); }
-            else { student_form.ShowDialog(); }
+            if (token_value == "admin") { adminform.ShowDialog(); }
+            else if (token_value == "prof") { profform.ShowDialog(); }
+            else { studentform.ShowDialog(); }
 
             this.Show();
         }
 
         private void Register_Click(object sender, EventArgs e)
         {
-            List<string> userlist = SQL.GetDataByColumnName("Name", "Accountlist");
-
             string username = UsernameLoginField.Text;
             string password = PasswordLoginField.Text;
 
-            if (userlist.Contains(username))
+            if (SQLData.CheckUserIfExists(username))
             {
                 MessageBox.Show("Please choose another username.");
                 return;
             }
 
-            if (username.Contains("|"))
+            if (UsernameLoginField.Text.Contains("|"))
             {
                 MessageBox.Show("Username must not contain '|' character.");
                 return;
@@ -79,7 +69,6 @@ namespace GUI
 
             string token;
 
-            //role selection can be optimized
             switch (password)
             {
                 case "$$C1-1013151515":
@@ -96,7 +85,7 @@ namespace GUI
                     break;
             }
 
-            sql_params.Clear();
+            Dictionary<string, object> sql_params = new Dictionary<string, object>();
             sql_params.Add("@name", username);
             sql_params.Add("@pass", password);
             sql_params.Add("@token", token);
