@@ -355,15 +355,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "PROF - MENU";
             // 
-            // WS_Profesor
+            // Professor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 582);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "WS_Profesor";
-            this.Text = "WS_Profesor";
+            this.Name = "Profesor";
+            this.Text = "Profesor";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel3.ResumeLayout(false);

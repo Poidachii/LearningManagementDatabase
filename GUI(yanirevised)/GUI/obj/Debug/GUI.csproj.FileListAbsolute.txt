@@ -121,3 +121,5 @@ C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\ob
 C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.exe
 C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.pdb
 >>>>>>> 9c69547b3250484f066d9bbd7aafce4f9386ade1
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.Admin.AccountHandling.resources
+C:\Users\YaNawMe\Source\Repos\LearningManagementDatabase\GUI(yanirevised)\GUI\obj\Debug\GUI.MainMenu.resources

@@ -86,12 +86,6 @@
     <Compile Include="AccountMainMenu.designer.cs">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calendar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calendar.designer.cs">
-      <DependentUpon>Calendar.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataBaseDisplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,26 +104,14 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuestionMainMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuestionMainMenu.Designer.cs">
-      <DependentUpon>QuestionMainMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionCreation.cs">
+    <Compile Include="Professor\Professor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuestionCreation.designer.cs">
-      <DependentUpon>QuestionCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Professor\Profesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Professor\Profesor.designer.cs">
-      <DependentUpon>Profesor.cs</DependentUpon>
+    <Compile Include="Professor\Professor.designer.cs">
+      <DependentUpon>Professor.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\Student.cs">
       <SubType>Form</SubType>
@@ -149,9 +131,6 @@
     <EmbeddedResource Include="AccountMainMenu.resx">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calendar.resx">
-      <DependentUpon>Calendar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DataBaseDisplay.resx">
       <DependentUpon>DataBaseDisplay.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,15 +146,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuestionCreation.resx">
-      <DependentUpon>QuestionCreation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuestionMainMenu.resx">
-      <DependentUpon>QuestionMainMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Professor\Profesor.resx">
-      <DependentUpon>Profesor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Student\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
