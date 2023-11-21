@@ -16,7 +16,7 @@ namespace GUI
     {
         private Student student_form = new Student();
         private Admin admin_form = new Admin();
-        private Profesor professor_form = new Profesor();
+        private Professor professor_form = new Professor();
 
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private DataTable dataset;
