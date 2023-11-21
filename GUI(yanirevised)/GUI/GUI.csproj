@@ -86,6 +86,30 @@
     <Compile Include="AccountMainMenu.designer.cs">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="AssignCoursePopupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignCoursePopupAdd.Designer.cs">
+      <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssignCoursePopupEditRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignCoursePopupEditRemove.Designer.cs">
+      <DependentUpon>AssignCoursePopupEditRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursePopupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursePopupAdd.Designer.cs">
+      <DependentUpon>CoursePopupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursePopupMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursePopupMain.Designer.cs">
+      <DependentUpon>CoursePopupMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseDisplay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +173,12 @@
     <Compile Include="testform.Designer.cs">
       <DependentUpon>testform.cs</DependentUpon>
     </Compile>
+    <Compile Include="testforms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testforms.Designer.cs">
+      <DependentUpon>testforms.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AccountCreation.resx">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +190,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountMainMenu.resx">
       <DependentUpon>AccountMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignCoursePopupAdd.resx">
+      <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignCoursePopupEditRemove.resx">
+      <DependentUpon>AssignCoursePopupEditRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursePopupAdd.resx">
+      <DependentUpon>CoursePopupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursePopupMain.resx">
+      <DependentUpon>CoursePopupMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataBaseDisplay.resx">
       <DependentUpon>DataBaseDisplay.cs</DependentUpon>

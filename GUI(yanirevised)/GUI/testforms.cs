@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class CoursePopupAdd : Form
+    public partial class testforms : Form
     {
-        public CoursePopupAdd()
+        public testforms()
         {
             InitializeComponent();
-        }
-
-        private void CoursePopupUpdateCourseButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CoursePopupAddCourseButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
