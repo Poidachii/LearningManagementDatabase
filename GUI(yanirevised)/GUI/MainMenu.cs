@@ -61,7 +61,7 @@ namespace GUI
             this.Show();
         }
 
-        private void DEBUG_TEST_CLICK(object sender, EventArgs e)
+        private void DEBUG_STUDENT_CLICK(object sender, EventArgs e)
         {
             Session.AccID = "1";
             Session.AccRole = "student";
