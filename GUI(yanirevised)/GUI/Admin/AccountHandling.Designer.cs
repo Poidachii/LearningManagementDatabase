@@ -157,7 +157,6 @@
             this.AccountDataViewer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.AccountDataViewer.Size = new System.Drawing.Size(1144, 650);
             this.AccountDataViewer.TabIndex = 55;
-            this.AccountDataViewer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDataViewer_CellContentClick);
             this.AccountDataViewer.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDataViewer_CellDoubleClick);
             // 
             // panel15

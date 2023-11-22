@@ -49,6 +49,9 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.QuizzesListView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CourseMaterialsListView = new System.Windows.Forms.ListView();
             this.MaterialName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MaterialLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -327,6 +330,7 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.QuizzesListView, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.CourseMaterialsListView, 0, 1);
@@ -338,6 +342,28 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel8.Size = new System.Drawing.Size(978, 561);
             this.tableLayoutPanel8.TabIndex = 18;
+            // 
+            // QuizzesListView
+            // 
+            this.QuizzesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.QuizzesListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuizzesListView.GridLines = true;
+            this.QuizzesListView.HideSelection = false;
+            this.QuizzesListView.Location = new System.Drawing.Point(492, 27);
+            this.QuizzesListView.Name = "QuizzesListView";
+            this.QuizzesListView.Size = new System.Drawing.Size(483, 531);
+            this.QuizzesListView.TabIndex = 4;
+            this.QuizzesListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Material Name";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "MaterialLink";
             // 
             // CourseMaterialsListView
             // 
@@ -453,5 +479,8 @@
         private System.Windows.Forms.ColumnHeader MaterialName;
         private System.Windows.Forms.ColumnHeader MaterialLink;
         private System.Windows.Forms.Button SignOutButton;
+        private System.Windows.Forms.ListView QuizzesListView;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }

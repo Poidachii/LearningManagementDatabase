@@ -28,9 +28,8 @@ namespace GUI
             {
                 { "@accid", Session.AccID}
             };
-
             DataTable dt = new DataTable();
-
+            
             dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" + 
                                       " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
                                       " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
@@ -83,6 +82,38 @@ namespace GUI
 
             CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
+            QuizzesListView.Columns.Clear(); // Clear previously added columns
+            QuizzesListView.Items.Clear(); // Clear previously populated items
+            QuizzesListView.View = View.Details;
+
+            //Fill ListView
+            sql_params = new Dictionary<string, object>
+            {
+                { "@accid", Session.AccID},
+                { "@courseid", StudentCourseDropdown.SelectedValue}
+            };
+
+            DataTable qz_dt = new DataTable();
+
+            qz_dt = SQL_legit.RunCommand("SELECT QuizName, QuizID " +
+                                    "FROM Quiz " +
+                                    "INNER JOIN CourseAssignment ON Quiz.CourseID=CourseAssignment.CourseID " +
+                                    "WHERE AccID = @accid AND CourseAssignment.CourseID=@courseid;", opt_sql_params: sql_params);
+
+            QuizzesListView.Columns.Add("QuizName");
+            QuizzesListView.Columns.Add("QuizID");
+
+            foreach (DataRow row in qz_dt.Rows)
+            {
+                //Add Item to ListView.
+                ListViewItem item = new ListViewItem(row["QuizName"].ToString());
+                item.SubItems.Add(row["QuizID"].ToString());
+                QuizzesListView.Items.Add(item);
+            }
+
+            QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
     }
 }

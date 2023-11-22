@@ -53,6 +53,7 @@ namespace GUI
 
             this.Hide();
 
+            //should be encrypted
             if (token_value == "admin") { admin_form.ShowDialog(); }
             else if (token_value == "prof") { professor_form.ShowDialog(); }
             else { student_form.ShowDialog(); }
