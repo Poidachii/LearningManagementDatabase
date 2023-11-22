@@ -65,6 +65,7 @@ namespace GUI
         {
             Session.AccID = "1";
             Session.AccRole = "student";
+            Session.SetAccName();
 
             this.Hide();
             student_form.ShowDialog();

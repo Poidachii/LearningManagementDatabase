@@ -36,7 +36,7 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button12 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.AccountLabel = new System.Windows.Forms.Label();
             this.SecondMainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -149,6 +149,7 @@
             this.SignOutButton.TabIndex = 5;
             this.SignOutButton.Text = "Sign Out";
             this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -159,7 +160,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel4.Controls.Add(this.button12, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label11, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.AccountLabel, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -180,18 +181,18 @@
             this.button12.TabIndex = 5;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // AccountLabel
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(56, 12);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 17);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "ACCOUNT";
+            this.AccountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountLabel.AutoSize = true;
+            this.AccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.AccountLabel.Location = new System.Drawing.Point(56, 12);
+            this.AccountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AccountLabel.Name = "AccountLabel";
+            this.AccountLabel.Size = new System.Drawing.Size(75, 17);
+            this.AccountLabel.TabIndex = 6;
+            this.AccountLabel.Text = "ACCOUNT";
             // 
             // SecondMainPanel
             // 
@@ -327,6 +328,7 @@
             this.GradeButton.Size = new System.Drawing.Size(200, 45);
             this.GradeButton.TabIndex = 11;
             this.GradeButton.UseVisualStyleBackColor = false;
+            this.GradeButton.Click += new System.EventHandler(this.StudentGradeButton_Click);
             // 
             // HomePanel
             // 
@@ -363,6 +365,7 @@
             this.HomeButton.Size = new System.Drawing.Size(200, 45);
             this.HomeButton.TabIndex = 3;
             this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // CourseMatsQuizPanel
             // 
@@ -498,7 +501,7 @@
         private System.Windows.Forms.TableLayoutPanel SecondMainPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label AccountLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button SignOutButton;
         private System.Windows.Forms.PictureBox pictureBox1;

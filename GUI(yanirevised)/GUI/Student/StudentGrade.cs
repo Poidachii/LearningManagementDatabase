@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class StudentGrade : Form
     {
-        private StudentGradeMenu studentgrademenu;
+        private StudentMain studentmainmenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public StudentGrade()
@@ -21,7 +21,7 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void StudentMainMenu_Load(object sender, EventArgs e)
+        private void StudentGradeMenu_Load(object sender, EventArgs e)
         {
             DataTable dt = SQL_legit.OnLoadData();
 
@@ -29,22 +29,16 @@ namespace GUI
             StudentCourseDropdown.ValueMember = "CourseID";
             StudentCourseDropdown.DataSource = dt; 
             StudentCourseDropdown.SelectedIndex = 0;
-        }
 
-        private void StudentGradeButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            studentgrademenu = new StudentGradeMenu();
-            studentgrademenu.ShowDialog();
-            this.Show();
+            AccountLabel.Text = $"Welcome, {Session.AccName}!";
         }
 
         private void StudentCourseDropdown_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Reset ListView
-            CourseMaterialsListView.Columns.Clear(); // Clear previously added columns
-            CourseMaterialsListView.Items.Clear(); // Clear previously populated items
-            CourseMaterialsListView.View = View.Details;
+            GradesListView.Columns.Clear(); // Clear previously added columns
+            GradesListView.Items.Clear(); // Clear previously populated items
+            GradesListView.View = View.Details;
 
             //Fill ListView
             sql_params = new Dictionary<string, object>
@@ -55,56 +49,43 @@ namespace GUI
 
             DataTable dt = new DataTable();
 
-            dt = SQL_legit.RunCommand("SELECT MaterialName, MaterialLink " +
-                                    "FROM CourseAssignment " +
-                                    "INNER JOIN CourseMaterials ON CourseMaterials.CourseID=CourseAssignment.CourseID " +
-                                    "WHERE AccID = @accid AND CourseAssignment.CourseID=@courseid;", opt_sql_params: sql_params);
+            dt = SQL_legit.RunCommand("SELECT QuizName, Score " +
+                                        "FROM Quiz " +
+                                        "INNER JOIN Grades ON Grades.CourseID=Quiz.CourseID " +
+                                        "WHERE AccID = @accid AND Grades.CourseID=@courseid;", opt_sql_params: sql_params);
 
-            CourseMaterialsListView.Columns.Add("MaterialName");
-            CourseMaterialsListView.Columns.Add("MaterialLink");
+            GradesListView.Columns.Add("QuizName");
+            GradesListView.Columns.Add("Score");
 
             foreach (DataRow row in dt.Rows)
             {
                 //Add Item to ListView.
-                ListViewItem item = new ListViewItem(row["MaterialName"].ToString());
-                item.SubItems.Add(row["MaterialLink"].ToString());
-                CourseMaterialsListView.Items.Add(item);
-            }
-
-            CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-
-            QuizzesListView.Columns.Clear(); // Clear previously added columns
-            QuizzesListView.Items.Clear(); // Clear previously populated items
-            QuizzesListView.View = View.Details;
-
-            //Fill ListView
-            sql_params = new Dictionary<string, object>
-            {
-                { "@accid", Session.AccID},
-                { "@courseid", StudentCourseDropdown.SelectedValue}
-            };
-
-            DataTable qz_dt = new DataTable();
-
-            qz_dt = SQL_legit.RunCommand("SELECT QuizName, QuizID " +
-                                    "FROM Quiz " +
-                                    "INNER JOIN CourseAssignment ON Quiz.CourseID=CourseAssignment.CourseID " +
-                                    "WHERE AccID = @accid AND CourseAssignment.CourseID=@courseid;", opt_sql_params: sql_params);
-
-            QuizzesListView.Columns.Add("QuizName");
-            QuizzesListView.Columns.Add("QuizID");
-
-            foreach (DataRow row in qz_dt.Rows)
-            {
-                //Add Item to ListView.
                 ListViewItem item = new ListViewItem(row["QuizName"].ToString());
-                item.SubItems.Add(row["QuizID"].ToString());
-                QuizzesListView.Items.Add(item);
+                item.SubItems.Add(row["Score"].ToString());
+                GradesListView.Items.Add(item);
             }
 
-            QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-            QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            GradesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            GradesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void SignOutButton_Click(object sender, EventArgs e)
+        {
+            Session.LogOut();
+            this.Close();
+        }
+
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            studentmainmenu = new StudentMain();
+            studentmainmenu.ShowDialog();
+            this.Close();
+        }
+
+        private void StudentGradeButton_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 }

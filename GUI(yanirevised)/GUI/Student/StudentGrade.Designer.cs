@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentGrade));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.NavBarTop = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,7 +36,7 @@
             this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button12 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.AccountLabel = new System.Windows.Forms.Label();
             this.SecondMainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
@@ -51,11 +51,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.HomeButton = new System.Windows.Forms.Button();
             this.CourseMatsQuizPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.QuizzesListView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CourseMaterialsListView = new System.Windows.Forms.ListView();
+            this.GradesListView = new System.Windows.Forms.ListView();
             this.MaterialName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MaterialLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
@@ -149,6 +145,7 @@
             this.SignOutButton.TabIndex = 5;
             this.SignOutButton.Text = "Sign Out";
             this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -159,7 +156,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel4.Controls.Add(this.button12, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label11, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.AccountLabel, 1, 0);
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -180,18 +177,18 @@
             this.button12.TabIndex = 5;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // AccountLabel
             // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(56, 12);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 17);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "ACCOUNT";
+            this.AccountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountLabel.AutoSize = true;
+            this.AccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.AccountLabel.Location = new System.Drawing.Point(56, 12);
+            this.AccountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AccountLabel.Name = "AccountLabel";
+            this.AccountLabel.Size = new System.Drawing.Size(75, 17);
+            this.AccountLabel.TabIndex = 6;
+            this.AccountLabel.Text = "ACCOUNT";
             // 
             // SecondMainPanel
             // 
@@ -363,18 +360,17 @@
             this.HomeButton.Size = new System.Drawing.Size(200, 45);
             this.HomeButton.TabIndex = 3;
             this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // CourseMatsQuizPanel
             // 
             this.CourseMatsQuizPanel.AutoSize = true;
             this.CourseMatsQuizPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.CourseMatsQuizPanel.BackColor = System.Drawing.Color.RoyalBlue;
-            this.CourseMatsQuizPanel.ColumnCount = 2;
-            this.CourseMatsQuizPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.CourseMatsQuizPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.CourseMatsQuizPanel.Controls.Add(this.label4, 1, 0);
-            this.CourseMatsQuizPanel.Controls.Add(this.QuizzesListView, 1, 1);
-            this.CourseMatsQuizPanel.Controls.Add(this.CourseMaterialsListView, 0, 1);
+            this.CourseMatsQuizPanel.ColumnCount = 1;
+            this.CourseMatsQuizPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.CourseMatsQuizPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.CourseMatsQuizPanel.Controls.Add(this.GradesListView, 0, 1);
             this.CourseMatsQuizPanel.Controls.Add(this.label3, 0, 0);
             this.CourseMatsQuizPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CourseMatsQuizPanel.Location = new System.Drawing.Point(3, 202);
@@ -385,53 +381,19 @@
             this.CourseMatsQuizPanel.Size = new System.Drawing.Size(982, 500);
             this.CourseMatsQuizPanel.TabIndex = 22;
             // 
-            // label4
+            // GradesListView
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(692, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Quizzes :";
-            // 
-            // QuizzesListView
-            // 
-            this.QuizzesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.QuizzesListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QuizzesListView.GridLines = true;
-            this.QuizzesListView.HideSelection = false;
-            this.QuizzesListView.Location = new System.Drawing.Point(494, 27);
-            this.QuizzesListView.Name = "QuizzesListView";
-            this.QuizzesListView.Size = new System.Drawing.Size(485, 470);
-            this.QuizzesListView.TabIndex = 4;
-            this.QuizzesListView.UseCompatibleStateImageBehavior = false;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Material Name";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "MaterialLink";
-            // 
-            // CourseMaterialsListView
-            // 
-            this.CourseMaterialsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.GradesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.MaterialName,
             this.MaterialLink});
-            this.CourseMaterialsListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CourseMaterialsListView.GridLines = true;
-            this.CourseMaterialsListView.HideSelection = false;
-            this.CourseMaterialsListView.Location = new System.Drawing.Point(3, 27);
-            this.CourseMaterialsListView.Name = "CourseMaterialsListView";
-            this.CourseMaterialsListView.Size = new System.Drawing.Size(485, 470);
-            this.CourseMaterialsListView.TabIndex = 3;
-            this.CourseMaterialsListView.UseCompatibleStateImageBehavior = false;
+            this.GradesListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GradesListView.GridLines = true;
+            this.GradesListView.HideSelection = false;
+            this.GradesListView.Location = new System.Drawing.Point(3, 27);
+            this.GradesListView.Name = "GradesListView";
+            this.GradesListView.Size = new System.Drawing.Size(976, 470);
+            this.GradesListView.TabIndex = 3;
+            this.GradesListView.UseCompatibleStateImageBehavior = false;
             // 
             // MaterialName
             // 
@@ -447,22 +409,22 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(165, 0);
+            this.label3.Location = new System.Drawing.Point(453, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 24);
+            this.label3.Size = new System.Drawing.Size(76, 24);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Course Materials :";
+            this.label3.Text = "Grades:";
             // 
-            // StudentMain
+            // StudentGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "StudentMain";
+            this.Name = "StudentGrade";
             this.Text = "StudentMainMenu";
-            this.Load += new System.EventHandler(this.StudentMainMenu_Load);
+            this.Load += new System.EventHandler(this.StudentGradeMenu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.NavBarTop.ResumeLayout(false);
@@ -498,7 +460,7 @@
         private System.Windows.Forms.TableLayoutPanel SecondMainPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label AccountLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button SignOutButton;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -511,11 +473,7 @@
         private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel CourseMatsQuizPanel;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListView QuizzesListView;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ListView CourseMaterialsListView;
+        private System.Windows.Forms.ListView GradesListView;
         private System.Windows.Forms.ColumnHeader MaterialName;
         private System.Windows.Forms.ColumnHeader MaterialLink;
         private System.Windows.Forms.Label label3;

@@ -256,7 +256,7 @@
             this.SignInButton.TabIndex = 12;
             this.SignInButton.Text = "Sign In";
             this.SignInButton.UseVisualStyleBackColor = false;
-            this.SignInButton.Click += new System.EventHandler(this.DEBUG_PROF_CLICK);
+            this.SignInButton.Click += new System.EventHandler(this.DEBUG_STUDENT_CLICK);
             // 
             // PasswordLoginField
             // 

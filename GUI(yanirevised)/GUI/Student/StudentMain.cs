@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class StudentMain : Form
     {
-        private StudentGradeMenu studentgrademenu;
+        private StudentGrade studentgrademenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public StudentMain()
@@ -29,14 +29,16 @@ namespace GUI
             StudentCourseDropdown.ValueMember = "CourseID";
             StudentCourseDropdown.DataSource = dt; 
             StudentCourseDropdown.SelectedIndex = 0;
+
+            AccountLabel.Text = $"Welcome, {Session.AccName}!";
         }
 
         private void StudentGradeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentgrademenu = new StudentGradeMenu();
+            studentgrademenu = new StudentGrade();
             studentgrademenu.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void StudentCourseDropdown_SelectedIndexChanged(object sender, EventArgs e)
@@ -105,6 +107,17 @@ namespace GUI
 
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void SignOutButton_Click(object sender, EventArgs e)
+        {
+            Session.LogOut();
+            this.Close();
         }
     }
 }

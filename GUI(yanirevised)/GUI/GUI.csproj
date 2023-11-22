@@ -164,12 +164,6 @@
     <Compile Include="Student\StudentMain.Designer.cs">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Student\StudentGradeMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student\StudentGradeMenu.Designer.cs">
-      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Student\StudentOld.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Student\StudentMain.resx">
       <DependentUpon>StudentMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Student\StudentGradeMenu.resx">
-      <DependentUpon>StudentGradeMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\StudentOld.resx">
       <DependentUpon>StudentOld.cs</DependentUpon>
