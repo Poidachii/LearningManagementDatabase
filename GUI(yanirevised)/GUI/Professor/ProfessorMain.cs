@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class ProfessorMain : Form
     {
-        private StudentGradeMenu studentgrademenu;
+        private ProfGrade studentgrademenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public ProfessorMain()
@@ -21,12 +21,12 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void StudentGradeButton_Click(object sender, EventArgs e)
+        private void GradeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentgrademenu = new StudentGradeMenu();
+            studentgrademenu = new ProfGrade();
             studentgrademenu.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void ProfessorMain_Load(object sender, EventArgs e)
@@ -37,6 +37,8 @@ namespace GUI
             ProfessorCourseDropdown.ValueMember = "CourseID";
             ProfessorCourseDropdown.DataSource = dt;
             ProfessorCourseDropdown.SelectedIndex = 0;
+
+            AccountLabel.Text = $"Welcome, {Session.AccName}!";
         }
 
         private void LoadCourseMaterials()
@@ -116,5 +118,15 @@ namespace GUI
             LoadQuizzes();
         }
 
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void SignOutButton_Click(object sender, EventArgs e)
+        {
+            Session.LogOut();
+            this.Close();
+        }
     }
 }
