@@ -258,6 +258,7 @@
             this.SignOutButton.Size = new System.Drawing.Size(59, 42);
             this.SignOutButton.TabIndex = 4;
             this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // tableLayoutPanel5
             // 

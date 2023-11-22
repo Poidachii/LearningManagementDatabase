@@ -8,12 +8,14 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI
 {
     public partial class StudentMainMenu : Form
     {
         private StudentGradeMenu studentgrademenu;
+        private MainMenu menu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public StudentMainMenu()
@@ -114,6 +116,14 @@ namespace GUI
 
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void SignOutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menu = new MainMenu();
+            menu.ShowDialog();
+            this.Show();
         }
     }
 }
