@@ -50,7 +50,7 @@ namespace GUI
         // Student functions
         public void LoadQuiz(string quiz_id) {
             sql_params.Clear();
-            sql_params.Add("@id", quiz_id)
+            sql_params.Add("@id", quiz_id);
 
             dataset = SQL.RunCommand("SELECT * FROM QuizItems WHERE QuizID = @id");
 

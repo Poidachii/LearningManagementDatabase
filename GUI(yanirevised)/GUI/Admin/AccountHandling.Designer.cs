@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.HomeButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SignOutButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.AccountDataViewer = new System.Windows.Forms.DataGridView();
             this.panel15 = new System.Windows.Forms.Panel();
@@ -46,7 +47,6 @@
             this.SearchBar = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.SignOutButton = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel4.SuspendLayout();
@@ -61,20 +61,20 @@
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(0, 52);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(295, 886);
+            this.panel2.Size = new System.Drawing.Size(221, 720);
             this.panel2.TabIndex = 53;
             // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(7, 5);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(5, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(281, 137);
+            this.pictureBox6.Size = new System.Drawing.Size(211, 111);
             this.pictureBox6.TabIndex = 17;
             this.pictureBox6.TabStop = false;
             // 
@@ -84,10 +84,10 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.HomeButton);
-            this.panel4.Location = new System.Drawing.Point(0, 146);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel4.Location = new System.Drawing.Point(0, 119);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(295, 64);
+            this.panel4.Size = new System.Drawing.Size(222, 53);
             this.panel4.TabIndex = 2;
             // 
             // label3
@@ -95,9 +95,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Location = new System.Drawing.Point(2, 0);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 18);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "HOME";
             // 
@@ -107,9 +108,9 @@
             this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeButton.Location = new System.Drawing.Point(0, 0);
-            this.HomeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(289, 62);
+            this.HomeButton.Size = new System.Drawing.Size(217, 50);
             this.HomeButton.TabIndex = 3;
             this.HomeButton.UseVisualStyleBackColor = true;
             // 
@@ -119,31 +120,42 @@
             this.panel1.Controls.Add(this.SignOutButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1847, 52);
+            this.panel1.Size = new System.Drawing.Size(1385, 42);
             this.panel1.TabIndex = 52;
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.Location = new System.Drawing.Point(1295, 11);
+            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(56, 19);
+            this.SignOutButton.TabIndex = 1;
+            this.SignOutButton.Text = "Sign Out";
+            this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Location = new System.Drawing.Point(5, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(395, 31);
+            this.label1.Size = new System.Drawing.Size(316, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMIN - ACCOUNT HANDLING";
             // 
             // AccountDataViewer
             // 
             this.AccountDataViewer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.AccountDataViewer.Location = new System.Drawing.Point(304, 122);
-            this.AccountDataViewer.Margin = new System.Windows.Forms.Padding(4);
+            this.AccountDataViewer.Location = new System.Drawing.Point(228, 99);
             this.AccountDataViewer.Name = "AccountDataViewer";
             this.AccountDataViewer.RowHeadersWidth = 51;
             this.AccountDataViewer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AccountDataViewer.Size = new System.Drawing.Size(1525, 800);
+            this.AccountDataViewer.Size = new System.Drawing.Size(1144, 650);
             this.AccountDataViewer.TabIndex = 55;
             this.AccountDataViewer.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDataViewer_CellDoubleClick);
             // 
@@ -159,17 +171,18 @@
             this.panel15.Controls.Add(this.SearchBar);
             this.panel15.Controls.Add(this.AddButton);
             this.panel15.Controls.Add(this.label15);
-            this.panel15.Location = new System.Drawing.Point(300, 57);
-            this.panel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel15.Location = new System.Drawing.Point(225, 46);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1528, 58);
+            this.panel15.Size = new System.Drawing.Size(1147, 48);
             this.panel15.TabIndex = 54;
             // 
             // AllListButton
             // 
-            this.AllListButton.Location = new System.Drawing.Point(789, 12);
+            this.AllListButton.Location = new System.Drawing.Point(592, 10);
+            this.AllListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AllListButton.Name = "AllListButton";
-            this.AllListButton.Size = new System.Drawing.Size(109, 31);
+            this.AllListButton.Size = new System.Drawing.Size(82, 25);
             this.AllListButton.TabIndex = 8;
             this.AllListButton.Text = "All";
             this.AllListButton.UseVisualStyleBackColor = true;
@@ -177,9 +190,10 @@
             // 
             // AdminListButton
             // 
-            this.AdminListButton.Location = new System.Drawing.Point(674, 9);
+            this.AdminListButton.Location = new System.Drawing.Point(506, 9);
+            this.AdminListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AdminListButton.Name = "AdminListButton";
-            this.AdminListButton.Size = new System.Drawing.Size(109, 31);
+            this.AdminListButton.Size = new System.Drawing.Size(82, 25);
             this.AdminListButton.TabIndex = 7;
             this.AdminListButton.Text = "Admin List";
             this.AdminListButton.UseVisualStyleBackColor = true;
@@ -187,9 +201,10 @@
             // 
             // ProfessorListButton
             // 
-            this.ProfessorListButton.Location = new System.Drawing.Point(547, 9);
+            this.ProfessorListButton.Location = new System.Drawing.Point(410, 7);
+            this.ProfessorListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProfessorListButton.Name = "ProfessorListButton";
-            this.ProfessorListButton.Size = new System.Drawing.Size(121, 34);
+            this.ProfessorListButton.Size = new System.Drawing.Size(91, 28);
             this.ProfessorListButton.TabIndex = 6;
             this.ProfessorListButton.Text = "Professor List";
             this.ProfessorListButton.UseVisualStyleBackColor = true;
@@ -197,9 +212,10 @@
             // 
             // StudentListButton
             // 
-            this.StudentListButton.Location = new System.Drawing.Point(414, 9);
+            this.StudentListButton.Location = new System.Drawing.Point(310, 7);
+            this.StudentListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StudentListButton.Name = "StudentListButton";
-            this.StudentListButton.Size = new System.Drawing.Size(127, 34);
+            this.StudentListButton.Size = new System.Drawing.Size(95, 28);
             this.StudentListButton.TabIndex = 5;
             this.StudentListButton.Text = "Student List";
             this.StudentListButton.UseVisualStyleBackColor = true;
@@ -212,20 +228,18 @@
             this.SearchBarIcon.Enabled = false;
             this.SearchBarIcon.Image = ((System.Drawing.Image)(resources.GetObject("SearchBarIcon.Image")));
             this.SearchBarIcon.InitialImage = null;
-            this.SearchBarIcon.Location = new System.Drawing.Point(1487, 9);
-            this.SearchBarIcon.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchBarIcon.Location = new System.Drawing.Point(1115, 7);
             this.SearchBarIcon.Name = "SearchBarIcon";
-            this.SearchBarIcon.Size = new System.Drawing.Size(33, 34);
+            this.SearchBarIcon.Size = new System.Drawing.Size(25, 28);
             this.SearchBarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.SearchBarIcon.TabIndex = 4;
             this.SearchBarIcon.TabStop = false;
             // 
             // SearchBar
             // 
-            this.SearchBar.Location = new System.Drawing.Point(1103, 15);
-            this.SearchBar.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchBar.Location = new System.Drawing.Point(827, 12);
             this.SearchBar.Name = "SearchBar";
-            this.SearchBar.Size = new System.Drawing.Size(375, 22);
+            this.SearchBar.Size = new System.Drawing.Size(282, 20);
             this.SearchBar.TabIndex = 3;
             // 
             // AddButton
@@ -233,10 +247,9 @@
             this.AddButton.BackColor = System.Drawing.Color.AliceBlue;
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddButton.Location = new System.Drawing.Point(203, 11);
-            this.AddButton.Margin = new System.Windows.Forms.Padding(4);
+            this.AddButton.Location = new System.Drawing.Point(152, 9);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(143, 32);
+            this.AddButton.Size = new System.Drawing.Size(107, 26);
             this.AddButton.TabIndex = 2;
             this.AddButton.Text = "ADD";
             this.AddButton.UseVisualStyleBackColor = false;
@@ -246,32 +259,22 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(28, 15);
+            this.label15.Location = new System.Drawing.Point(21, 12);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(131, 25);
+            this.label15.Size = new System.Drawing.Size(109, 20);
             this.label15.TabIndex = 1;
             this.label15.Text = "Account List";
             // 
-            // SignOutButton
-            // 
-            this.SignOutButton.Location = new System.Drawing.Point(1727, 14);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(75, 23);
-            this.SignOutButton.TabIndex = 1;
-            this.SignOutButton.Text = "Sign Out";
-            this.SignOutButton.UseVisualStyleBackColor = true;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
-            // 
             // AccountHandling
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1845, 937);
+            this.ClientSize = new System.Drawing.Size(1384, 761);
             this.Controls.Add(this.AccountDataViewer);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AccountHandling";
             this.Text = "AccountHandling";
             this.panel2.ResumeLayout(false);

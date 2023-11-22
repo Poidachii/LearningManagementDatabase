@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,14 +31,13 @@ namespace GUI
 
             DataTable dt = new DataTable();
 
-            dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, CourseName " +
-                                    "FROM CourseAssignment " +
-                                    "INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID " +
-                                    "WHERE AccID = @accid;", opt_sql_params: sql_params);
+            dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" + 
+                                      " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
+                                      " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
 
             StudentCourseDropdown.DisplayMember = "CourseName";
             StudentCourseDropdown.ValueMember = "CourseID";
-            StudentCourseDropdown.DataSource = dt;
+            StudentCourseDropdown.DataSource = dt; 
             StudentCourseDropdown.SelectedIndex = 0;
         }
 

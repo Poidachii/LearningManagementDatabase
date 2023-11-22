@@ -86,17 +86,29 @@
     <Compile Include="Admin\AccountHandling.Designer.cs">
       <DependentUpon>AccountHandling.cs</DependentUpon>
     </Compile>
-    <Compile Include="AccountMainMenu.cs">
+    <Compile Include="AssignCoursePopupAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AccountMainMenu.designer.cs">
-      <DependentUpon>AccountMainMenu.cs</DependentUpon>
+    <Compile Include="AssignCoursePopupAdd.Designer.cs">
+      <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataBaseDisplay.cs">
+    <Compile Include="AssignCoursePopupEditRemove.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataBaseDisplay.Designer.cs">
-      <DependentUpon>DataBaseDisplay.cs</DependentUpon>
+    <Compile Include="AssignCoursePopupEditRemove.Designer.cs">
+      <DependentUpon>AssignCoursePopupEditRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursePopupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursePopupAdd.Designer.cs">
+      <DependentUpon>CoursePopupAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoursePopupMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoursePopupMain.Designer.cs">
+      <DependentUpon>CoursePopupMain.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralInfo.cs">
       <SubType>Form</SubType>
@@ -110,6 +122,7 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Necessities.cs" />
     <Compile Include="Professor\ProfGrade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,14 +170,20 @@
     <EmbeddedResource Include="Admin\AccountHandling.resx">
       <DependentUpon>AccountHandling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AccountMainMenu.resx">
-      <DependentUpon>AccountMainMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminCourseHandling.resx">
       <DependentUpon>AdminCourseHandling.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataBaseDisplay.resx">
-      <DependentUpon>DataBaseDisplay.cs</DependentUpon>
+    <EmbeddedResource Include="AssignCoursePopupAdd.resx">
+      <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignCoursePopupEditRemove.resx">
+      <DependentUpon>AssignCoursePopupEditRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursePopupAdd.resx">
+      <DependentUpon>CoursePopupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoursePopupMain.resx">
+      <DependentUpon>CoursePopupMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

@@ -46,7 +46,7 @@ namespace GUI
             sql_params.Clear();
             sql_params.Add("@name", name);
 
-            SQL.RunCommand("SELECT * FROM AccountList WHERE name = @name", CourseDataViewer, sql_params);
+            SQL.RunCommand("SELECT * FROM AccountList WHERE Name = @name", CourseDataViewer, sql_params);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Profesor
+    partial class Professor
     {
         /// <summary>
         /// Required designer variable.

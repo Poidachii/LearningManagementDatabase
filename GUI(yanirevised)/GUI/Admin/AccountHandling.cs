@@ -27,7 +27,7 @@ namespace GUI.Admin
             sql_params.Clear();
             sql_params.Add("@name", name);
 
-            SQL.RunCommand("SELECT * FROM AccountList WHERE name = @name", AccountDataViewer, sql_params);
+            SQL_legit.RunCommand("SELECT * FROM Account WHERE name = @name", AccountDataViewer, sql_params);
         }
 
         private void StudentListButton_Click(object sender, EventArgs e)
@@ -36,8 +36,8 @@ namespace GUI.Admin
             ProfessorListButton.Enabled = true;
             AdminListButton.Enabled = true;
             AllListButton.Enabled = true;
-
-            SQL.RunCommand("SELECT * FROM AccountList WHERE AccRole = student", AccountDataViewer);
+ 
+            SQL_legit.RunCommand("SELECT * FROM Account WHERE AccRole = 'student'", AccountDataViewer, sql_params);
         }
 
         private void ProfessorListButton_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace GUI.Admin
             AdminListButton.Enabled = true;
             AllListButton.Enabled = true;
 
-            SQL.RunCommand("SELECT * FROM AccountList WHERE AccRole = professor", AccountDataViewer);
+            SQL_legit.RunCommand("SELECT * FROM Account WHERE AccRole = 'prof'", AccountDataViewer, sql_params);
         }
 
         private void AdminListButton_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace GUI.Admin
             AdminListButton.Enabled = false;
             AllListButton.Enabled = true;
 
-            SQL.RunCommand("SELECT * FROM AccountList WHERE AccRole = admin", AccountDataViewer);
+            SQL_legit.RunCommand("SELECT * FROM Account WHERE AccRole = 'admin'", AccountDataViewer, sql_params);
         }
 
         private void AllListButton_Click(object sender, EventArgs e)
@@ -67,14 +67,14 @@ namespace GUI.Admin
             AdminListButton.Enabled = true;
             AllListButton.Enabled = false;
 
-            SQL.RunCommand("SELECT * FROM AccountList", AccountDataViewer);
+            SQL_legit.RunCommand("SELECT * FROM Account", AccountDataViewer, sql_params);
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             account_creation.ShowDialog();
-            SQL.RunCommand("SELECT * FROM AccountList", AccountDataViewer);
+            SQL_legit.RunCommand("SELECT * FROM Account", AccountDataViewer, sql_params);
             this.Show();
         }
 
@@ -87,7 +87,7 @@ namespace GUI.Admin
             this.Hide();
             account_creation.Initialize(name, pass, role);
             account_creation.ShowDialog();
-            SQL.RunCommand("SELECT * FROM AccountList", AccountDataViewer);
+            SQL_legit.RunCommand("SELECT * FROM Account", AccountDataViewer, sql_params);
             this.Show();
         }
 
