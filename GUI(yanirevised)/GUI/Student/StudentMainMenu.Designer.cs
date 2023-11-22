@@ -43,6 +43,7 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.SignOutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -54,7 +55,6 @@
             this.HomePanel = new System.Windows.Forms.Panel();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.SignOutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentHomeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StudentGradeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -245,6 +245,17 @@
             this.SignOutPanel.Size = new System.Drawing.Size(65, 67);
             this.SignOutPanel.TabIndex = 18;
             // 
+            // SignOutButton
+            // 
+            this.SignOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SignOutButton.BackgroundImage")));
+            this.SignOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Location = new System.Drawing.Point(3, 3);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(59, 42);
+            this.SignOutButton.TabIndex = 4;
+            this.SignOutButton.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.AutoSize = true;
@@ -376,17 +387,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 17;
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SignOutButton.BackgroundImage")));
-            this.SignOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignOutButton.Location = new System.Drawing.Point(3, 3);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(59, 42);
-            this.SignOutButton.TabIndex = 4;
-            this.SignOutButton.UseVisualStyleBackColor = true;
             // 
             // StudentMainMenu
             // 

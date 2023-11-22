@@ -62,7 +62,7 @@
             this.panel2.Controls.Add(this.pictureBox6);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(0, 42);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(221, 720);
             this.panel2.TabIndex = 53;
@@ -72,7 +72,7 @@
             this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox6.Location = new System.Drawing.Point(5, 4);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(211, 111);
             this.pictureBox6.TabIndex = 17;
@@ -85,7 +85,7 @@
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.HomeButton);
             this.panel4.Location = new System.Drawing.Point(0, 119);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(222, 53);
             this.panel4.TabIndex = 2;
@@ -108,7 +108,7 @@
             this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HomeButton.Location = new System.Drawing.Point(0, 0);
-            this.HomeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
             this.HomeButton.Name = "HomeButton";
             this.HomeButton.Size = new System.Drawing.Size(217, 50);
             this.HomeButton.TabIndex = 3;
@@ -120,7 +120,7 @@
             this.panel1.Controls.Add(this.SignOutButton);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1385, 42);
             this.panel1.TabIndex = 52;
@@ -128,7 +128,7 @@
             // SignOutButton
             // 
             this.SignOutButton.Location = new System.Drawing.Point(1295, 11);
-            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SignOutButton.Margin = new System.Windows.Forms.Padding(2);
             this.SignOutButton.Name = "SignOutButton";
             this.SignOutButton.Size = new System.Drawing.Size(56, 19);
             this.SignOutButton.TabIndex = 1;
@@ -157,6 +157,7 @@
             this.AccountDataViewer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.AccountDataViewer.Size = new System.Drawing.Size(1144, 650);
             this.AccountDataViewer.TabIndex = 55;
+            this.AccountDataViewer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDataViewer_CellContentClick);
             this.AccountDataViewer.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDataViewer_CellDoubleClick);
             // 
             // panel15
@@ -172,7 +173,7 @@
             this.panel15.Controls.Add(this.AddButton);
             this.panel15.Controls.Add(this.label15);
             this.panel15.Location = new System.Drawing.Point(225, 46);
-            this.panel15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel15.Margin = new System.Windows.Forms.Padding(2);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(1147, 48);
             this.panel15.TabIndex = 54;
@@ -180,7 +181,7 @@
             // AllListButton
             // 
             this.AllListButton.Location = new System.Drawing.Point(592, 10);
-            this.AllListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AllListButton.Margin = new System.Windows.Forms.Padding(2);
             this.AllListButton.Name = "AllListButton";
             this.AllListButton.Size = new System.Drawing.Size(82, 25);
             this.AllListButton.TabIndex = 8;
@@ -191,7 +192,7 @@
             // AdminListButton
             // 
             this.AdminListButton.Location = new System.Drawing.Point(506, 9);
-            this.AdminListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AdminListButton.Margin = new System.Windows.Forms.Padding(2);
             this.AdminListButton.Name = "AdminListButton";
             this.AdminListButton.Size = new System.Drawing.Size(82, 25);
             this.AdminListButton.TabIndex = 7;
@@ -202,7 +203,7 @@
             // ProfessorListButton
             // 
             this.ProfessorListButton.Location = new System.Drawing.Point(410, 7);
-            this.ProfessorListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProfessorListButton.Margin = new System.Windows.Forms.Padding(2);
             this.ProfessorListButton.Name = "ProfessorListButton";
             this.ProfessorListButton.Size = new System.Drawing.Size(91, 28);
             this.ProfessorListButton.TabIndex = 6;
@@ -213,7 +214,7 @@
             // StudentListButton
             // 
             this.StudentListButton.Location = new System.Drawing.Point(310, 7);
-            this.StudentListButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StudentListButton.Margin = new System.Windows.Forms.Padding(2);
             this.StudentListButton.Name = "StudentListButton";
             this.StudentListButton.Size = new System.Drawing.Size(95, 28);
             this.StudentListButton.TabIndex = 5;

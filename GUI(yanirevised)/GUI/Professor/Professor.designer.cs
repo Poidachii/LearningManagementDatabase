@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             this.FrontEndPanel = new System.Windows.Forms.Panel();
+            this.CourseListLabel = new System.Windows.Forms.Label();
+            this.CourseListComboBox = new System.Windows.Forms.ComboBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.HomeLabel = new System.Windows.Forms.Label();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.GradeLabel = new System.Windows.Forms.Label();
+            this.GradeButton = new System.Windows.Forms.Button();
             this.CoursePanel = new System.Windows.Forms.Panel();
             this.CourseLabel = new System.Windows.Forms.Label();
+            this.CourseButton = new System.Windows.Forms.Button();
             this.SignOutButton = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button12 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.CourseListComboBox = new System.Windows.Forms.ComboBox();
-            this.CourseListLabel = new System.Windows.Forms.Label();
             this.CourseLabel1 = new System.Windows.Forms.Label();
             this.QuizLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.FrontEndPanelVertical = new System.Windows.Forms.Panel();
-            this.CourseAddButton = new System.Windows.Forms.Button();
-            this.CourseUpdateButton = new System.Windows.Forms.Button();
-            this.CourseRemoveButton = new System.Windows.Forms.Button();
             this.QuizRemoveButton = new System.Windows.Forms.Button();
             this.QuizUpdateButton = new System.Windows.Forms.Button();
             this.QuizAddButton = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.HomeButton = new System.Windows.Forms.Button();
-            this.GradeButton = new System.Windows.Forms.Button();
-            this.CourseButton = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.CourseRemoveButton = new System.Windows.Forms.Button();
+            this.CourseUpdateButton = new System.Windows.Forms.Button();
+            this.CourseAddButton = new System.Windows.Forms.Button();
+            this.FrontEndPanelVertical = new System.Windows.Forms.Panel();
             this.FrontEndPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.HomePanel.SuspendLayout();
             this.GradePanel.SuspendLayout();
             this.CoursePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // FrontEndPanel
@@ -79,6 +79,37 @@
             this.FrontEndPanel.Name = "FrontEndPanel";
             this.FrontEndPanel.Size = new System.Drawing.Size(1385, 120);
             this.FrontEndPanel.TabIndex = 52;
+            // 
+            // CourseListLabel
+            // 
+            this.CourseListLabel.AutoSize = true;
+            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.CourseListLabel.Location = new System.Drawing.Point(918, 10);
+            this.CourseListLabel.Name = "CourseListLabel";
+            this.CourseListLabel.Size = new System.Drawing.Size(344, 55);
+            this.CourseListLabel.TabIndex = 19;
+            this.CourseListLabel.Text = "COURSE LIST";
+            // 
+            // CourseListComboBox
+            // 
+            this.CourseListComboBox.FormattingEnabled = true;
+            this.CourseListComboBox.Location = new System.Drawing.Point(928, 77);
+            this.CourseListComboBox.Name = "CourseListComboBox";
+            this.CourseListComboBox.Size = new System.Drawing.Size(445, 21);
+            this.CourseListComboBox.TabIndex = 18;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(5, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(211, 111);
+            this.pictureBox6.TabIndex = 17;
+            this.pictureBox6.TabStop = false;
             // 
             // HomePanel
             // 
@@ -103,6 +134,18 @@
             this.HomeLabel.Size = new System.Drawing.Size(44, 15);
             this.HomeLabel.TabIndex = 2;
             this.HomeLabel.Text = "HOME";
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
+            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Location = new System.Drawing.Point(2, 2);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(215, 45);
+            this.HomeButton.TabIndex = 3;
+            this.HomeButton.UseVisualStyleBackColor = true;
             // 
             // GradePanel
             // 
@@ -129,6 +172,18 @@
             this.GradeLabel.TabIndex = 5;
             this.GradeLabel.Text = "GRADES";
             // 
+            // GradeButton
+            // 
+            this.GradeButton.BackgroundImage = global::GUI.Properties.Resources._6343947;
+            this.GradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GradeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GradeButton.Location = new System.Drawing.Point(1, 2);
+            this.GradeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GradeButton.Name = "GradeButton";
+            this.GradeButton.Size = new System.Drawing.Size(215, 45);
+            this.GradeButton.TabIndex = 9;
+            this.GradeButton.UseVisualStyleBackColor = true;
+            // 
             // CoursePanel
             // 
             this.CoursePanel.BackColor = System.Drawing.Color.RoyalBlue;
@@ -152,6 +207,18 @@
             this.CourseLabel.Size = new System.Drawing.Size(66, 15);
             this.CourseLabel.TabIndex = 3;
             this.CourseLabel.Text = "COURSES";
+            // 
+            // CourseButton
+            // 
+            this.CourseButton.BackgroundImage = global::GUI.Properties.Resources.img_179623;
+            this.CourseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CourseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CourseButton.Location = new System.Drawing.Point(2, 2);
+            this.CourseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CourseButton.Name = "CourseButton";
+            this.CourseButton.Size = new System.Drawing.Size(214, 45);
+            this.CourseButton.TabIndex = 6;
+            this.CourseButton.UseVisualStyleBackColor = true;
             // 
             // SignOutButton
             // 
@@ -178,6 +245,18 @@
             this.panel1.Size = new System.Drawing.Size(1385, 42);
             this.panel1.TabIndex = 51;
             // 
+            // button12
+            // 
+            this.button12.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(1173, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(50, 38);
+            this.button12.TabIndex = 4;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -201,25 +280,6 @@
             this.label1.Size = new System.Drawing.Size(146, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "PROF - MENU";
-            // 
-            // CourseListComboBox
-            // 
-            this.CourseListComboBox.FormattingEnabled = true;
-            this.CourseListComboBox.Location = new System.Drawing.Point(928, 77);
-            this.CourseListComboBox.Name = "CourseListComboBox";
-            this.CourseListComboBox.Size = new System.Drawing.Size(445, 21);
-            this.CourseListComboBox.TabIndex = 18;
-            // 
-            // CourseListLabel
-            // 
-            this.CourseListLabel.AutoSize = true;
-            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.CourseListLabel.Location = new System.Drawing.Point(918, 10);
-            this.CourseListLabel.Name = "CourseListLabel";
-            this.CourseListLabel.Size = new System.Drawing.Size(344, 55);
-            this.CourseListLabel.TabIndex = 19;
-            this.CourseListLabel.Text = "COURSE LIST";
             // 
             // CourseLabel1
             // 
@@ -258,42 +318,6 @@
             this.panel2.Size = new System.Drawing.Size(1385, 50);
             this.panel2.TabIndex = 53;
             // 
-            // FrontEndPanelVertical
-            // 
-            this.FrontEndPanelVertical.BackColor = System.Drawing.Color.MidnightBlue;
-            this.FrontEndPanelVertical.Location = new System.Drawing.Point(700, 162);
-            this.FrontEndPanelVertical.Margin = new System.Windows.Forms.Padding(2);
-            this.FrontEndPanelVertical.Name = "FrontEndPanelVertical";
-            this.FrontEndPanelVertical.Size = new System.Drawing.Size(50, 550);
-            this.FrontEndPanelVertical.TabIndex = 54;
-            // 
-            // CourseAddButton
-            // 
-            this.CourseAddButton.Location = new System.Drawing.Point(20, 13);
-            this.CourseAddButton.Name = "CourseAddButton";
-            this.CourseAddButton.Size = new System.Drawing.Size(112, 26);
-            this.CourseAddButton.TabIndex = 0;
-            this.CourseAddButton.Text = "ADD";
-            this.CourseAddButton.UseVisualStyleBackColor = true;
-            // 
-            // CourseUpdateButton
-            // 
-            this.CourseUpdateButton.Location = new System.Drawing.Point(243, 13);
-            this.CourseUpdateButton.Name = "CourseUpdateButton";
-            this.CourseUpdateButton.Size = new System.Drawing.Size(112, 26);
-            this.CourseUpdateButton.TabIndex = 1;
-            this.CourseUpdateButton.Text = "UPDATE";
-            this.CourseUpdateButton.UseVisualStyleBackColor = true;
-            // 
-            // CourseRemoveButton
-            // 
-            this.CourseRemoveButton.Location = new System.Drawing.Point(471, 13);
-            this.CourseRemoveButton.Name = "CourseRemoveButton";
-            this.CourseRemoveButton.Size = new System.Drawing.Size(112, 26);
-            this.CourseRemoveButton.TabIndex = 2;
-            this.CourseRemoveButton.Text = "REMOVE";
-            this.CourseRemoveButton.UseVisualStyleBackColor = true;
-            // 
             // QuizRemoveButton
             // 
             this.QuizRemoveButton.Location = new System.Drawing.Point(1236, 13);
@@ -321,67 +345,43 @@
             this.QuizAddButton.Text = "ADD";
             this.QuizAddButton.UseVisualStyleBackColor = true;
             // 
-            // pictureBox6
+            // CourseRemoveButton
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::GUI.Properties.Resources.MMCL_Logo_original;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(5, 4);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(211, 111);
-            this.pictureBox6.TabIndex = 17;
-            this.pictureBox6.TabStop = false;
+            this.CourseRemoveButton.Location = new System.Drawing.Point(471, 13);
+            this.CourseRemoveButton.Name = "CourseRemoveButton";
+            this.CourseRemoveButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseRemoveButton.TabIndex = 2;
+            this.CourseRemoveButton.Text = "REMOVE";
+            this.CourseRemoveButton.UseVisualStyleBackColor = true;
             // 
-            // HomeButton
+            // CourseUpdateButton
             // 
-            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
-            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeButton.Location = new System.Drawing.Point(2, 2);
-            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(215, 45);
-            this.HomeButton.TabIndex = 3;
-            this.HomeButton.UseVisualStyleBackColor = true;
+            this.CourseUpdateButton.Location = new System.Drawing.Point(243, 13);
+            this.CourseUpdateButton.Name = "CourseUpdateButton";
+            this.CourseUpdateButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseUpdateButton.TabIndex = 1;
+            this.CourseUpdateButton.Text = "UPDATE";
+            this.CourseUpdateButton.UseVisualStyleBackColor = true;
             // 
-            // GradeButton
+            // CourseAddButton
             // 
-            this.GradeButton.BackgroundImage = global::GUI.Properties.Resources._6343947;
-            this.GradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.GradeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GradeButton.Location = new System.Drawing.Point(1, 2);
-            this.GradeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.GradeButton.Name = "GradeButton";
-            this.GradeButton.Size = new System.Drawing.Size(215, 45);
-            this.GradeButton.TabIndex = 9;
-            this.GradeButton.UseVisualStyleBackColor = true;
+            this.CourseAddButton.Location = new System.Drawing.Point(20, 13);
+            this.CourseAddButton.Name = "CourseAddButton";
+            this.CourseAddButton.Size = new System.Drawing.Size(112, 26);
+            this.CourseAddButton.TabIndex = 0;
+            this.CourseAddButton.Text = "ADD";
+            this.CourseAddButton.UseVisualStyleBackColor = true;
             // 
-            // CourseButton
+            // FrontEndPanelVertical
             // 
-            this.CourseButton.BackgroundImage = global::GUI.Properties.Resources.img_179623;
-            this.CourseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CourseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CourseButton.Location = new System.Drawing.Point(2, 2);
-            this.CourseButton.Margin = new System.Windows.Forms.Padding(2);
-            this.CourseButton.Name = "CourseButton";
-            this.CourseButton.Size = new System.Drawing.Size(214, 45);
-            this.CourseButton.TabIndex = 6;
-            this.CourseButton.UseVisualStyleBackColor = true;
+            this.FrontEndPanelVertical.BackColor = System.Drawing.Color.MidnightBlue;
+            this.FrontEndPanelVertical.Location = new System.Drawing.Point(700, 162);
+            this.FrontEndPanelVertical.Margin = new System.Windows.Forms.Padding(2);
+            this.FrontEndPanelVertical.Name = "FrontEndPanelVertical";
+            this.FrontEndPanelVertical.Size = new System.Drawing.Size(50, 550);
+            this.FrontEndPanelVertical.TabIndex = 54;
             // 
-            // button12
-            // 
-            this.button12.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(1173, 2);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 38);
-            this.button12.TabIndex = 4;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // Profesor
+            // Professor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -393,11 +393,12 @@
             this.Controls.Add(this.CourseLabel1);
             this.Controls.Add(this.FrontEndPanel);
             this.Controls.Add(this.panel1);
-            this.Name = "Profesor";
+            this.Name = "Professor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profesor";
             this.FrontEndPanel.ResumeLayout(false);
             this.FrontEndPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
             this.GradePanel.ResumeLayout(false);
@@ -407,7 +408,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
