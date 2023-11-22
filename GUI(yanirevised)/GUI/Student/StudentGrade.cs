@@ -11,28 +11,19 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class StudentMainMenu : Form
+    public partial class StudentGrade : Form
     {
         private StudentGradeMenu studentgrademenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
-        public StudentMainMenu()
+        public StudentGrade()
         {
             InitializeComponent();
         }
 
         private void StudentMainMenu_Load(object sender, EventArgs e)
         {
-            //Fill DropDown
-            sql_params = new Dictionary<string, object>
-            {
-                { "@accid", Session.AccID}
-            };
-            DataTable dt = new DataTable();
-            
-            dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" + 
-                                      " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
-                                      " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
+            DataTable dt = SQL_legit.OnLoadData();
 
             StudentCourseDropdown.DisplayMember = "CourseName";
             StudentCourseDropdown.ValueMember = "CourseID";

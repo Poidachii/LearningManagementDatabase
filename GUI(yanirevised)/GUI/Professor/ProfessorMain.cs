@@ -21,25 +21,6 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void StudentMainMenu_Load(object sender, EventArgs e)
-        {
-            //Fill DropDown
-            sql_params = new Dictionary<string, object>
-            {
-                { "@accid", Session.AccID}
-            };
-            DataTable dt = new DataTable();
-            
-            dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" + 
-                                      " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
-                                      " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
-
-            StudentCourseDropdown.DisplayMember = "CourseName";
-            StudentCourseDropdown.ValueMember = "CourseID";
-            StudentCourseDropdown.DataSource = dt; 
-            StudentCourseDropdown.SelectedIndex = 0;
-        }
-
         private void StudentGradeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -48,7 +29,17 @@ namespace GUI
             this.Show();
         }
 
-        private void StudentCourseDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        private void ProfessorMain_Load(object sender, EventArgs e)
+        {
+            DataTable dt = SQL_legit.OnLoadData();
+
+            ProfessorCourseDropdown.DisplayMember = "CourseName";
+            ProfessorCourseDropdown.ValueMember = "CourseID";
+            ProfessorCourseDropdown.DataSource = dt;
+            ProfessorCourseDropdown.SelectedIndex = 0;
+        }
+
+        private void LoadCourseMaterials()
         {
             //Reset ListView
             CourseMaterialsListView.Columns.Clear(); // Clear previously added columns
@@ -59,7 +50,7 @@ namespace GUI
             sql_params = new Dictionary<string, object>
             {
                 { "@accid", Session.AccID},
-                { "@courseid", StudentCourseDropdown.SelectedValue}
+                { "@courseid", ProfessorCourseDropdown.SelectedValue}
             };
 
             DataTable dt = new DataTable();
@@ -82,7 +73,10 @@ namespace GUI
 
             CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             CourseMaterialsListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
 
+        private void LoadQuizzes()
+        {
             QuizzesListView.Columns.Clear(); // Clear previously added columns
             QuizzesListView.Items.Clear(); // Clear previously populated items
             QuizzesListView.View = View.Details;
@@ -91,7 +85,7 @@ namespace GUI
             sql_params = new Dictionary<string, object>
             {
                 { "@accid", Session.AccID},
-                { "@courseid", StudentCourseDropdown.SelectedValue}
+                { "@courseid", ProfessorCourseDropdown.SelectedValue}
             };
 
             DataTable qz_dt = new DataTable();
@@ -115,5 +109,12 @@ namespace GUI
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
+
+        private void ProfessorCourseDropdown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadCourseMaterials();
+            LoadQuizzes();
+        }
+
     }
 }

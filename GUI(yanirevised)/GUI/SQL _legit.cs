@@ -12,6 +12,7 @@ namespace GUI
         private static DataTable dataset;
         private static SqlCommand command;
         private static SqlDataAdapter adapter;
+        private static Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public static DataTable RunCommand(string sql_command, DataGridView data_display = null, Dictionary<string, object> opt_sql_params = null)
         {
@@ -56,6 +57,20 @@ namespace GUI
             adapter.Fill(dataset);
 
             return dataset.AsEnumerable().Select(x => x.Field<string>(column_name)).ToList();
+        }
+
+        public static DataTable OnLoadData()
+        {
+            sql_params = new Dictionary<string, object>()
+            {
+                { "@accid", Session.AccID}
+            };
+
+            dataset = RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" +
+                                      " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
+                                      " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
+
+            return dataset;
         }
     }
 }

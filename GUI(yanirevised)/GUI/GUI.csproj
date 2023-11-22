@@ -152,6 +152,12 @@
     <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\StudentGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentGrade.Designer.cs">
+      <DependentUpon>StudentGrade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\StudentMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,12 +169,6 @@
     </Compile>
     <Compile Include="Student\StudentGradeMenu.Designer.cs">
       <DependentUpon>StudentGradeMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Student\StudentMainMenu%28old%29.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Student\StudentMainMenu%28old%29.Designer.cs">
-      <DependentUpon>StudentMainMenu%28old%29.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\StudentOld.cs">
       <SubType>Form</SubType>
@@ -221,14 +221,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Student\StudentGrade.resx">
+      <DependentUpon>StudentGrade.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\StudentMain.resx">
       <DependentUpon>StudentMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\StudentGradeMenu.resx">
       <DependentUpon>StudentGradeMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Student\StudentMainMenu%28old%29.resx">
-      <DependentUpon>StudentMainMenu%28old%29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\StudentOld.resx">
       <DependentUpon>StudentOld.cs</DependentUpon>

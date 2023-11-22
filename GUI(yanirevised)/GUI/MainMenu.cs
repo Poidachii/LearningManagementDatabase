@@ -71,6 +71,16 @@ namespace GUI
             this.Show();
         }
 
+        private void DEBUG_PROF_CLICK(object sender, EventArgs e)
+        {
+            Session.AccID = "1";
+            Session.AccRole = "student";
+
+            this.Hide();
+            professor_form.ShowDialog();
+            this.Show();
+        }
+
         private void OneMCLButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://one.mcl.edu.ph");
