@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class StudentMainMenuModified
+    partial class StudentMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentMainMenuModified));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentMain));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.NavBarTop = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +40,9 @@
             this.SecondMainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.StudentCourseDropdown = new System.Windows.Forms.ComboBox();
+            this.CourseListLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.GradeLabel = new System.Windows.Forms.Label();
@@ -56,9 +59,6 @@
             this.MaterialName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MaterialLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.StudentCourseDropdown = new System.Windows.Forms.ComboBox();
-            this.CourseListLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.NavBarTop.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -66,11 +66,11 @@
             this.SecondMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.GradePanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.CourseMatsQuizPanel.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -235,6 +235,45 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(869, 127);
             this.tableLayoutPanel7.TabIndex = 5;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.AutoSize = true;
+            this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.Controls.Add(this.StudentCourseDropdown, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.CourseListLabel, 0, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 60);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(863, 64);
+            this.tableLayoutPanel6.TabIndex = 7;
+            // 
+            // StudentCourseDropdown
+            // 
+            this.StudentCourseDropdown.BackColor = System.Drawing.SystemColors.Window;
+            this.StudentCourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.StudentCourseDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StudentCourseDropdown.FormattingEnabled = true;
+            this.StudentCourseDropdown.Location = new System.Drawing.Point(3, 28);
+            this.StudentCourseDropdown.Name = "StudentCourseDropdown";
+            this.StudentCourseDropdown.Size = new System.Drawing.Size(857, 33);
+            this.StudentCourseDropdown.TabIndex = 21;
+            this.StudentCourseDropdown.SelectedIndexChanged += new System.EventHandler(this.StudentCourseDropdown_SelectedIndexChanged);
+            // 
+            // CourseListLabel
+            // 
+            this.CourseListLabel.AutoSize = true;
+            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.CourseListLabel.Location = new System.Drawing.Point(3, 0);
+            this.CourseListLabel.Name = "CourseListLabel";
+            this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
+            this.CourseListLabel.TabIndex = 20;
+            this.CourseListLabel.Text = "COURSE:";
             // 
             // tableLayoutPanel2
             // 
@@ -414,52 +453,14 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Course Materials :";
             // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.AutoSize = true;
-            this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel6.Controls.Add(this.StudentCourseDropdown, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.CourseListLabel, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 60);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(863, 64);
-            this.tableLayoutPanel6.TabIndex = 7;
-            // 
-            // StudentCourseDropdown
-            // 
-            this.StudentCourseDropdown.BackColor = System.Drawing.SystemColors.Window;
-            this.StudentCourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.StudentCourseDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentCourseDropdown.FormattingEnabled = true;
-            this.StudentCourseDropdown.Location = new System.Drawing.Point(3, 28);
-            this.StudentCourseDropdown.Name = "StudentCourseDropdown";
-            this.StudentCourseDropdown.Size = new System.Drawing.Size(857, 33);
-            this.StudentCourseDropdown.TabIndex = 21;
-            // 
-            // CourseListLabel
-            // 
-            this.CourseListLabel.AutoSize = true;
-            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.CourseListLabel.Location = new System.Drawing.Point(3, 0);
-            this.CourseListLabel.Name = "CourseListLabel";
-            this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
-            this.CourseListLabel.TabIndex = 20;
-            this.CourseListLabel.Text = "COURSE:";
-            // 
-            // StudentMainMenuModified
+            // StudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "StudentMainMenuModified";
+            this.Name = "StudentMain";
             this.Text = "StudentMainMenu";
             this.Load += new System.EventHandler(this.StudentMainMenu_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -475,6 +476,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.GradePanel.ResumeLayout(false);
             this.GradePanel.PerformLayout();
@@ -482,8 +485,6 @@
             this.HomePanel.PerformLayout();
             this.CourseMatsQuizPanel.ResumeLayout(false);
             this.CourseMatsQuizPanel.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -15,9 +15,9 @@ namespace GUI
 {
     public partial class MainMenu : Form
     {
-        private StudentMainMenu student_form = new StudentMainMenu();
+        private StudentMain student_form = new StudentMain();
         private AccountHandling admin_form = new AccountHandling();
-        private Professor professor_form = new Professor();
+        private ProfessorMain professor_form = new ProfessorMain();
         
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private DataTable dataset;

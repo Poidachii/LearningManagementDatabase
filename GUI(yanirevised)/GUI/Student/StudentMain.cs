@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class StudentMainMenuModified : Form
+    public partial class StudentMain : Form
     {
         private StudentGradeMenu studentgrademenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
-        public StudentMainMenuModified()
+        public StudentMain()
         {
             InitializeComponent();
         }
