@@ -642,7 +642,7 @@
             this.label17.TabIndex = 1;
             this.label17.Text = "Prelims";
             // 
-            // WS_Student
+            // Student
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -658,7 +658,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "WS_Student";
+            this.Name = "Student";
             this.Text = "WS_Student";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

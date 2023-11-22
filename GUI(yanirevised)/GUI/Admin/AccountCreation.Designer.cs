@@ -39,6 +39,8 @@ namespace GUI
             this.CreateButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.InputPanel = new System.Windows.Forms.Panel();
+            this.RoleLabel = new System.Windows.Forms.Label();
+            this.RoleDropDown = new System.Windows.Forms.ComboBox();
             this.InputPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +90,7 @@ namespace GUI
             // CreateButton
             // 
             this.CreateButton.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.CreateButton.Location = new System.Drawing.Point(100, 260);
+            this.CreateButton.Location = new System.Drawing.Point(120, 350);
             this.CreateButton.Margin = new System.Windows.Forms.Padding(4);
             this.CreateButton.Name = "CreateButton";
             this.CreateButton.Size = new System.Drawing.Size(250, 80);
@@ -100,7 +102,7 @@ namespace GUI
             // DeleteButton
             // 
             this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.DeleteButton.Location = new System.Drawing.Point(450, 260);
+            this.DeleteButton.Location = new System.Drawing.Point(430, 350);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(250, 80);
@@ -112,21 +114,49 @@ namespace GUI
             // InputPanel
             // 
             this.InputPanel.BackColor = System.Drawing.Color.MidnightBlue;
+            this.InputPanel.Controls.Add(this.RoleDropDown);
+            this.InputPanel.Controls.Add(this.RoleLabel);
             this.InputPanel.Controls.Add(this.UsernameField);
             this.InputPanel.Controls.Add(this.UserLabel);
             this.InputPanel.Controls.Add(this.PasswordField);
             this.InputPanel.Controls.Add(this.PassLabel);
             this.InputPanel.Location = new System.Drawing.Point(100, 30);
             this.InputPanel.Name = "InputPanel";
-            this.InputPanel.Size = new System.Drawing.Size(600, 200);
+            this.InputPanel.Size = new System.Drawing.Size(600, 298);
             this.InputPanel.TabIndex = 7;
+            // 
+            // RoleLabel
+            // 
+            this.RoleLabel.AutoSize = true;
+            this.RoleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
+            this.RoleLabel.ForeColor = System.Drawing.Color.White;
+            this.RoleLabel.Location = new System.Drawing.Point(26, 206);
+            this.RoleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RoleLabel.Name = "RoleLabel";
+            this.RoleLabel.Size = new System.Drawing.Size(81, 32);
+            this.RoleLabel.TabIndex = 6;
+            this.RoleLabel.Text = "Role:";
+            // 
+            // RoleDropDown
+            // 
+            this.RoleDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RoleDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.RoleDropDown.FormattingEnabled = true;
+            this.RoleDropDown.Items.AddRange(new object[] {
+            "Student",
+            "Professor",
+            "Admin"});
+            this.RoleDropDown.Location = new System.Drawing.Point(200, 206);
+            this.RoleDropDown.Name = "RoleDropDown";
+            this.RoleDropDown.Size = new System.Drawing.Size(350, 40);
+            this.RoleDropDown.TabIndex = 7;
             // 
             // AccountCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(782, 353);
+            this.ClientSize = new System.Drawing.Size(782, 524);
             this.Controls.Add(this.InputPanel);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.CreateButton);
@@ -147,5 +177,7 @@ namespace GUI
         private Button CreateButton;
         private Button DeleteButton;
         private Panel InputPanel;
+        private ComboBox RoleDropDown;
+        private System.Windows.Forms.Label RoleLabel;
     }
 }

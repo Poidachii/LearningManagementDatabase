@@ -43,18 +43,21 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.SignOutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.QuizzesListView = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CourseMaterialsListView = new System.Windows.Forms.ListView();
             this.MaterialName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.MaterialLink = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.HomePanel = new System.Windows.Forms.Panel();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.SignOutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentHomeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StudentGradeButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -245,6 +248,17 @@
             this.SignOutPanel.Size = new System.Drawing.Size(65, 67);
             this.SignOutPanel.TabIndex = 18;
             // 
+            // SignOutButton
+            // 
+            this.SignOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SignOutButton.BackgroundImage")));
+            this.SignOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SignOutButton.Location = new System.Drawing.Point(3, 3);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(59, 42);
+            this.SignOutButton.TabIndex = 4;
+            this.SignOutButton.UseVisualStyleBackColor = true;
+            // 
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.AutoSize = true;
@@ -316,6 +330,7 @@
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.QuizzesListView, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.label3, 1, 0);
             this.tableLayoutPanel8.Controls.Add(this.CourseMaterialsListView, 0, 1);
@@ -327,6 +342,28 @@
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel8.Size = new System.Drawing.Size(978, 561);
             this.tableLayoutPanel8.TabIndex = 18;
+            // 
+            // QuizzesListView
+            // 
+            this.QuizzesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.QuizzesListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuizzesListView.GridLines = true;
+            this.QuizzesListView.HideSelection = false;
+            this.QuizzesListView.Location = new System.Drawing.Point(492, 27);
+            this.QuizzesListView.Name = "QuizzesListView";
+            this.QuizzesListView.Size = new System.Drawing.Size(483, 531);
+            this.QuizzesListView.TabIndex = 4;
+            this.QuizzesListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Material Name";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "MaterialLink";
             // 
             // CourseMaterialsListView
             // 
@@ -376,17 +413,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(0, 0);
             this.panel1.TabIndex = 17;
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SignOutButton.BackgroundImage")));
-            this.SignOutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SignOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SignOutButton.Location = new System.Drawing.Point(3, 3);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(59, 42);
-            this.SignOutButton.TabIndex = 4;
-            this.SignOutButton.UseVisualStyleBackColor = true;
             // 
             // StudentMainMenu
             // 
@@ -453,5 +479,8 @@
         private System.Windows.Forms.ColumnHeader MaterialName;
         private System.Windows.Forms.ColumnHeader MaterialLink;
         private System.Windows.Forms.Button SignOutButton;
+        private System.Windows.Forms.ListView QuizzesListView;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }

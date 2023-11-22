@@ -8,7 +8,7 @@ namespace GUI
 {
     internal class SQL
     {
-        private static SqlConnection sql_connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename=C:\Users\Yani\Documents\LMSDataBase.mdf;Integrated Security = True; Connect Timeout = 30");
+        private static SqlConnection sql_connection = new SqlConnection(@"Data Source = .\SQLEXPRESS; Initial Catalog=LMS_DB;Integrated Security = True; Connect Timeout = 30");
         private static DataTable dataset;
         private static SqlCommand command;
         private static SqlDataAdapter adapter;

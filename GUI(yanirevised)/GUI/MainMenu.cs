@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI.Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,9 +16,9 @@ namespace GUI
     public partial class MainMenu : Form
     {
         private StudentMainMenu student_form = new StudentMainMenu();
-        //private Admin admin_form = new Admin();
-        //private Professor professor_form = new Professor();
-
+        private AccountHandling admin_form = new AccountHandling();
+        private Professor professor_form = new Professor();
+        
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private DataTable dataset;
         private DataRow query_result;
@@ -33,9 +34,10 @@ namespace GUI
             {
                 { "@name", UsernameLoginField.Text },
                 { "@pass", PasswordLoginField.Text }
+                
             };
 
-            dataset = SQL.RunCommand("SELECT Token FROM Accountlist WHERE Name = @name AND Password = @pass", opt_sql_params: sql_params);
+            dataset = SQL_legit.RunCommand("SELECT AccID, AccRole FROM Account WHERE AccName = @name AND AccPass = @pass", opt_sql_params: sql_params);
 
             if (dataset == null || dataset?.Rows.Count <= 0)
             {
@@ -44,20 +46,24 @@ namespace GUI
             }
 
             query_result = dataset.Rows[0];
-            string token_value = query_result[0].ToString();
+            string token_value = query_result[1].ToString();
+
+            Session.AccID = dataset.Rows[0][0].ToString();
+
 
             this.Hide();
-            /*
+
+            //should be encrypted
             if (token_value == "admin") { admin_form.ShowDialog(); }
             else if (token_value == "prof") { professor_form.ShowDialog(); }
             else { student_form.ShowDialog(); }
-            */
+
             this.Show();
         }
 
         private void DEBUG_TEST_CLICK(object sender, EventArgs e)
         {
-            Session.AccID = 1;
+            Session.AccID = "1";
             Session.AccRole = "student";
 
             this.Hide();

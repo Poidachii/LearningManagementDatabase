@@ -8,12 +8,12 @@ namespace GUI
 {
     public static class Session
     {
-        public static int AccID;
+        public static string AccID;
         public static string AccRole;
 
         public static void LogOut()
         {
-            AccID = 0;
+            AccID = "0";
             AccRole = null;
         }
     }
