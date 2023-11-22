@@ -8,46 +8,37 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI
 {
-    public partial class StudentMainMenu : Form
+    public partial class StudentMain : Form
     {
-        private StudentGradeMenu studentgrademenu;
-        private MainMenu menu;
+        private StudentGrade studentgrademenu;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
-        public StudentMainMenu()
+        public StudentMain()
         {
             InitializeComponent();
         }
 
         private void StudentMainMenu_Load(object sender, EventArgs e)
         {
-            //Fill DropDown
-            sql_params = new Dictionary<string, object>
-            {
-                { "@accid", Session.AccID}
-            };
-            DataTable dt = new DataTable();
-            
-            dt = SQL_legit.RunCommand("SELECT CourseAssignment.CourseID, Courses.CourseName" + " FROM CourseAssignment" + 
-                                      " INNER JOIN Courses ON Courses.CourseID = CourseAssignment.CourseID" +
-                                      " WHERE CourseAssignment.AccID = @accid;", opt_sql_params: sql_params);
+            DataTable dt = SQL_legit.OnLoadData();
 
             StudentCourseDropdown.DisplayMember = "CourseName";
             StudentCourseDropdown.ValueMember = "CourseID";
             StudentCourseDropdown.DataSource = dt; 
             StudentCourseDropdown.SelectedIndex = 0;
+
+            AccountLabel.Text = $"Welcome, {Session.AccName}!";
         }
 
         private void StudentGradeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentgrademenu = new StudentGradeMenu();
+            studentgrademenu = new StudentGrade();
             studentgrademenu.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void StudentCourseDropdown_SelectedIndexChanged(object sender, EventArgs e)
@@ -118,12 +109,15 @@ namespace GUI
             QuizzesListView.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
         private void SignOutButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            menu = new MainMenu();
-            menu.ShowDialog();
-            this.Show();
+            Session.LogOut();
+            this.Close();
         }
     }
 }
