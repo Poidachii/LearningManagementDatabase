@@ -29,60 +29,63 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.StudentCourseDropdown = new System.Windows.Forms.ComboBox();
-            this.CourseListLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel6
+            // tableLayoutPanel8
             // 
-            this.tableLayoutPanel6.AutoSize = true;
-            this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel6.Controls.Add(this.StudentCourseDropdown, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.CourseListLabel, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(345, 238);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(863, 55);
-            this.tableLayoutPanel6.TabIndex = 6;
+            this.tableLayoutPanel8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.tableLayoutPanel8.AutoSize = true;
+            this.tableLayoutPanel8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel8.ColumnCount = 2;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(97, 260);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(606, 35);
+            this.tableLayoutPanel8.TabIndex = 8;
             // 
-            // StudentCourseDropdown
+            // textBox3
             // 
-            this.StudentCourseDropdown.BackColor = System.Drawing.SystemColors.Window;
-            this.StudentCourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.StudentCourseDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentCourseDropdown.FormattingEnabled = true;
-            this.StudentCourseDropdown.Location = new System.Drawing.Point(3, 28);
-            this.StudentCourseDropdown.Name = "StudentCourseDropdown";
-            this.StudentCourseDropdown.Size = new System.Drawing.Size(857, 24);
-            this.StudentCourseDropdown.TabIndex = 21;
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(306, 3);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(297, 29);
+            this.textBox3.TabIndex = 26;
             // 
-            // CourseListLabel
+            // label5
             // 
-            this.CourseListLabel.AutoSize = true;
-            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.CourseListLabel.Location = new System.Drawing.Point(3, 0);
-            this.CourseListLabel.Name = "CourseListLabel";
-            this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
-            this.CourseListLabel.TabIndex = 20;
-            this.CourseListLabel.Text = "COURSE:";
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Control;
+            this.label5.Location = new System.Drawing.Point(109, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 24);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Choices:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel6);
+            this.Controls.Add(this.tableLayoutPanel8);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,8 +93,8 @@ namespace GUI
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.ComboBox StudentCourseDropdown;
-        private System.Windows.Forms.Label CourseListLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
