@@ -47,7 +47,10 @@ namespace GUI
             };
 
             SQL_legit.RunCommand("INSERT INTO CourseMaterials " +
-                                "VALUES(@courseid, @materialname, @materiallink)");
+                                "VALUES(@courseid, @materialname, @materiallink)", opt_sql_params: sql_params);
+
+            MessageBox.Show("Successfully added the Course Materials.", "Course Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.DialogResult = DialogResult.OK;
         }
 
         private bool CheckMaterialLinkExists(string MaterialLink)

@@ -57,7 +57,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.RemoveCourseMaterialButton = new System.Windows.Forms.Button();
             this.EditCourseMaterialButton = new System.Windows.Forms.Button();
             this.AddCourseMaterialButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -132,7 +132,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 26);
             this.label1.TabIndex = 1;
-            this.label1.Text = "PROFFESOR - MENU";
+            this.label1.Text = "PROFESSOR - MENU";
             // 
             // tableLayoutPanel5
             // 
@@ -441,7 +441,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel8.Controls.Add(this.button4, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.RemoveCourseMaterialButton, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.EditCourseMaterialButton, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.AddCourseMaterialButton, 0, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(58, 3);
@@ -451,17 +451,18 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(374, 29);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
-            // button4
+            // RemoveCourseMaterialButton
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.AutoSize = true;
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.Location = new System.Drawing.Point(238, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Remove Course Material";
-            this.button4.UseVisualStyleBackColor = true;
+            this.RemoveCourseMaterialButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RemoveCourseMaterialButton.AutoSize = true;
+            this.RemoveCourseMaterialButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.RemoveCourseMaterialButton.Location = new System.Drawing.Point(238, 3);
+            this.RemoveCourseMaterialButton.Name = "RemoveCourseMaterialButton";
+            this.RemoveCourseMaterialButton.Size = new System.Drawing.Size(133, 23);
+            this.RemoveCourseMaterialButton.TabIndex = 2;
+            this.RemoveCourseMaterialButton.Text = "Remove Course Material";
+            this.RemoveCourseMaterialButton.UseVisualStyleBackColor = true;
+            this.RemoveCourseMaterialButton.Click += new System.EventHandler(this.RemoveCourseMaterialButton_Click);
             // 
             // EditCourseMaterialButton
             // 
@@ -664,7 +665,7 @@
         private System.Windows.Forms.ColumnHeader MaterialLink;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button RemoveCourseMaterialButton;
         private System.Windows.Forms.Button EditCourseMaterialButton;
         private System.Windows.Forms.Button AddCourseMaterialButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;

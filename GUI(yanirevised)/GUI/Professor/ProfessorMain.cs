@@ -137,7 +137,12 @@ namespace GUI
         {
             AddCourseMaterial = new AddCourseMaterial();
             AddCourseMaterial.SetCourseID(ProfessorCourseDropdown.SelectedValue.ToString());
-            AddCourseMaterial.ShowDialog();
+
+            if (AddCourseMaterial.ShowDialog() == DialogResult.OK)
+            {
+                LoadCourseMaterials();
+                LoadQuizzes();
+            }
         }
 
         private void EditCourseMaterialButton_Click(object sender, EventArgs e)
@@ -149,7 +154,40 @@ namespace GUI
 
             EditCourseMaterial = new EditCourseMaterial();
             EditCourseMaterial.SetMaterialID(CourseMaterialsListView.SelectedItems[0].Tag.ToString());
-            EditCourseMaterial.ShowDialog();
+
+            if(EditCourseMaterial.ShowDialog() == DialogResult.OK)
+            {
+                LoadCourseMaterials();
+                LoadQuizzes();
+            }
+        }
+
+        private void RemoveCourseMaterialButton_Click(object sender, EventArgs e)
+        {
+            if (CourseMaterialsListView.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Do you want to delete this Course Material?", "Confirmation", MessageBoxButtons.YesNoCancel);
+
+            if(result == DialogResult.Yes)
+            {
+                string MaterialID = CourseMaterialsListView.SelectedItems[0].Tag.ToString();
+
+                sql_params = new Dictionary<string, object>
+                {
+                    { "@materialid", MaterialID},
+                };
+
+                DataTable dt = SQL_legit.RunCommand("DELETE FROM CourseMaterials " +
+                                                    "WHERE MaterialId=@materialid", opt_sql_params: sql_params);
+
+                MessageBox.Show("Successfully deleted the Course Material.", "Course Material Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            LoadCourseMaterials();
+            LoadQuizzes();
         }
     }
 }

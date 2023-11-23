@@ -42,19 +42,27 @@ namespace GUI
             MaterialLinkTextBox.Text = MaterialLink;
         }
 
-        private void CoursePopupUpdateCourseButton_Click(object sender, EventArgs e)
+        private void EditCourseMaterialButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(MaterialNameTextBox.Text) || string.IsNullOrWhiteSpace(MaterialLinkTextBox.Text))
+            {
+                MessageBox.Show("Please add a Course Material(Name or Link)", "No Course Material", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-        }
+            sql_params = new Dictionary<string, object>
+            {
+                { "@materialid", MaterialID},
+                { "@materialname", MaterialNameTextBox.Text},
+                { "@materiallink", MaterialLinkTextBox.Text}
+            };
 
-        private void CoursePopupAddCourseButton_Click(object sender, EventArgs e)
-        {
+            SQL_legit.RunCommand("UPDATE CourseMaterials " +
+                                "SET MaterialName=@materialname, MaterialLink=@materiallink " +
+                                "WHERE MaterialID=@materialid", opt_sql_params: sql_params);
 
-        }
-
-        private void CoursePopupAddPicture1_Click(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Successfully changed the Course Materials.", "Course Edited", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.DialogResult = DialogResult.OK;
         }
     }
 }
