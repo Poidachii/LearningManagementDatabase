@@ -14,6 +14,8 @@ namespace GUI
     public partial class ProfessorMain : Form
     {
         private ProfGrade studentgrademenu;
+        private AddCourseMaterial AddCourseMaterial;
+        private EditCourseMaterial EditCourseMaterial;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public ProfessorMain()
@@ -127,6 +129,19 @@ namespace GUI
         {
             Session.LogOut();
             this.Close();
+        }
+
+        private void AddCourseMaterialButton_Click(object sender, EventArgs e)
+        {
+            AddCourseMaterial = new AddCourseMaterial();
+            AddCourseMaterial.SetCourseID(ProfessorCourseDropdown.SelectedValue.ToString());
+            AddCourseMaterial.ShowDialog();
+        }
+
+        private void EditCourseMaterialButton_Click(object sender, EventArgs e)
+        {
+            EditCourseMaterial = new EditCourseMaterial();
+            EditCourseMaterial.ShowDialog();
         }
     }
 }

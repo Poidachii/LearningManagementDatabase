@@ -39,9 +39,6 @@
             this.AccountLabel = new System.Windows.Forms.Label();
             this.SecondMainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.ProfessorCourseDropdown = new System.Windows.Forms.ComboBox();
-            this.CourseListLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.GradeLabel = new System.Windows.Forms.Label();
@@ -49,6 +46,9 @@
             this.HomePanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.HomeButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.ProfessorCourseDropdown = new System.Windows.Forms.ComboBox();
+            this.CourseListLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CourseMatsQuizPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -62,8 +62,8 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.EditCourseMaterialButton = new System.Windows.Forms.Button();
+            this.AddCourseMaterialButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -74,10 +74,10 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.SecondMainPanel.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.GradePanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.CourseMatsQuizPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -238,45 +238,6 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(869, 127);
             this.tableLayoutPanel7.TabIndex = 6;
             // 
-            // tableLayoutPanel6
-            // 
-            this.tableLayoutPanel6.AutoSize = true;
-            this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel6.ColumnCount = 1;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel6.Controls.Add(this.ProfessorCourseDropdown, 0, 1);
-            this.tableLayoutPanel6.Controls.Add(this.CourseListLabel, 0, 0);
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 60);
-            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-            this.tableLayoutPanel6.RowCount = 2;
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(863, 64);
-            this.tableLayoutPanel6.TabIndex = 7;
-            // 
-            // ProfessorCourseDropdown
-            // 
-            this.ProfessorCourseDropdown.BackColor = System.Drawing.SystemColors.Window;
-            this.ProfessorCourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ProfessorCourseDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProfessorCourseDropdown.FormattingEnabled = true;
-            this.ProfessorCourseDropdown.Location = new System.Drawing.Point(3, 28);
-            this.ProfessorCourseDropdown.Name = "ProfessorCourseDropdown";
-            this.ProfessorCourseDropdown.Size = new System.Drawing.Size(857, 33);
-            this.ProfessorCourseDropdown.TabIndex = 21;
-            this.ProfessorCourseDropdown.SelectedIndexChanged += new System.EventHandler(this.ProfessorCourseDropdown_SelectedIndexChanged);
-            // 
-            // CourseListLabel
-            // 
-            this.CourseListLabel.AutoSize = true;
-            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.CourseListLabel.Location = new System.Drawing.Point(3, 0);
-            this.CourseListLabel.Name = "CourseListLabel";
-            this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
-            this.CourseListLabel.TabIndex = 20;
-            this.CourseListLabel.Text = "COURSE:";
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.AutoSize = true;
@@ -367,6 +328,45 @@
             this.HomeButton.TabIndex = 3;
             this.HomeButton.UseVisualStyleBackColor = true;
             this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.AutoSize = true;
+            this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel6.Controls.Add(this.ProfessorCourseDropdown, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.CourseListLabel, 0, 0);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 60);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 2;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(863, 64);
+            this.tableLayoutPanel6.TabIndex = 7;
+            // 
+            // ProfessorCourseDropdown
+            // 
+            this.ProfessorCourseDropdown.BackColor = System.Drawing.SystemColors.Window;
+            this.ProfessorCourseDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ProfessorCourseDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProfessorCourseDropdown.FormattingEnabled = true;
+            this.ProfessorCourseDropdown.Location = new System.Drawing.Point(3, 28);
+            this.ProfessorCourseDropdown.Name = "ProfessorCourseDropdown";
+            this.ProfessorCourseDropdown.Size = new System.Drawing.Size(857, 33);
+            this.ProfessorCourseDropdown.TabIndex = 21;
+            this.ProfessorCourseDropdown.SelectedIndexChanged += new System.EventHandler(this.ProfessorCourseDropdown_SelectedIndexChanged);
+            // 
+            // CourseListLabel
+            // 
+            this.CourseListLabel.AutoSize = true;
+            this.CourseListLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseListLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.CourseListLabel.Location = new System.Drawing.Point(3, 0);
+            this.CourseListLabel.Name = "CourseListLabel";
+            this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
+            this.CourseListLabel.TabIndex = 20;
+            this.CourseListLabel.Text = "COURSE:";
             // 
             // pictureBox1
             // 
@@ -496,8 +496,8 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel8.Controls.Add(this.button4, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button5, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button6, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.EditCourseMaterialButton, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.AddCourseMaterialButton, 0, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(58, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
@@ -517,29 +517,31 @@
             this.button4.Text = "Remove Course Material";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // EditCourseMaterialButton
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.AutoSize = true;
-            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button5.Location = new System.Drawing.Point(121, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 23);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "Edit Course Material";
-            this.button5.UseVisualStyleBackColor = true;
+            this.EditCourseMaterialButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EditCourseMaterialButton.AutoSize = true;
+            this.EditCourseMaterialButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.EditCourseMaterialButton.Location = new System.Drawing.Point(121, 3);
+            this.EditCourseMaterialButton.Name = "EditCourseMaterialButton";
+            this.EditCourseMaterialButton.Size = new System.Drawing.Size(111, 23);
+            this.EditCourseMaterialButton.TabIndex = 1;
+            this.EditCourseMaterialButton.Text = "Edit Course Material";
+            this.EditCourseMaterialButton.UseVisualStyleBackColor = true;
+            this.EditCourseMaterialButton.Click += new System.EventHandler(this.EditCourseMaterialButton_Click);
             // 
-            // button6
+            // AddCourseMaterialButton
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.AutoSize = true;
-            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button6.Location = new System.Drawing.Point(3, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(112, 23);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Add Course Material";
-            this.button6.UseVisualStyleBackColor = true;
+            this.AddCourseMaterialButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddCourseMaterialButton.AutoSize = true;
+            this.AddCourseMaterialButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AddCourseMaterialButton.Location = new System.Drawing.Point(3, 3);
+            this.AddCourseMaterialButton.Name = "AddCourseMaterialButton";
+            this.AddCourseMaterialButton.Size = new System.Drawing.Size(112, 23);
+            this.AddCourseMaterialButton.TabIndex = 0;
+            this.AddCourseMaterialButton.Text = "Add Course Material";
+            this.AddCourseMaterialButton.UseVisualStyleBackColor = true;
+            this.AddCourseMaterialButton.Click += new System.EventHandler(this.AddCourseMaterialButton_Click);
             // 
             // tableLayoutPanel9
             // 
@@ -618,13 +620,13 @@
             this.SecondMainPanel.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            this.tableLayoutPanel6.ResumeLayout(false);
-            this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.GradePanel.ResumeLayout(false);
             this.GradePanel.PerformLayout();
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.CourseMatsQuizPanel.ResumeLayout(false);
             this.CourseMatsQuizPanel.PerformLayout();
@@ -663,8 +665,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button EditCourseMaterialButton;
+        private System.Windows.Forms.Button AddCourseMaterialButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

@@ -104,6 +104,12 @@
     <Compile Include="CoursePopupAdd.Designer.cs">
       <DependentUpon>CoursePopupAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor\EditCourseMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor\EditCourseMaterial.Designer.cs">
+      <DependentUpon>EditCourseMaterial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Professor\AddCourseMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CoursePopupAdd.resx">
       <DependentUpon>CoursePopupAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor\EditCourseMaterial.resx">
+      <DependentUpon>EditCourseMaterial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\AddCourseMaterial.resx">
       <DependentUpon>AddCourseMaterial.cs</DependentUpon>

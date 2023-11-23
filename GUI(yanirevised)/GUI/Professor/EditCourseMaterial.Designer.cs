@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class AddCourseMaterial
+    partial class EditCourseMaterial
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCourseMaterial));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditCourseMaterial));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.CoursePopupAddPicture1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,7 +37,7 @@
             this.MaterialNameTextBox = new System.Windows.Forms.TextBox();
             this.MaterialLinkTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.AddCourseMaterialButton = new System.Windows.Forms.Button();
+            this.CoursePopupAddCourseButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoursePopupAddPicture1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.Controls.Add(this.CoursePopupAddPicture1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.AddCourseMaterialButton, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.CoursePopupAddCourseButton, 0, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -83,9 +83,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(90, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 33);
+            this.label1.Size = new System.Drawing.Size(279, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Add Course Material";
+            this.label1.Text = "Edit Course Material";
             // 
             // tableLayoutPanel2
             // 
@@ -156,21 +156,20 @@
             this.label2.Text = "Material Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // AddCourseMaterialButton
+            // CoursePopupAddCourseButton
             // 
-            this.AddCourseMaterialButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.AddCourseMaterialButton.AutoSize = true;
-            this.AddCourseMaterialButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AddCourseMaterialButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.AddCourseMaterialButton.Location = new System.Drawing.Point(134, 275);
-            this.AddCourseMaterialButton.Name = "AddCourseMaterialButton";
-            this.AddCourseMaterialButton.Size = new System.Drawing.Size(191, 34);
-            this.AddCourseMaterialButton.TabIndex = 7;
-            this.AddCourseMaterialButton.Text = "Add Course Material";
-            this.AddCourseMaterialButton.UseVisualStyleBackColor = true;
-            this.AddCourseMaterialButton.Click += new System.EventHandler(this.AddCourseMaterialButton_Click);
+            this.CoursePopupAddCourseButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.CoursePopupAddCourseButton.AutoSize = true;
+            this.CoursePopupAddCourseButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.CoursePopupAddCourseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.CoursePopupAddCourseButton.Location = new System.Drawing.Point(136, 275);
+            this.CoursePopupAddCourseButton.Name = "CoursePopupAddCourseButton";
+            this.CoursePopupAddCourseButton.Size = new System.Drawing.Size(188, 34);
+            this.CoursePopupAddCourseButton.TabIndex = 7;
+            this.CoursePopupAddCourseButton.Text = "Edit Course Material";
+            this.CoursePopupAddCourseButton.UseVisualStyleBackColor = true;
             // 
-            // AddCourseMaterial
+            // EditCourseMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,7 +180,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AddCourseMaterial";
+            this.Name = "EditCourseMaterial";
             this.Text = "Add Course Material";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -202,6 +201,6 @@
         private System.Windows.Forms.TextBox MaterialNameTextBox;
         private System.Windows.Forms.TextBox MaterialLinkTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button AddCourseMaterialButton;
+        private System.Windows.Forms.Button CoursePopupAddCourseButton;
     }
 }
