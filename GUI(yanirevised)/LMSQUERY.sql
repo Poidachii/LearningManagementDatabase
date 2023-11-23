@@ -21,6 +21,7 @@ CREATE TABLE CourseAssignment(
 );
 
 CREATE TABLE CourseMaterials (
+	MaterialID INT IDENTITY(1,1) PRIMARY KEY,
 	CourseID INT NOT NULL FOREIGN KEY REFERENCES Courses(CourseID),
 	MaterialName NVARCHAR(MAX),
 	MaterialLink NVARCHAR(MAX)
