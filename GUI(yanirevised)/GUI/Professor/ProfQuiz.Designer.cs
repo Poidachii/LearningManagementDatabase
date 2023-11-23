@@ -97,10 +97,9 @@ namespace GUI.Professor
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 185F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(984, 705);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -405,7 +404,8 @@ namespace GUI.Professor
             this.tableLayoutPanel8.Controls.Add(this.textBox4, 1, 2);
             this.tableLayoutPanel8.Controls.Add(this.textBox5, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.label5, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(189, 361);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(189, 349);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 4;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -475,7 +475,7 @@ namespace GUI.Professor
             this.tableLayoutPanel9.Controls.Add(this.UpdateButton, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.RemoveButton, 0, 0);
             this.tableLayoutPanel9.Controls.Add(this.AddButton, 0, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(283, 624);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(283, 618);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -531,7 +531,8 @@ namespace GUI.Professor
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.textBox6, 1, 0);
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(189, 535);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(189, 522);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
