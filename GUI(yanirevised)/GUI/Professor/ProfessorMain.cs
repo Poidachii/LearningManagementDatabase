@@ -59,18 +59,20 @@ namespace GUI
 
             DataTable dt = new DataTable();
 
-            dt = SQL_legit.RunCommand("SELECT MaterialName, MaterialLink " +
+            dt = SQL_legit.RunCommand("SELECT MaterialName, MaterialLink, MaterialID " +
                                     "FROM CourseAssignment " +
                                     "INNER JOIN CourseMaterials ON CourseMaterials.CourseID=CourseAssignment.CourseID " +
                                     "WHERE AccID = @accid AND CourseAssignment.CourseID=@courseid;", opt_sql_params: sql_params);
 
-            CourseMaterialsListView.Columns.Add("MaterialName");
-            CourseMaterialsListView.Columns.Add("MaterialLink");
+            CourseMaterialsListView.Columns.Add("Material Name");
+            CourseMaterialsListView.Columns.Add("Material Link");
 
             foreach (DataRow row in dt.Rows)
             {
                 //Add Item to ListView.
                 ListViewItem item = new ListViewItem(row["MaterialName"].ToString());
+                item.Tag = row["MaterialID"].ToString();
+
                 item.SubItems.Add(row["MaterialLink"].ToString());
                 CourseMaterialsListView.Items.Add(item);
             }
@@ -99,8 +101,8 @@ namespace GUI
                                     "INNER JOIN CourseAssignment ON Quiz.CourseID=CourseAssignment.CourseID " +
                                     "WHERE AccID = @accid AND CourseAssignment.CourseID=@courseid;", opt_sql_params: sql_params);
 
-            QuizzesListView.Columns.Add("QuizName");
-            QuizzesListView.Columns.Add("QuizID");
+            QuizzesListView.Columns.Add("Quiz Name");
+            QuizzesListView.Columns.Add("Quiz ID");
 
             foreach (DataRow row in qz_dt.Rows)
             {
@@ -140,7 +142,13 @@ namespace GUI
 
         private void EditCourseMaterialButton_Click(object sender, EventArgs e)
         {
+            if (CourseMaterialsListView.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
             EditCourseMaterial = new EditCourseMaterial();
+            EditCourseMaterial.SetMaterialID(CourseMaterialsListView.SelectedItems[0].Tag.ToString());
             EditCourseMaterial.ShowDialog();
         }
     }

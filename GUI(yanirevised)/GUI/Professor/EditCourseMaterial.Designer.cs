@@ -182,6 +182,7 @@
             this.MinimizeBox = false;
             this.Name = "EditCourseMaterial";
             this.Text = "Add Course Material";
+            this.Load += new System.EventHandler(this.EditCourseMaterial_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoursePopupAddPicture1)).EndInit();
