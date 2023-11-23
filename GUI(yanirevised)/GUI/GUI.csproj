@@ -104,6 +104,12 @@
     <Compile Include="CoursePopupAdd.Designer.cs">
       <DependentUpon>CoursePopupAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor\EditQuizScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor\EditQuizScore.Designer.cs">
+      <DependentUpon>EditQuizScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Professor\EditCourseMaterial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,12 +153,6 @@
     <Compile Include="Professor\ProfessorQuiz.Designer.cs">
       <DependentUpon>ProfessorQuiz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Professor\ProfGrade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Professor\ProfGrade.Designer.cs">
-      <DependentUpon>ProfGrade.cs</DependentUpon>
-    </Compile>
     <Compile Include="Professor\ProfQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +164,12 @@
     </Compile>
     <Compile Include="Professor\ProfessorMain.Designer.cs">
       <DependentUpon>ProfessorMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Professor\ProfGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Professor\ProfGrade.Designer.cs">
+      <DependentUpon>ProfGrade.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="SQL _legit.cs" />
@@ -212,6 +218,9 @@
     <EmbeddedResource Include="CoursePopupAdd.resx">
       <DependentUpon>CoursePopupAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Professor\EditQuizScore.resx">
+      <DependentUpon>EditQuizScore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Professor\EditCourseMaterial.resx">
       <DependentUpon>EditCourseMaterial.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,14 +239,14 @@
     <EmbeddedResource Include="Professor\ProfessorQuiz.resx">
       <DependentUpon>ProfessorQuiz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Professor\ProfGrade.resx">
-      <DependentUpon>ProfGrade.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Professor\ProfQuiz.resx">
       <DependentUpon>ProfQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\ProfessorMain.resx">
       <DependentUpon>ProfessorMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Professor\ProfGrade.resx">
+      <DependentUpon>ProfGrade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

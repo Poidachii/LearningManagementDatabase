@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class EditCourseMaterial
+    partial class UpdateQuizScore
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditCourseMaterial));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateQuizScore));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.CoursePopupAddPicture1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.QuizNameLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.MaterialNameTextBox = new System.Windows.Forms.TextBox();
-            this.MaterialLinkTextBox = new System.Windows.Forms.TextBox();
+            this.ScoreTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.EditCourseMaterialButton = new System.Windows.Forms.Button();
+            this.EditQuizButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoursePopupAddPicture1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
@@ -50,7 +50,7 @@
             this.tableLayoutPanel1.Controls.Add(this.CoursePopupAddPicture1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.EditCourseMaterialButton, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.EditQuizButton, 0, 4);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -81,11 +81,11 @@
             this.label1.BackColor = System.Drawing.Color.RoyalBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(90, 56);
+            this.label1.Location = new System.Drawing.Point(121, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(279, 33);
+            this.label1.Size = new System.Drawing.Size(218, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Edit Course Material";
+            this.label1.Text = "Edit Quiz Score";
             // 
             // tableLayoutPanel2
             // 
@@ -95,9 +95,9 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel2.Controls.Add(this.QuizNameLabel, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.MaterialNameTextBox, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.MaterialLinkTextBox, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.ScoreTextBox, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(5, 145);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
@@ -107,6 +107,21 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(450, 70);
             this.tableLayoutPanel2.TabIndex = 5;
+            // 
+            // QuizNameLabel
+            // 
+            this.QuizNameLabel.AutoSize = true;
+            this.QuizNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.QuizNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuizNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuizNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.QuizNameLabel.Location = new System.Drawing.Point(153, 3);
+            this.QuizNameLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.QuizNameLabel.Name = "QuizNameLabel";
+            this.QuizNameLabel.Size = new System.Drawing.Size(294, 29);
+            this.QuizNameLabel.TabIndex = 9;
+            this.QuizNameLabel.Text = "[InsertQuizNameHere]";
+            this.QuizNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -120,26 +135,18 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 29);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Material Link:";
+            this.label3.Text = "Quiz Score:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MaterialNameTextBox
+            // ScoreTextBox
             // 
-            this.MaterialNameTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.MaterialNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.MaterialNameTextBox.Location = new System.Drawing.Point(153, 3);
-            this.MaterialNameTextBox.Name = "MaterialNameTextBox";
-            this.MaterialNameTextBox.Size = new System.Drawing.Size(294, 29);
-            this.MaterialNameTextBox.TabIndex = 7;
-            // 
-            // MaterialLinkTextBox
-            // 
-            this.MaterialLinkTextBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MaterialLinkTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.MaterialLinkTextBox.Location = new System.Drawing.Point(153, 38);
-            this.MaterialLinkTextBox.Name = "MaterialLinkTextBox";
-            this.MaterialLinkTextBox.Size = new System.Drawing.Size(294, 29);
-            this.MaterialLinkTextBox.TabIndex = 8;
+            this.ScoreTextBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ScoreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.ScoreTextBox.Location = new System.Drawing.Point(153, 38);
+            this.ScoreTextBox.Name = "ScoreTextBox";
+            this.ScoreTextBox.Size = new System.Drawing.Size(294, 29);
+            this.ScoreTextBox.TabIndex = 8;
+            this.ScoreTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -153,24 +160,24 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 29);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Material Name:";
+            this.label2.Text = "Quiz Name:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EditCourseMaterialButton
+            // EditQuizButton
             // 
-            this.EditCourseMaterialButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.EditCourseMaterialButton.AutoSize = true;
-            this.EditCourseMaterialButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.EditCourseMaterialButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.EditCourseMaterialButton.Location = new System.Drawing.Point(136, 275);
-            this.EditCourseMaterialButton.Name = "EditCourseMaterialButton";
-            this.EditCourseMaterialButton.Size = new System.Drawing.Size(188, 34);
-            this.EditCourseMaterialButton.TabIndex = 7;
-            this.EditCourseMaterialButton.Text = "Edit Course Material";
-            this.EditCourseMaterialButton.UseVisualStyleBackColor = true;
-            this.EditCourseMaterialButton.Click += new System.EventHandler(this.EditCourseMaterialButton_Click);
+            this.EditQuizButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.EditQuizButton.AutoSize = true;
+            this.EditQuizButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.EditQuizButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.EditQuizButton.Location = new System.Drawing.Point(154, 275);
+            this.EditQuizButton.Name = "EditQuizButton";
+            this.EditQuizButton.Size = new System.Drawing.Size(151, 34);
+            this.EditQuizButton.TabIndex = 7;
+            this.EditQuizButton.Text = "Edit Quiz Score";
+            this.EditQuizButton.UseVisualStyleBackColor = true;
+            this.EditQuizButton.Click += new System.EventHandler(this.EditQuizButton_Click);
             // 
-            // EditCourseMaterial
+            // UpdateQuizScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,9 +188,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "EditCourseMaterial";
-            this.Text = "Add Course Material";
-            this.Load += new System.EventHandler(this.EditCourseMaterial_Load);
+            this.Name = "UpdateQuizScore";
+            this.Text = "Edit Quiz Score";
+            this.Load += new System.EventHandler(this.UpdateQuizScore_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoursePopupAddPicture1)).EndInit();
@@ -200,9 +207,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox MaterialNameTextBox;
-        private System.Windows.Forms.TextBox MaterialLinkTextBox;
-        private System.Windows.Forms.Button EditCourseMaterialButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button EditQuizButton;
+        private System.Windows.Forms.Label QuizNameLabel;
+        private System.Windows.Forms.TextBox ScoreTextBox;
     }
 }

@@ -35,17 +35,21 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button12 = new System.Windows.Forms.Button();
             this.AccountLabel = new System.Windows.Forms.Label();
             this.SecondMainPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.GradePanel = new System.Windows.Forms.Panel();
             this.GradeLabel = new System.Windows.Forms.Label();
+            this.GradeButton = new System.Windows.Forms.Button();
             this.HomePanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.ProfessorCourseDropdown = new System.Windows.Forms.ComboBox();
             this.CourseListLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CourseMatsQuizPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.QuizzesListView = new System.Windows.Forms.ListView();
@@ -64,10 +68,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.GradeButton = new System.Windows.Forms.Button();
-            this.HomeButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.NavBarTop.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -78,11 +78,11 @@
             this.GradePanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.CourseMatsQuizPanel.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -181,6 +181,19 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(133, 42);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
+            // button12
+            // 
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button12.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(50, 38);
+            this.button12.TabIndex = 5;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // AccountLabel
             // 
             this.AccountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -264,6 +277,21 @@
             this.GradeLabel.TabIndex = 10;
             this.GradeLabel.Text = "GRADES";
             // 
+            // GradeButton
+            // 
+            this.GradeButton.BackColor = System.Drawing.Color.RoyalBlue;
+            this.GradeButton.BackgroundImage = global::GUI.Properties.Resources._6343947;
+            this.GradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.GradeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GradeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GradeButton.Location = new System.Drawing.Point(0, 0);
+            this.GradeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GradeButton.Name = "GradeButton";
+            this.GradeButton.Size = new System.Drawing.Size(200, 45);
+            this.GradeButton.TabIndex = 11;
+            this.GradeButton.UseVisualStyleBackColor = false;
+            this.GradeButton.Click += new System.EventHandler(this.GradeButton_Click);
+            // 
             // HomePanel
             // 
             this.HomePanel.BackColor = System.Drawing.Color.RoyalBlue;
@@ -286,6 +314,20 @@
             this.label2.Size = new System.Drawing.Size(44, 15);
             this.label2.TabIndex = 12;
             this.label2.Text = "HOME";
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
+            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Location = new System.Drawing.Point(0, 0);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(200, 45);
+            this.HomeButton.TabIndex = 3;
+            this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -325,6 +367,18 @@
             this.CourseListLabel.Size = new System.Drawing.Size(107, 25);
             this.CourseListLabel.TabIndex = 20;
             this.CourseListLabel.Text = "COURSE:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // CourseMatsQuizPanel
             // 
@@ -545,60 +599,6 @@
             this.button3.Text = "Add Quiz";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button12
-            // 
-            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button12.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(2, 2);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(50, 38);
-            this.button12.TabIndex = 5;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // GradeButton
-            // 
-            this.GradeButton.BackColor = System.Drawing.Color.RoyalBlue;
-            this.GradeButton.BackgroundImage = global::GUI.Properties.Resources._6343947;
-            this.GradeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.GradeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.GradeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GradeButton.Location = new System.Drawing.Point(0, 0);
-            this.GradeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.GradeButton.Name = "GradeButton";
-            this.GradeButton.Size = new System.Drawing.Size(200, 45);
-            this.GradeButton.TabIndex = 11;
-            this.GradeButton.UseVisualStyleBackColor = false;
-            this.GradeButton.Click += new System.EventHandler(this.GradeButton_Click);
-            // 
-            // HomeButton
-            // 
-            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
-            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeButton.Location = new System.Drawing.Point(0, 0);
-            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
-            this.HomeButton.Name = "HomeButton";
-            this.HomeButton.Size = new System.Drawing.Size(200, 45);
-            this.HomeButton.TabIndex = 3;
-            this.HomeButton.UseVisualStyleBackColor = true;
-            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // ProfessorMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -607,7 +607,7 @@
             this.ClientSize = new System.Drawing.Size(1008, 729);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ProfessorMain";
-            this.Text = "StudentMainMenu";
+            this.Text = "ProfessorMainMenu";
             this.Load += new System.EventHandler(this.ProfessorMain_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -628,6 +628,7 @@
             this.HomePanel.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.CourseMatsQuizPanel.ResumeLayout(false);
             this.CourseMatsQuizPanel.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -636,7 +637,6 @@
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel9.ResumeLayout(false);
             this.tableLayoutPanel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class ProfessorMain : Form
     {
-        private ProfGrade studentgrademenu;
+        private ProfGrade ProfGradeNew;
         private AddCourseMaterial AddCourseMaterial;
         private EditCourseMaterial EditCourseMaterial;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
@@ -26,8 +26,8 @@ namespace GUI
         private void GradeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            studentgrademenu = new ProfGrade();
-            studentgrademenu.ShowDialog();
+            ProfGradeNew = new ProfGrade();
+            ProfGradeNew.ShowDialog();
             this.Close();
         }
 
