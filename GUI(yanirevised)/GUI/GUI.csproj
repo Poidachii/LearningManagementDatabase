@@ -62,11 +62,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Admin.cs">
+    <Compile Include="Admin\AdminMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="Admin\AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminCourseHandling.cs">
       <SubType>Form</SubType>
@@ -205,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AccountHandling.resx">
       <DependentUpon>AccountHandling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminCourseHandling.resx">
       <DependentUpon>AdminCourseHandling.cs</DependentUpon>
