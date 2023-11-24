@@ -62,7 +62,6 @@ namespace GUI
                 MessageBox.Show("Invalid login credentials. Please try again.");
             }
         }
-
         private void OneMCLButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://one.mcl.edu.ph");
@@ -76,6 +75,12 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://mcl.blackboard.com/ultra/catalog");
+        }
+
+        private void DEBUG_STUDENT_CLICK(object sender, EventArgs e)
+        {
+            Session.AccID = "1";
+            student_form.ShowDialog();
         }
     }
 }

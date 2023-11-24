@@ -125,8 +125,14 @@ namespace GUI
 
         private void QuizzesListView_DoubleClick(object sender, EventArgs e)
         {
-            string QuizID = QuizzesListView.SelectedItems[0].Tag.ToString();
-            StudentQuiz.SetQuizID(QuizID);
+            this.Hide();
+            StudentQuiz = new StudentQuiz();
+            StudentQuiz.SetQuizID(QuizzesListView.SelectedItems[0].Tag.ToString());
+            StudentQuiz.SetCourseID(StudentCourseDropdown.SelectedValue.ToString());
+
+            StudentQuiz.ShowDialog();
+            this.Close();
+            
         }
     }
 }
