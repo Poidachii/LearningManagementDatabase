@@ -4,32 +4,60 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GUI
 {
     public static class Session
     {
-        public static string AccID;
-        public static string AccRole;
-        public static string AccName;
+        private static string Acc_ID;
+        private static string Acc_Role;
+        private static string Acc_Name;
 
-        public static void LogOut()
+        public static void Logout()
         {
             AccID = null;
             AccRole = null;
             AccName = null;
         }
 
-        public static void SetAccName() 
+        public static bool Login(string username, string password)
         {
-            Dictionary<string, object> sql_params = new Dictionary<string, object>
+            Dictionary<string, object> sql_params = new Dictionary<string, object>()
             {
-                { "@accid", AccID}
+                { "@name", username },
+                { "@pass", password }
             };
 
-            DataTable dt = SQL_legit.RunCommand("SELECT AccName FROM AccountList WHERE AccID=@accid", opt_sql_params: sql_params);
+            DataTable dt = SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName = @name AND AccPass = @pass)", opt_sql_params: sql_params);
 
-            AccName = dt.Rows[0]["AccName"].ToString();
+            if (dt?.Rows.Count <= 0) { return false; }
+
+            DataRow dr = dt.Rows[0];
+
+            AccID = dr["AccID"].ToString();
+            AccName = dr["AccName"].ToString();
+            AccRole = dr["AccRole"].ToString();
+
+            return true;
+        }
+
+        public static string AccID
+        {
+            get { return Acc_ID; }
+            set { Acc_ID = value; }
+        }
+
+        public static string AccName
+        {
+            get {  return Acc_Name; }
+            set { Acc_Name = value; }
+        }
+
+        public static string AccRole
+        {
+            get { return Acc_Role; }
+            set { Acc_Role = value; }
         }
     }
 }
