@@ -29,31 +29,35 @@ namespace GUI.Admin
         {
             name = SearchBar.Text;
 
-            if (name == "")
-            {
-                SQL_legit.RunCommand("SELECT * FROM AccountList", AccountDataViewer, sql_params);
-                return;
-            }
-
             if (role_type == "all")
             {
                 sql_params.Clear();
-                sql_params.Add("@name", name);
+                sql_params.Add("@name", "%" + name + "%");
 
-                SQL_legit.RunCommand("SELECT * FROM AccountList WHERE AccName = @name", AccountDataViewer, sql_params);
+                SQL_legit.RunCommand("SELECT * FROM AccountList WHERE AccName LIKE @name", AccountDataViewer, sql_params);
 
                 return;
             }
+
+            if (name == "")
+            {
+                sql_params.Clear();
+                sql_params.Add("@role", role_type);
+
+                SQL_legit.RunCommand("SELECT * FROM AccountList WHERE AccRole = @role", AccountDataViewer, sql_params);
+
+                return;
+            }    
 
             sql_params.Clear();
             sql_params = new Dictionary<string, object>()
             {
-                {"@name", name },
+                {"@name", "%" + name + "%" },
                 {"@role", role_type }
             };
 
             
-            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName = @name AND AccRole = @role)", AccountDataViewer, sql_params);
+            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName LIKE @name AND AccRole = @role)", AccountDataViewer, sql_params);
         }
 
         private void StudentListButton_Click(object sender, EventArgs e)
@@ -74,8 +78,8 @@ namespace GUI.Admin
             role_type = "student";
 
             sql_params.Clear();
-            sql_params.Add("@name", name);
-            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName = @name AND AccRole = 'student')", AccountDataViewer, sql_params);
+            sql_params.Add("@name", "%" + name + "%");
+            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName LIKE @name AND AccRole = 'student')", AccountDataViewer, sql_params);
         }
 
         private void ProfessorListButton_Click(object sender, EventArgs e)
@@ -96,8 +100,8 @@ namespace GUI.Admin
             role_type = "professor";
 
             sql_params.Clear();
-            sql_params.Add("@name", name);
-            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName = @name AND AccRole = 'professor')", AccountDataViewer, sql_params);
+            sql_params.Add("@name", "%" + name + "%");
+            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName LIKE @name AND AccRole = 'professor')", AccountDataViewer, sql_params);
         }
 
         private void AdminListButton_Click(object sender, EventArgs e)
@@ -118,8 +122,8 @@ namespace GUI.Admin
             role_type = "admin";
 
             sql_params.Clear();
-            sql_params.Add("@name", name);
-            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName = @name AND AccRole = 'admin')", AccountDataViewer, sql_params);
+            sql_params.Add("@name", "%" + name + "%");
+            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE (AccName LIKE @name AND AccRole = 'admin')", AccountDataViewer, sql_params);
         }
 
         private void AllListButton_Click(object sender, EventArgs e)
@@ -138,8 +142,8 @@ namespace GUI.Admin
             role_type = "all";
 
             sql_params.Clear();
-            sql_params.Add("@name", name);
-            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE AccName = @name", AccountDataViewer, sql_params);
+            sql_params.Add("@name", "%" + name + "%");
+            SQL_legit.RunCommand("SELECT * FROM AccountList WHERE AccName LIKE @name", AccountDataViewer, sql_params);
         }
 
         private void AddButton_Click(object sender, EventArgs e)
