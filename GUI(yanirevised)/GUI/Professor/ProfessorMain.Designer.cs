@@ -65,9 +65,9 @@
             this.EditCourseMaterialButton = new System.Windows.Forms.Button();
             this.AddCourseMaterialButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.RemoveQuizButton = new System.Windows.Forms.Button();
+            this.EditQuizButton = new System.Windows.Forms.Button();
+            this.AddQuizButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.NavBarTop.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -553,9 +553,9 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel9.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.button3, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.RemoveQuizButton, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.EditQuizButton, 0, 0);
+            this.tableLayoutPanel9.Controls.Add(this.AddQuizButton, 0, 0);
             this.tableLayoutPanel9.Location = new System.Drawing.Point(627, 3);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 1;
@@ -563,41 +563,44 @@
             this.tableLayoutPanel9.Size = new System.Drawing.Size(218, 29);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
-            // button1
+            // RemoveQuizButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(134, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Remove Quiz";
-            this.button1.UseVisualStyleBackColor = true;
+            this.RemoveQuizButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.RemoveQuizButton.AutoSize = true;
+            this.RemoveQuizButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.RemoveQuizButton.Location = new System.Drawing.Point(134, 3);
+            this.RemoveQuizButton.Name = "RemoveQuizButton";
+            this.RemoveQuizButton.Size = new System.Drawing.Size(81, 23);
+            this.RemoveQuizButton.TabIndex = 2;
+            this.RemoveQuizButton.Text = "Remove Quiz";
+            this.RemoveQuizButton.UseVisualStyleBackColor = true;
+            this.RemoveQuizButton.Click += new System.EventHandler(this.RemoveQuizButton_Click);
             // 
-            // button2
+            // EditQuizButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.AutoSize = true;
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(69, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Edit Quiz";
-            this.button2.UseVisualStyleBackColor = true;
+            this.EditQuizButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EditQuizButton.AutoSize = true;
+            this.EditQuizButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.EditQuizButton.Location = new System.Drawing.Point(69, 3);
+            this.EditQuizButton.Name = "EditQuizButton";
+            this.EditQuizButton.Size = new System.Drawing.Size(59, 23);
+            this.EditQuizButton.TabIndex = 1;
+            this.EditQuizButton.Text = "Edit Quiz";
+            this.EditQuizButton.UseVisualStyleBackColor = true;
+            this.EditQuizButton.Click += new System.EventHandler(this.EditQuizButton_Click);
             // 
-            // button3
+            // AddQuizButton
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.AutoSize = true;
-            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button3.Location = new System.Drawing.Point(3, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Add Quiz";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AddQuizButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddQuizButton.AutoSize = true;
+            this.AddQuizButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AddQuizButton.Location = new System.Drawing.Point(3, 3);
+            this.AddQuizButton.Name = "AddQuizButton";
+            this.AddQuizButton.Size = new System.Drawing.Size(60, 23);
+            this.AddQuizButton.TabIndex = 0;
+            this.AddQuizButton.Text = "Add Quiz";
+            this.AddQuizButton.UseVisualStyleBackColor = true;
+            this.AddQuizButton.Click += new System.EventHandler(this.AddQuizButton_Click);
             // 
             // ProfessorMain
             // 
@@ -669,9 +672,9 @@
         private System.Windows.Forms.Button EditCourseMaterialButton;
         private System.Windows.Forms.Button AddCourseMaterialButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button RemoveQuizButton;
+        private System.Windows.Forms.Button EditQuizButton;
+        private System.Windows.Forms.Button AddQuizButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.ComboBox ProfessorCourseDropdown;
