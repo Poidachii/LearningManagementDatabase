@@ -18,10 +18,6 @@ namespace GUI
         private StudentMain student_form = new StudentMain();
         private AdminMain admin_form = new AdminMain();
         private ProfessorMain professor_form = new ProfessorMain();
-        
-        private Dictionary<string, object> sql_params = new Dictionary<string, object>();
-        private DataTable dataset;
-        private DataRow query_result;
 
         public MainMenu()
         {
@@ -47,6 +43,7 @@ namespace GUI
                         break;
 
                     case "admin":
+                        admin_form.SetGreeting();
                         admin_form.ShowDialog();
                         break;
 

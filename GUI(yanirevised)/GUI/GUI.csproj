@@ -68,18 +68,6 @@
     <Compile Include="Admin\AdminMain.Designer.cs">
       <DependentUpon>AdminMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AdminCourseHandling.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminCourseHandling.Designer.cs">
-      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AccountCreation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AccountCreation.designer.cs">
-      <DependentUpon>AccountCreation.cs</DependentUpon>
-    </Compile>
     <Compile Include="AssignCoursePopupAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,7 +155,6 @@
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="SQL _legit.cs" />
-    <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\StudentGrade.cs">
@@ -194,14 +181,8 @@
     <Compile Include="Student\StudentQuiz.Designer.cs">
       <DependentUpon>StudentQuiz.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin\AccountCreation.resx">
-      <DependentUpon>AccountCreation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\AdminMain.resx">
       <DependentUpon>AdminMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminCourseHandling.resx">
-      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AssignCoursePopupAdd.resx">
       <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
