@@ -79,8 +79,10 @@ namespace GUI
 
         private void DEBUG_STUDENT_CLICK(object sender, EventArgs e)
         {
+            this.Hide();
             Session.AccID = "1";
             student_form.ShowDialog();
+            this.Show();
         }
     }
 }

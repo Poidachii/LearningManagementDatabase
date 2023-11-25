@@ -32,19 +32,13 @@
             this.IconPictureBox = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.QuestionNameTitleLabel = new System.Windows.Forms.Label();
-            this.QuizTableLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.SignOutButton = new System.Windows.Forms.Button();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.AccountLabel = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.CourseNameTitleLabel = new System.Windows.Forms.Label();
             this.CourseNamePanel = new System.Windows.Forms.Panel();
             this.CourseNameLabel = new System.Windows.Forms.Label();
             this.QuestionNamePanel = new System.Windows.Forms.Panel();
             this.QuestionNameLabel = new System.Windows.Forms.Label();
             this.QuizPanel = new System.Windows.Forms.Panel();
+            this.SubmitButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.QuestionLabel = new System.Windows.Forms.Label();
             this.RadioGroup = new System.Windows.Forms.TableLayoutPanel();
@@ -56,17 +50,24 @@
             this.PreviousButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ItemTrackerLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.NavBarTop = new System.Windows.Forms.TableLayoutPanel();
+            this.HomeButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.SignOutButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.button12 = new System.Windows.Forms.Button();
+            this.AccountLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IconPictureBox)).BeginInit();
-            this.QuizTableLayout.SuspendLayout();
-            this.tableLayoutPanel8.SuspendLayout();
-            this.tableLayoutPanel9.SuspendLayout();
             this.CourseNamePanel.SuspendLayout();
             this.QuestionNamePanel.SuspendLayout();
             this.QuizPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.RadioGroup.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.NavBarTop.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // IconPictureBox
@@ -106,109 +107,6 @@
             this.QuestionNameTitleLabel.Size = new System.Drawing.Size(187, 26);
             this.QuestionNameTitleLabel.TabIndex = 7;
             this.QuestionNameTitleLabel.Text = "QUESTION NAME:";
-            // 
-            // QuizTableLayout
-            // 
-            this.QuizTableLayout.AutoSize = true;
-            this.QuizTableLayout.BackColor = System.Drawing.Color.RoyalBlue;
-            this.QuizTableLayout.ColumnCount = 2;
-            this.QuizTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.QuizTableLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.QuizTableLayout.Controls.Add(this.tableLayoutPanel8, 1, 0);
-            this.QuizTableLayout.Controls.Add(this.label8, 0, 0);
-            this.QuizTableLayout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.QuizTableLayout.Location = new System.Drawing.Point(0, 0);
-            this.QuizTableLayout.Name = "QuizTableLayout";
-            this.QuizTableLayout.RowCount = 1;
-            this.QuizTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.QuizTableLayout.Size = new System.Drawing.Size(1008, 54);
-            this.QuizTableLayout.TabIndex = 8;
-            // 
-            // tableLayoutPanel8
-            // 
-            this.tableLayoutPanel8.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.tableLayoutPanel8.AutoSize = true;
-            this.tableLayoutPanel8.ColumnCount = 2;
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel8.Controls.Add(this.SignOutButton, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.tableLayoutPanel9, 0, 0);
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(787, 3);
-            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-            this.tableLayoutPanel8.RowCount = 1;
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(218, 48);
-            this.tableLayoutPanel8.TabIndex = 5;
-            // 
-            // SignOutButton
-            // 
-            this.SignOutButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.SignOutButton.AutoSize = true;
-            this.SignOutButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.SignOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignOutButton.Location = new System.Drawing.Point(142, 10);
-            this.SignOutButton.Name = "SignOutButton";
-            this.SignOutButton.Size = new System.Drawing.Size(73, 27);
-            this.SignOutButton.TabIndex = 5;
-            this.SignOutButton.Text = "Sign Out";
-            this.SignOutButton.UseVisualStyleBackColor = true;
-            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
-            // 
-            // tableLayoutPanel9
-            // 
-            this.tableLayoutPanel9.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tableLayoutPanel9.AutoSize = true;
-            this.tableLayoutPanel9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel9.ColumnCount = 2;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel9.Controls.Add(this.button2, 0, 0);
-            this.tableLayoutPanel9.Controls.Add(this.AccountLabel, 1, 0);
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel9.Name = "tableLayoutPanel9";
-            this.tableLayoutPanel9.RowCount = 1;
-            this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(133, 42);
-            this.tableLayoutPanel9.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(2, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(50, 38);
-            this.button2.TabIndex = 5;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // AccountLabel
-            // 
-            this.AccountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AccountLabel.AutoSize = true;
-            this.AccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AccountLabel.ForeColor = System.Drawing.Color.Transparent;
-            this.AccountLabel.Location = new System.Drawing.Point(56, 12);
-            this.AccountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.AccountLabel.Name = "AccountLabel";
-            this.AccountLabel.Size = new System.Drawing.Size(75, 17);
-            this.AccountLabel.TabIndex = 6;
-            this.AccountLabel.Text = "ACCOUNT";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(2, 14);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 26);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "STUDENT - [QUIZ]";
             // 
             // CourseNameTitleLabel
             // 
@@ -276,7 +174,7 @@
             // QuizPanel
             // 
             this.QuizPanel.BackColor = System.Drawing.Color.RoyalBlue;
-            this.QuizPanel.Controls.Add(this.button1);
+            this.QuizPanel.Controls.Add(this.SubmitButton);
             this.QuizPanel.Controls.Add(this.tableLayoutPanel1);
             this.QuizPanel.Controls.Add(this.NextButton);
             this.QuizPanel.Controls.Add(this.PreviousButton);
@@ -284,6 +182,17 @@
             this.QuizPanel.Name = "QuizPanel";
             this.QuizPanel.Size = new System.Drawing.Size(984, 508);
             this.QuizPanel.TabIndex = 12;
+            // 
+            // SubmitButton
+            // 
+            this.SubmitButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitButton.Location = new System.Drawing.Point(735, 443);
+            this.SubmitButton.Name = "SubmitButton";
+            this.SubmitButton.Size = new System.Drawing.Size(222, 53);
+            this.SubmitButton.TabIndex = 4;
+            this.SubmitButton.Text = "SUBMIT";
+            this.SubmitButton.UseVisualStyleBackColor = true;
+            this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -341,6 +250,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -354,6 +264,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -367,6 +278,7 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton4
             // 
@@ -380,6 +292,7 @@
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // NextButton
             // 
@@ -425,15 +338,124 @@
             this.ItemTrackerLabel.TabIndex = 0;
             this.ItemTrackerLabel.Text = "[CurrentItemNumber]";
             // 
-            // button1
+            // NavBarTop
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(735, 443);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(222, 53);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "SUBMIT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.NavBarTop.AutoSize = true;
+            this.NavBarTop.BackColor = System.Drawing.Color.RoyalBlue;
+            this.NavBarTop.ColumnCount = 3;
+            this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.NavBarTop.Controls.Add(this.HomeButton, 0, 0);
+            this.NavBarTop.Controls.Add(this.label1, 0, 0);
+            this.NavBarTop.Controls.Add(this.tableLayoutPanel5, 2, 0);
+            this.NavBarTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.NavBarTop.Location = new System.Drawing.Point(0, 0);
+            this.NavBarTop.Name = "NavBarTop";
+            this.NavBarTop.RowCount = 1;
+            this.NavBarTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.NavBarTop.Size = new System.Drawing.Size(1008, 54);
+            this.NavBarTop.TabIndex = 14;
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
+            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Location = new System.Drawing.Point(179, 2);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(86, 50);
+            this.HomeButton.TabIndex = 6;
+            this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(2, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 26);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "STUDENT - QUIZ";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.tableLayoutPanel5.AutoSize = true;
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.Controls.Add(this.SignOutButton, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(787, 3);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(218, 48);
+            this.tableLayoutPanel5.TabIndex = 5;
+            // 
+            // SignOutButton
+            // 
+            this.SignOutButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.SignOutButton.AutoSize = true;
+            this.SignOutButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SignOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SignOutButton.Location = new System.Drawing.Point(142, 10);
+            this.SignOutButton.Name = "SignOutButton";
+            this.SignOutButton.Size = new System.Drawing.Size(73, 27);
+            this.SignOutButton.TabIndex = 5;
+            this.SignOutButton.Text = "Sign Out";
+            this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tableLayoutPanel4.AutoSize = true;
+            this.tableLayoutPanel4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.Controls.Add(this.button12, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.AccountLabel, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(133, 42);
+            this.tableLayoutPanel4.TabIndex = 4;
+            // 
+            // button12
+            // 
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button12.BackgroundImage = global::GUI.Properties.Resources.account_logo_png_11;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(2, 2);
+            this.button12.Margin = new System.Windows.Forms.Padding(2);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(50, 38);
+            this.button12.TabIndex = 5;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // AccountLabel
+            // 
+            this.AccountLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AccountLabel.AutoSize = true;
+            this.AccountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLabel.ForeColor = System.Drawing.Color.Transparent;
+            this.AccountLabel.Location = new System.Drawing.Point(56, 12);
+            this.AccountLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.AccountLabel.Name = "AccountLabel";
+            this.AccountLabel.Size = new System.Drawing.Size(75, 17);
+            this.AccountLabel.TabIndex = 6;
+            this.AccountLabel.Text = "ACCOUNT";
             // 
             // StudentQuiz
             // 
@@ -441,23 +463,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.NavBarTop);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.QuizPanel);
             this.Controls.Add(this.QuestionNamePanel);
             this.Controls.Add(this.CourseNamePanel);
-            this.Controls.Add(this.QuizTableLayout);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.IconPictureBox);
             this.Name = "StudentQuiz";
             this.Text = "StudentQuiz";
             this.Load += new System.EventHandler(this.StudentQuiz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IconPictureBox)).EndInit();
-            this.QuizTableLayout.ResumeLayout(false);
-            this.QuizTableLayout.PerformLayout();
-            this.tableLayoutPanel8.ResumeLayout(false);
-            this.tableLayoutPanel8.PerformLayout();
-            this.tableLayoutPanel9.ResumeLayout(false);
-            this.tableLayoutPanel9.PerformLayout();
             this.CourseNamePanel.ResumeLayout(false);
             this.CourseNamePanel.PerformLayout();
             this.QuestionNamePanel.ResumeLayout(false);
@@ -469,6 +485,12 @@
             this.RadioGroup.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.NavBarTop.ResumeLayout(false);
+            this.NavBarTop.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -478,13 +500,6 @@
         private System.Windows.Forms.PictureBox IconPictureBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label QuestionNameTitleLabel;
-        private System.Windows.Forms.TableLayoutPanel QuizTableLayout;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.Button SignOutButton;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label AccountLabel;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label CourseNameTitleLabel;
         private System.Windows.Forms.Panel CourseNamePanel;
         private System.Windows.Forms.Panel QuestionNamePanel;
@@ -502,6 +517,14 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label ItemTrackerLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.TableLayoutPanel NavBarTop;
+        private System.Windows.Forms.Button HomeButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button SignOutButton;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label AccountLabel;
     }
 }

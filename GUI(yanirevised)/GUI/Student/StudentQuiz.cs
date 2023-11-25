@@ -12,11 +12,13 @@ namespace GUI
 {
     public partial class StudentQuiz : Form
     {
+        private StudentMain studentmainmenu;
+
         private Dictionary<object, object> itemlist = new Dictionary<object, object>();
         private Dictionary<object, object> Questions = new Dictionary<object, object>();
         private Dictionary<object, object> Choices = new Dictionary<object, object>();
         private Dictionary<object, object> CorrectAnswers = new Dictionary<object, object>();
-        private Dictionary<object, object> StudentAnswers = new Dictionary<object, object>();
+        private Dictionary<object, string> StudentAnswers = new Dictionary<object, string>();
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
         private int CurrentItemNumber = 1;
 
@@ -127,14 +129,25 @@ namespace GUI
         private void PreviousButton_Click(object sender, EventArgs e)
         {
             if(CurrentItemNumber == 1) { return; }
-            var checkedButton = RadioGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
-            if (checkedButton?.Checked == true)
+
+            var buttons = RadioGroup.Controls.OfType<RadioButton>();
+
+            // Clear any checked button for the current item
+            var checkedButton = buttons.FirstOrDefault(r => r.Checked);
+            if (checkedButton != null && StudentAnswers[itemlist[CurrentItemNumber]] != null)
             {
                 checkedButton.Checked = false;
             }
 
-            CurrentItemNumber -= 1;
+            CurrentItemNumber--;
             LoadQuestion(CurrentItemNumber);
+
+            // Set the checked button based on the student's answer for the next item
+            var selectedButton = buttons.FirstOrDefault(button => button.Text == StudentAnswers[itemlist[CurrentItemNumber]]);
+            if (selectedButton != null && StudentAnswers[itemlist[CurrentItemNumber]] != null)
+            {
+                selectedButton.Checked = true;
+            }
 
             ItemTrackerLabel.Text = $"{CurrentItemNumber} / {itemlist.Count}";
         }
@@ -142,21 +155,115 @@ namespace GUI
         private void NextButton_Click(object sender, EventArgs e)
         {
             if (CurrentItemNumber == itemlist.Count) { return; }
-            CurrentItemNumber += 1;
-            var checkedButton = RadioGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
-            if (checkedButton?.Checked == true)
+
+            var buttons = RadioGroup.Controls.OfType<RadioButton>();
+
+            // Clear any checked button for the current item
+            var checkedButton = buttons.FirstOrDefault(r => r.Checked);
+            if (checkedButton != null && StudentAnswers[itemlist[CurrentItemNumber]] != null)
             {
                 checkedButton.Checked = false;
             }
+
+            CurrentItemNumber++;
             LoadQuestion(CurrentItemNumber);
+
+            // Set the checked button based on the student's answer for the next item
+            var selectedButton = buttons.FirstOrDefault(button => button.Text == StudentAnswers[itemlist[CurrentItemNumber]]);
+            if (selectedButton != null && StudentAnswers[itemlist[CurrentItemNumber]] != null)
+            {
+                selectedButton.Checked = true;
+            }
 
             ItemTrackerLabel.Text = $"{CurrentItemNumber} / {itemlist.Count}";
         }
 
-        private void radioButton_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            var checkedButton = RadioGroup.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked);
-            StudentAnswers[itemlist[CurrentItemNumber]] = checkedButton;
+            RadioButton rb = sender as RadioButton;
+            if (rb != null)
+            {
+                if (rb.Checked)
+                {
+                    // Only one radio button will be checked
+                    StudentAnswers[itemlist[CurrentItemNumber]] = rb.Text;
+                    return;
+                }
+            }
+        }
+
+        private void ReturnHome()
+        {
+            this.Hide();
+            studentmainmenu = new StudentMain();
+            studentmainmenu.ShowDialog();
+            this.Close();
+        }
+
+        private void HomeButton_Click(object sender, EventArgs e)
+        {
+            ReturnHome();
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            int score = 0;
+            bool containsNull = StudentAnswers.Values.Any(value => value == null);
+            if (containsNull)
+            {
+                MessageBox.Show("Please answer all questions.");
+                return;
+            }
+
+            foreach (var ItemID in StudentAnswers.Keys)
+            {
+                if (string.Compare(StudentAnswers[ItemID], CorrectAnswers[ItemID].ToString()) == 0)
+                {
+                    score++;
+                }
+            }
+
+            MessageBox.Show("Quiz submitted.");
+
+            // Add a quiz first if it does not exist
+            sql_params = new Dictionary<string, object>
+                {
+                    { "@quizid", QuizID},
+                    { "@accid", Session.AccID}
+                };
+
+            DataTable dt = SQL_legit.RunCommand("SELECT * FROM Grades WHERE QuizID=@quizid AND AccID=@accid", opt_sql_params: sql_params);
+
+            if (dt?.Rows.Count <= 0)
+            {
+
+                sql_params = new Dictionary<string, object>
+                {
+                    { "@courseid", CourseID},
+                    { "@quizid", QuizID},
+                    { "@accid", Session.AccID},
+                    { "@score", score}
+                };
+
+                SQL_legit.RunCommand("INSERT INTO Grades " +
+                                "VALUES(@accid, @courseid, @quizid, @score)", opt_sql_params: sql_params);
+            }
+
+            else
+            {
+                sql_params = new Dictionary<string, object>
+                {
+                    { "@accid", Session.AccID},
+                    { "@quizid", QuizID},
+                    { "@score", score}
+                };
+
+                SQL_legit.RunCommand("UPDATE Grades " +
+                                "SET Score=@score " +
+                                "WHERE QuizID=@quizid AND AccID=@accid ", opt_sql_params: sql_params);
+            }
+
+            ReturnHome();
         }
     }
 }
