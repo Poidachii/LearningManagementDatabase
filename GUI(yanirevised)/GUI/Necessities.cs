@@ -6,10 +6,7 @@ using System.Linq;
 namespace GUI
 {
     internal class Necessities
-    {
-        private static Dictionary<string, object> sql_params = new Dictionary<string, object>();
-        private static DataTable dataset;
-        
+    {     
         /*
             AccountList
             - AccID PRIMARY KEY
