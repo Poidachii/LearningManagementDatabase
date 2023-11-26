@@ -33,18 +33,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.QuestionNameLabel = new System.Windows.Forms.Label();
             this.QuizTableLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.SignOutButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.CourseNameLabel = new System.Windows.Forms.Label();
             this.CourseNamePanel = new System.Windows.Forms.Panel();
             this.QuestionNamePanel = new System.Windows.Forms.Panel();
             this.QuizPanel = new System.Windows.Forms.Panel();
-            this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
+            this.PreviousButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IconPictureBox)).BeginInit();
             this.QuizTableLayout.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
@@ -108,19 +108,6 @@
             this.QuizTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.QuizTableLayout.Size = new System.Drawing.Size(1008, 54);
             this.QuizTableLayout.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(2, 14);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 26);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "STUDENT - [QUIZ]";
             // 
             // tableLayoutPanel8
             // 
@@ -194,6 +181,19 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "ACCOUNT";
             // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label8.Location = new System.Drawing.Point(2, 14);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(187, 26);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "STUDENT - [QUIZ]";
+            // 
             // CourseNameLabel
             // 
             this.CourseNameLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -239,16 +239,6 @@
             this.QuizPanel.Size = new System.Drawing.Size(984, 508);
             this.QuizPanel.TabIndex = 12;
             // 
-            // PreviousButton
-            // 
-            this.PreviousButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousButton.Location = new System.Drawing.Point(18, 443);
-            this.PreviousButton.Name = "PreviousButton";
-            this.PreviousButton.Size = new System.Drawing.Size(222, 53);
-            this.PreviousButton.TabIndex = 1;
-            this.PreviousButton.Text = "PREVIOUS";
-            this.PreviousButton.UseVisualStyleBackColor = true;
-            // 
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -258,6 +248,16 @@
             this.NextButton.TabIndex = 2;
             this.NextButton.Text = "NEXT";
             this.NextButton.UseVisualStyleBackColor = true;
+            // 
+            // PreviousButton
+            // 
+            this.PreviousButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousButton.Location = new System.Drawing.Point(18, 443);
+            this.PreviousButton.Name = "PreviousButton";
+            this.PreviousButton.Size = new System.Drawing.Size(222, 53);
+            this.PreviousButton.TabIndex = 1;
+            this.PreviousButton.Text = "PREVIOUS";
+            this.PreviousButton.UseVisualStyleBackColor = true;
             // 
             // StudentQuiz
             // 
