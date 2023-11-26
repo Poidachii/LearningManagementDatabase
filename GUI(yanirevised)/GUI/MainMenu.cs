@@ -16,12 +16,8 @@ namespace GUI
     public partial class MainMenu : Form
     {
         private StudentMain student_form = new StudentMain();
-        private AccountHandling admin_form = new AccountHandling();
+        private AdminMain admin_form = new AdminMain();
         private ProfessorMain professor_form = new ProfessorMain();
-        
-        private Dictionary<string, object> sql_params = new Dictionary<string, object>();
-        private DataTable dataset;
-        private DataRow query_result;
 
         public MainMenu()
         {
@@ -30,59 +26,39 @@ namespace GUI
 
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            sql_params = new Dictionary<string, object>
-            {
-                { "@name", UsernameLoginField.Text },
-                { "@pass", PasswordLoginField.Text }
-                
-            };
+            bool login_success = Session.Login(UsernameLoginField.Text, PasswordLoginField.Text);
 
-            dataset = SQL_legit.RunCommand("SELECT AccID, AccRole FROM Account WHERE AccName = @name AND AccPass = @pass", opt_sql_params: sql_params);
-
-            if (dataset == null || dataset?.Rows.Count <= 0)
+            if (login_success)
             {
-                MessageBox.Show("Invalid username and/or password!");
-                return;
+                this.Hide();
+
+                switch (Session.AccRole)
+                {
+                    case "student":
+                        student_form.ShowDialog();
+                        break;
+
+                    case "professor":
+                        professor_form.ShowDialog();
+                        break;
+
+                    case "admin":
+                        admin_form.SetGreeting();
+                        admin_form.ShowDialog();
+                        break;
+
+                    default:
+                        break;
+                }
+
+                this.Show();
             }
 
-            query_result = dataset.Rows[0];
-            string token_value = query_result[1].ToString();
-
-            Session.AccID = dataset.Rows[0][0].ToString();
-
-
-            this.Hide();
-
-            //should be encrypted
-            if (token_value == "admin") { admin_form.ShowDialog(); }
-            else if (token_value == "prof") { professor_form.ShowDialog(); }
-            else { student_form.ShowDialog(); }
-
-            this.Show();
+            else if (!login_success)
+            {
+                MessageBox.Show("Invalid login credentials. Please try again.");
+            }
         }
-
-        private void DEBUG_STUDENT_CLICK(object sender, EventArgs e)
-        {
-            Session.AccID = "1";
-            Session.AccRole = "student";
-            Session.SetAccName();
-
-            this.Hide();
-            student_form.ShowDialog();
-            this.Show();
-        }
-
-        private void DEBUG_PROF_CLICK(object sender, EventArgs e)
-        {
-            Session.AccID = "1";
-            Session.AccRole = "student";
-            Session.SetAccName();
-
-            this.Hide();
-            professor_form.ShowDialog();
-            this.Show();
-        }
-
         private void OneMCLButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://one.mcl.edu.ph");
@@ -96,6 +72,14 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://mcl.blackboard.com/ultra/catalog");
+        }
+
+        private void DEBUG_STUDENT_CLICK(object sender, EventArgs e)
+        {
+            this.Hide();
+            Session.AccID = "1";
+            student_form.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -62,29 +62,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Admin.cs">
+    <Compile Include="Admin\AdminMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AdminCourseHandling.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AdminCourseHandling.Designer.cs">
-      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AccountCreation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AccountCreation.designer.cs">
-      <DependentUpon>AccountCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AccountHandling.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\AccountHandling.Designer.cs">
-      <DependentUpon>AccountHandling.cs</DependentUpon>
+    <Compile Include="Admin\AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
     </Compile>
     <Compile Include="AssignCoursePopupAdd.cs">
       <SubType>Form</SubType>
@@ -147,12 +129,6 @@
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Necessities.cs" />
-    <Compile Include="Professor\ProfessorQuiz.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Professor\ProfessorQuiz.Designer.cs">
-      <DependentUpon>ProfessorQuiz.cs</DependentUpon>
-    </Compile>
     <Compile Include="Professor\ProfQuiz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +147,12 @@
     <Compile Include="Professor\ProfGrade.Designer.cs">
       <DependentUpon>ProfGrade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor\ProfQuizStates\AddQuizState.cs" />
+    <Compile Include="Professor\ProfQuizStates\EditQuizState.cs" />
+    <Compile Include="Professor\ProfQuizStates\IQuizState.cs" />
+    <Compile Include="Professor\ProfQuizStates\QuizStateContext.cs" />
     <Compile Include="Session.cs" />
     <Compile Include="SQL _legit.cs" />
-    <Compile Include="SQL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\StudentGrade.cs">
@@ -200,14 +179,8 @@
     <Compile Include="Student\StudentQuiz.Designer.cs">
       <DependentUpon>StudentQuiz.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin\AccountCreation.resx">
-      <DependentUpon>AccountCreation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AccountHandling.resx">
-      <DependentUpon>AccountHandling.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\AdminCourseHandling.resx">
-      <DependentUpon>AdminCourseHandling.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AssignCoursePopupAdd.resx">
       <DependentUpon>AssignCoursePopupAdd.cs</DependentUpon>
@@ -236,14 +209,12 @@
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Professor\ProfessorQuiz.resx">
-      <DependentUpon>ProfessorQuiz.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Professor\ProfQuiz.resx">
       <DependentUpon>ProfQuiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\ProfessorMain.resx">
       <DependentUpon>ProfessorMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Professor\ProfGrade.resx">
       <DependentUpon>ProfGrade.cs</DependentUpon>

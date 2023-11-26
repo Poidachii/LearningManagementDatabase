@@ -1,5 +1,4 @@
-﻿
-namespace GUI.Professor
+﻿namespace GUI
 {
     partial class ProfQuiz
     {
@@ -32,6 +31,7 @@ namespace GUI.Professor
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfQuiz));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.NavBarTop = new System.Windows.Forms.TableLayoutPanel();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.SignOutButton = new System.Windows.Forms.Button();
@@ -40,23 +40,22 @@ namespace GUI.Professor
             this.AccountLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.SaveButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.CourseListLabel = new System.Windows.Forms.Label();
             this.CourseNameLabel = new System.Windows.Forms.Label();
+            this.CourseListLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.QuizNameTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ItemNumberComboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.QuestionTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ChoiceTextBox1 = new System.Windows.Forms.TextBox();
+            this.ChoiceTextBox4 = new System.Windows.Forms.TextBox();
+            this.ChoiceTextBox3 = new System.Windows.Forms.TextBox();
+            this.ChoiceTextBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.UpdateButton = new System.Windows.Forms.Button();
@@ -64,7 +63,7 @@ namespace GUI.Professor
             this.AddButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.AnswerTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.NavBarTop.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -107,11 +106,13 @@ namespace GUI.Professor
             // 
             this.NavBarTop.AutoSize = true;
             this.NavBarTop.BackColor = System.Drawing.Color.RoyalBlue;
-            this.NavBarTop.ColumnCount = 2;
+            this.NavBarTop.ColumnCount = 3;
             this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.NavBarTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.NavBarTop.Controls.Add(this.HomeButton, 0, 0);
             this.NavBarTop.Controls.Add(this.label1, 0, 0);
-            this.NavBarTop.Controls.Add(this.tableLayoutPanel5, 1, 0);
+            this.NavBarTop.Controls.Add(this.tableLayoutPanel5, 2, 0);
             this.NavBarTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.NavBarTop.Location = new System.Drawing.Point(3, 3);
             this.NavBarTop.Name = "NavBarTop";
@@ -119,6 +120,20 @@ namespace GUI.Professor
             this.NavBarTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.NavBarTop.Size = new System.Drawing.Size(978, 54);
             this.NavBarTop.TabIndex = 3;
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.BackgroundImage = global::GUI.Properties.Resources.img_66574;
+            this.HomeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.HomeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeButton.Location = new System.Drawing.Point(201, 2);
+            this.HomeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(86, 50);
+            this.HomeButton.TabIndex = 6;
+            this.HomeButton.UseVisualStyleBackColor = true;
+            this.HomeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // label1
             // 
@@ -161,6 +176,7 @@ namespace GUI.Professor
             this.SignOutButton.TabIndex = 5;
             this.SignOutButton.Text = "Sign Out";
             this.SignOutButton.UseVisualStyleBackColor = true;
+            this.SignOutButton.Click += new System.EventHandler(this.SignOutButton_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -209,12 +225,11 @@ namespace GUI.Professor
             // 
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.SaveButton, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 63);
@@ -236,19 +251,6 @@ namespace GUI.Professor
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // SaveButton
-            // 
-            this.SaveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.SaveButton.AutoSize = true;
-            this.SaveButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.SaveButton.Location = new System.Drawing.Point(874, 36);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Padding = new System.Windows.Forms.Padding(5);
-            this.SaveButton.Size = new System.Drawing.Size(101, 33);
-            this.SaveButton.TabIndex = 67;
-            this.SaveButton.Text = "SAVE";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -264,8 +266,20 @@ namespace GUI.Professor
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(759, 100);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(866, 100);
             this.tableLayoutPanel3.TabIndex = 5;
+            // 
+            // CourseNameLabel
+            // 
+            this.CourseNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.CourseNameLabel.AutoSize = true;
+            this.CourseNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.CourseNameLabel.Location = new System.Drawing.Point(3, 65);
+            this.CourseNameLabel.Name = "CourseNameLabel";
+            this.CourseNameLabel.Size = new System.Drawing.Size(427, 20);
+            this.CourseNameLabel.TabIndex = 21;
+            this.CourseNameLabel.Text = "[InsertCourseHere]";
             // 
             // CourseListLabel
             // 
@@ -279,25 +293,13 @@ namespace GUI.Professor
             this.CourseListLabel.TabIndex = 20;
             this.CourseListLabel.Text = "COURSE NAME:";
             // 
-            // CourseNameLabel
-            // 
-            this.CourseNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.CourseNameLabel.AutoSize = true;
-            this.CourseNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CourseNameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.CourseNameLabel.Location = new System.Drawing.Point(3, 65);
-            this.CourseNameLabel.Name = "CourseNameLabel";
-            this.CourseNameLabel.Size = new System.Drawing.Size(373, 20);
-            this.CourseNameLabel.TabIndex = 21;
-            this.CourseNameLabel.Text = "[InsertCourseHere]";
-            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(382, 17);
+            this.label3.Location = new System.Drawing.Point(436, 17);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(1);
             this.label3.Size = new System.Drawing.Size(175, 33);
@@ -308,9 +310,9 @@ namespace GUI.Professor
             // 
             this.QuizNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.QuizNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuizNameTextBox.Location = new System.Drawing.Point(382, 62);
+            this.QuizNameTextBox.Location = new System.Drawing.Point(436, 62);
             this.QuizNameTextBox.Name = "QuizNameTextBox";
-            this.QuizNameTextBox.Size = new System.Drawing.Size(374, 26);
+            this.QuizNameTextBox.Size = new System.Drawing.Size(427, 26);
             this.QuizNameTextBox.TabIndex = 23;
             // 
             // tableLayoutPanel6
@@ -318,10 +320,11 @@ namespace GUI.Professor
             this.tableLayoutPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel6.AutoSize = true;
             this.tableLayoutPanel6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel6.BackColor = System.Drawing.Color.RoyalBlue;
             this.tableLayoutPanel6.ColumnCount = 1;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel6.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel6.Controls.Add(this.comboBox1, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.ItemNumberComboBox, 0, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(838, 182);
             this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -343,24 +346,26 @@ namespace GUI.Professor
             this.label2.TabIndex = 22;
             this.label2.Text = "Question Number:";
             // 
-            // comboBox1
+            // ItemNumberComboBox
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 23;
+            this.ItemNumberComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ItemNumberComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ItemNumberComboBox.FormattingEnabled = true;
+            this.ItemNumberComboBox.Location = new System.Drawing.Point(3, 23);
+            this.ItemNumberComboBox.Name = "ItemNumberComboBox";
+            this.ItemNumberComboBox.Size = new System.Drawing.Size(137, 21);
+            this.ItemNumberComboBox.TabIndex = 23;
+            this.ItemNumberComboBox.SelectionChangeCommitted += new System.EventHandler(this.ItemNumberComboBox_SelectionChangeCommitted);
             // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.AutoSize = true;
             this.tableLayoutPanel7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
             this.tableLayoutPanel7.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel7.Controls.Add(this.QuestionTextBox, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 235);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -375,21 +380,21 @@ namespace GUI.Professor
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(101, 28);
+            this.label4.Location = new System.Drawing.Point(52, 28);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 24);
             this.label4.TabIndex = 22;
             this.label4.Text = "Question:";
             // 
-            // textBox1
+            // QuestionTextBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(198, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(777, 75);
-            this.textBox1.TabIndex = 23;
+            this.QuestionTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QuestionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuestionTextBox.Location = new System.Drawing.Point(149, 3);
+            this.QuestionTextBox.Multiline = true;
+            this.QuestionTextBox.Name = "QuestionTextBox";
+            this.QuestionTextBox.Size = new System.Drawing.Size(826, 75);
+            this.QuestionTextBox.TabIndex = 23;
             // 
             // tableLayoutPanel8
             // 
@@ -399,10 +404,10 @@ namespace GUI.Professor
             this.tableLayoutPanel8.ColumnCount = 2;
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel8.Controls.Add(this.textBox2, 1, 0);
-            this.tableLayoutPanel8.Controls.Add(this.textBox3, 1, 3);
-            this.tableLayoutPanel8.Controls.Add(this.textBox4, 1, 2);
-            this.tableLayoutPanel8.Controls.Add(this.textBox5, 1, 1);
+            this.tableLayoutPanel8.Controls.Add(this.ChoiceTextBox1, 1, 0);
+            this.tableLayoutPanel8.Controls.Add(this.ChoiceTextBox4, 1, 3);
+            this.tableLayoutPanel8.Controls.Add(this.ChoiceTextBox3, 1, 2);
+            this.tableLayoutPanel8.Controls.Add(this.ChoiceTextBox2, 1, 1);
             this.tableLayoutPanel8.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel8.Location = new System.Drawing.Point(189, 349);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
@@ -415,41 +420,41 @@ namespace GUI.Professor
             this.tableLayoutPanel8.Size = new System.Drawing.Size(606, 140);
             this.tableLayoutPanel8.TabIndex = 7;
             // 
-            // textBox2
+            // ChoiceTextBox1
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(306, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(297, 29);
-            this.textBox2.TabIndex = 25;
+            this.ChoiceTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChoiceTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChoiceTextBox1.Location = new System.Drawing.Point(306, 3);
+            this.ChoiceTextBox1.Name = "ChoiceTextBox1";
+            this.ChoiceTextBox1.Size = new System.Drawing.Size(297, 29);
+            this.ChoiceTextBox1.TabIndex = 25;
             // 
-            // textBox3
+            // ChoiceTextBox4
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(306, 108);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(297, 29);
-            this.textBox3.TabIndex = 26;
+            this.ChoiceTextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChoiceTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChoiceTextBox4.Location = new System.Drawing.Point(306, 108);
+            this.ChoiceTextBox4.Name = "ChoiceTextBox4";
+            this.ChoiceTextBox4.Size = new System.Drawing.Size(297, 29);
+            this.ChoiceTextBox4.TabIndex = 26;
             // 
-            // textBox4
+            // ChoiceTextBox3
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(306, 73);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(297, 29);
-            this.textBox4.TabIndex = 27;
+            this.ChoiceTextBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChoiceTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChoiceTextBox3.Location = new System.Drawing.Point(306, 73);
+            this.ChoiceTextBox3.Name = "ChoiceTextBox3";
+            this.ChoiceTextBox3.Size = new System.Drawing.Size(297, 29);
+            this.ChoiceTextBox3.TabIndex = 27;
             // 
-            // textBox5
+            // ChoiceTextBox2
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(306, 38);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(297, 29);
-            this.textBox5.TabIndex = 28;
+            this.ChoiceTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ChoiceTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChoiceTextBox2.Location = new System.Drawing.Point(306, 38);
+            this.ChoiceTextBox2.Name = "ChoiceTextBox2";
+            this.ChoiceTextBox2.Size = new System.Drawing.Size(297, 29);
+            this.ChoiceTextBox2.TabIndex = 28;
             // 
             // label5
             // 
@@ -494,6 +499,7 @@ namespace GUI.Professor
             this.UpdateButton.TabIndex = 6;
             this.UpdateButton.Text = "Update Question";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // RemoveButton
             // 
@@ -507,6 +513,7 @@ namespace GUI.Professor
             this.RemoveButton.TabIndex = 7;
             this.RemoveButton.Text = "Remove Question";
             this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveButton.Click += new System.EventHandler(this.RemoveButton_Click);
             // 
             // AddButton
             // 
@@ -520,6 +527,7 @@ namespace GUI.Professor
             this.AddButton.TabIndex = 8;
             this.AddButton.Text = "Add Question";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // tableLayoutPanel10
             // 
@@ -530,15 +538,15 @@ namespace GUI.Professor
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel10.Controls.Add(this.label6, 0, 0);
-            this.tableLayoutPanel10.Controls.Add(this.textBox6, 1, 0);
+            this.tableLayoutPanel10.Controls.Add(this.AnswerTextBox, 1, 0);
             this.tableLayoutPanel10.Location = new System.Drawing.Point(189, 522);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel10.Size = new System.Drawing.Size(606, 35);
             this.tableLayoutPanel10.TabIndex = 11;
             // 
@@ -554,14 +562,14 @@ namespace GUI.Professor
             this.label6.TabIndex = 29;
             this.label6.Text = "Answer:";
             // 
-            // textBox6
+            // AnswerTextBox
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(306, 3);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(297, 29);
-            this.textBox6.TabIndex = 26;
+            this.AnswerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.AnswerTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AnswerTextBox.Location = new System.Drawing.Point(306, 3);
+            this.AnswerTextBox.Name = "AnswerTextBox";
+            this.AnswerTextBox.Size = new System.Drawing.Size(297, 29);
+            this.AnswerTextBox.TabIndex = 26;
             // 
             // ProfQuiz
             // 
@@ -572,6 +580,7 @@ namespace GUI.Professor
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "ProfQuiz";
             this.Text = "ProfQuiz";
+            this.Load += new System.EventHandler(this.ProfQuiz_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.NavBarTop.ResumeLayout(false);
@@ -581,7 +590,6 @@ namespace GUI.Professor
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -611,7 +619,6 @@ namespace GUI.Professor
         private System.Windows.Forms.Label AccountLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label CourseNameLabel;
         private System.Windows.Forms.Label CourseListLabel;
@@ -619,15 +626,15 @@ namespace GUI.Professor
         private System.Windows.Forms.TextBox QuizNameTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ItemNumberComboBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox QuestionTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox ChoiceTextBox1;
+        private System.Windows.Forms.TextBox ChoiceTextBox4;
+        private System.Windows.Forms.TextBox ChoiceTextBox3;
+        private System.Windows.Forms.TextBox ChoiceTextBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.Button UpdateButton;
@@ -635,6 +642,7 @@ namespace GUI.Professor
         private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox AnswerTextBox;
+        private System.Windows.Forms.Button HomeButton;
     }
 }

@@ -14,9 +14,12 @@ namespace GUI
     public partial class ProfessorMain : Form
     {
         private ProfGrade ProfGradeNew;
+        private ProfQuiz ProfQuiz;
         private AddCourseMaterial AddCourseMaterial;
         private EditCourseMaterial EditCourseMaterial;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
+
+        private QuizStateContext context = new QuizStateContext();
 
         public ProfessorMain()
         {
@@ -108,6 +111,8 @@ namespace GUI
             {
                 //Add Item to ListView.
                 ListViewItem item = new ListViewItem(row["QuizName"].ToString());
+                item.Tag = row["QuizID"].ToString();
+
                 item.SubItems.Add(row["QuizID"].ToString());
                 QuizzesListView.Items.Add(item);
             }
@@ -129,7 +134,7 @@ namespace GUI
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
-            Session.LogOut();
+            Session.Logout();
             this.Close();
         }
 
@@ -184,6 +189,77 @@ namespace GUI
                                                     "WHERE MaterialId=@materialid", opt_sql_params: sql_params);
 
                 MessageBox.Show("Successfully deleted the Course Material.", "Course Material Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            LoadCourseMaterials();
+            LoadQuizzes();
+        }
+
+        private void AddQuizButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ProfQuiz = new ProfQuiz();
+
+            ProfQuiz.SetQuizID();
+            ProfQuiz.SetCourseID(ProfessorCourseDropdown.SelectedValue.ToString());
+            ProfQuiz.SetCourseName(ProfessorCourseDropdown.Text);
+
+            ProfQuiz.context.SetState(new AddQuizState());
+
+            ProfQuiz.ShowDialog();
+            this.Close();
+        }
+
+        private void EditQuizButton_Click(object sender, EventArgs e)
+        {
+            if (QuizzesListView.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            this.Hide();
+            ProfQuiz = new ProfQuiz();
+            ProfQuiz.SetQuizID(QuizzesListView.SelectedItems[0].Tag.ToString());
+            ProfQuiz.SetCourseID(ProfessorCourseDropdown.SelectedValue.ToString());
+            ProfQuiz.SetCourseName(ProfessorCourseDropdown.Text);
+
+            ProfQuiz.context.SetState(new EditQuizState());
+
+            ProfQuiz.ShowDialog();
+            this.Close();
+        }
+
+        private void RemoveQuizButton_Click(object sender, EventArgs e)
+        {
+            if (QuizzesListView.SelectedItems.Count <= 0)
+            {
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Do you want to delete this quiz?", "Confirmation", MessageBoxButtons.YesNoCancel);
+
+            if (result == DialogResult.Yes)
+            {
+                string QuizID = QuizzesListView.SelectedItems[0].Tag.ToString();
+
+                sql_params = new Dictionary<string, object>
+                {
+                    { "@quizid", QuizID},
+                };
+
+                // Delete Quiz Items first
+                SQL_legit.RunCommand("DELETE FROM QuizItems " +
+                                    "WHERE QuizID=@quizid", opt_sql_params: sql_params);
+
+                // Delete Quiz from grades next
+                SQL_legit.RunCommand("DELETE FROM Grades " +
+                                    "WHERE QuizID=@quizid", opt_sql_params: sql_params);
+
+                // Delete Quiz last
+                SQL_legit.RunCommand("DELETE FROM Quiz " +
+                                    "WHERE QuizID=@quizid", opt_sql_params: sql_params);
+
+                MessageBox.Show("Successfully deleted the quiz.", "Quiz Deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             LoadCourseMaterials();

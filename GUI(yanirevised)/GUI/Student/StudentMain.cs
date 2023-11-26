@@ -14,6 +14,7 @@ namespace GUI
     public partial class StudentMain : Form
     {
         private StudentGrade studentgrademenu;
+        private StudentQuiz StudentQuiz;
         private Dictionary<string, object> sql_params = new Dictionary<string, object>();
 
         public StudentMain()
@@ -101,6 +102,8 @@ namespace GUI
             {
                 //Add Item to ListView.
                 ListViewItem item = new ListViewItem(row["QuizName"].ToString());
+                item.Tag = row["QuizID"].ToString();
+
                 item.SubItems.Add(row["QuizID"].ToString());
                 QuizzesListView.Items.Add(item);
             }
@@ -116,8 +119,20 @@ namespace GUI
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
-            Session.LogOut();
+            Session.Logout();
             this.Close();
+        }
+
+        private void QuizzesListView_DoubleClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            StudentQuiz = new StudentQuiz();
+            StudentQuiz.SetQuizID(QuizzesListView.SelectedItems[0].Tag.ToString());
+            StudentQuiz.SetCourseID(StudentCourseDropdown.SelectedValue.ToString());
+
+            StudentQuiz.ShowDialog();
+            this.Close();
+            
         }
     }
 }

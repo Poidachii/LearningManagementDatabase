@@ -36,7 +36,7 @@ namespace GUI
 
         private void SignOutButton_Click(object sender, EventArgs e)
         {
-            Session.LogOut();
+            Session.Logout();
             this.Close();
         }
 
