@@ -649,7 +649,7 @@ namespace GUI.Admin
                 string name_id = dt.Rows[0]["AccID"].ToString();
 
                 sql_params.Clear();
-                sql_params["@accid"] = name_id
+                sql_params["@accid"] = name_id;
                 sql_params["@courseid"] = course_id;
 
                 SQL_legit.RunCommand("INSERT INTO CourseAssignment VALUES (@accid, @courseid)", opt_sql_params: sql_params);
