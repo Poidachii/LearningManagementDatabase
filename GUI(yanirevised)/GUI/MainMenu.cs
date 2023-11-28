@@ -78,7 +78,7 @@ namespace GUI
         {
             this.Hide();
             Session.AccID = "1";
-            student_form.ShowDialog();
+            professor_form.ShowDialog();
             this.Show();
         }
     }

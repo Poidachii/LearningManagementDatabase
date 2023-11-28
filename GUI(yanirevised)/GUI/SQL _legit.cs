@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace GUI
             {
                 foreach(KeyValuePair<string, object> param in opt_sql_params)
                 {
-                    command.Parameters.AddWithValue(param.Key, param.Value);
+                    command.Parameters.AddWithValue(param.Key, param.Value ?? DBNull.Value);
                 }
             }
 

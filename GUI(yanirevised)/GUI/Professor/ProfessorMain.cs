@@ -200,7 +200,6 @@ namespace GUI
             this.Hide();
             ProfQuiz = new ProfQuiz();
 
-            ProfQuiz.SetQuizID();
             ProfQuiz.SetCourseID(ProfessorCourseDropdown.SelectedValue.ToString());
             ProfQuiz.SetCourseName(ProfessorCourseDropdown.Text);
 

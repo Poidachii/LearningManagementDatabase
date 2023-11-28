@@ -54,7 +54,7 @@ namespace GUI
 
             DataTable dt = SQL_legit.RunCommand("SELECT MAX(QuizID) AS QuizID from Quiz;", opt_sql_params: sql_params);
 
-            int QuizID_int = Convert.ToInt32(dt.Rows[0]["QuizID"]) + 1;
+            int QuizID_int = Convert.ToInt32(dt.Rows[0]["QuizID"]);
             QuizID = QuizID_int.ToString();
         }
 
@@ -113,6 +113,7 @@ namespace GUI
         {
             AccountLabel.Text = $"Welcome, {Session.AccName}!";
             CourseNameLabel.Text = CourseName;
+            QuizID = null;
 
             RefreshUI(0);
         }
@@ -159,12 +160,14 @@ namespace GUI
 
                 sql_params = new Dictionary<string, object>
                 {
-                    { "@courseid", QuizID},
+                    { "@courseid", CourseID},
                     { "@quizname", QuizNameTextBox.Text}
                 };
 
                 SQL_legit.RunCommand("INSERT INTO Quiz " +
                                 "VALUES(@courseid, @quizname)", opt_sql_params: sql_params);
+
+                SetQuizID();
             }
 
             else
